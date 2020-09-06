@@ -1,0 +1,77 @@
+# depslib dependency file v1.0
+1599351457 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
+	<iostream>
+	<CEP.h>
+	<Classe.h>
+	<CodigoDeAgencia.h>
+	<CodigoDeAplicacao.h>
+	<CodigoDeBanco.h>
+	<CodigoDeProduto.h>
+	<CPF.h>
+	<Data.h>
+
+1599353401 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CPF.cpp
+	"CPF.h"
+
+1599352888 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CPF.h
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
+
+1599352697 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CEP.cpp
+	"CEP.h"
+
+1599352691 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CEP.h
+	<string>
+
+1599352888 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeBanco.h
+	<string>
+
+1599352888 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeBanco.cpp
+	"CodigoDeBanco.h"
+
+1599352721 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Classe.cpp
+	"Classe.h"
+
+1599352721 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Classe.h
+	<string>
+
+1599353402 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeAgencia.cpp
+	"CodigoDeAgencia.h"
+
+1599352888 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAgencia.h
+	<string>
+	<regex>
+
+1599353402 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeAplicacao.cpp
+	"CodigoDeAplicacao.h"
+
+1599352888 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAplicacao.h
+	<string>
+	<regex>
+
+1599353402 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeProduto.cpp
+	"CodigoDeProduto.h"
+
+1599352888 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeProduto.h
+	<string>
+	<regex>
+
+1599353401 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Data.h
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
+
+1599353402 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Data.cpp
+	"Data.h"
+
+1599352560 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Emissor.cpp
+	"Emissor.h"
+
+1599352529 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Emissor.h
+	<string>
+	<regex>
+	<iostream>
+
