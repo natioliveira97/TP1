@@ -34,6 +34,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/CEP.h" />
 		<Unit filename="include/CPF.h" />
 		<Unit filename="include/Classe.h" />
 		<Unit filename="include/CodigoDeAgencia.h" />
@@ -52,6 +53,7 @@
 		<Unit filename="include/ValorDeAplicacao.h" />
 		<Unit filename="include/ValorMinimo.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/CEP.cpp" />
 		<Unit filename="src/CPF.cpp" />
 		<Unit filename="src/Classe.cpp" />
 		<Unit filename="src/CodigoDeAgencia.cpp" />

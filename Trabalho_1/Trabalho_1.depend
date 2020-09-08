@@ -75,3 +75,79 @@
 	<regex>
 	<iostream>
 
+1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\main.cpp
+	<iostream>
+	<CEP.h>
+	<Classe.h>
+	<CodigoDeAgencia.h>
+	<CodigoDeAplicacao.h>
+	<CodigoDeBanco.h>
+	<CodigoDeProduto.h>
+	<CPF.h>
+	<Data.h>
+
+1599529284 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\cep.h
+	<string>
+
+1599529249 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\classe.h
+	<string>
+
+1599529241 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\codigodeagencia.h
+	<string>
+	<regex>
+
+1599523007 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\codigodeaplicacao.h
+	<string>
+	<regex>
+
+1599523007 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\codigodebanco.h
+	<string>
+
+1599523007 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\codigodeproduto.h
+	<string>
+	<regex>
+
+1599523007 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\cpf.h
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
+
+1599523007 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\data.h
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
+
+1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\cep.cpp
+	"CEP.h"
+
+1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\classe.cpp
+	"Classe.h"
+
+1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\codigodeagencia.cpp
+	"CodigoDeAgencia.h"
+
+1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\codigodeaplicacao.cpp
+	"CodigoDeAplicacao.h"
+
+1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\codigodebanco.cpp
+	"CodigoDeBanco.h"
+
+1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\codigodeproduto.cpp
+	"CodigoDeProduto.h"
+
+1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\cpf.cpp
+	"CPF.h"
+
+1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\data.cpp
+	"Data.h"
+
+1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\emissor.cpp
+	"Emissor.h"
+
+1599523007 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\emissor.h
+	<string>
+	<regex>
+	<iostream>
+
