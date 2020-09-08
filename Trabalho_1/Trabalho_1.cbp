@@ -35,12 +35,40 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/CPF.h" />
+		<Unit filename="include/Classe.h" />
+		<Unit filename="include/CodigoDeAgencia.h" />
+		<Unit filename="include/CodigoDeAplicacao.h" />
+		<Unit filename="include/CodigoDeBanco.h" />
+		<Unit filename="include/CodigoDeProduto.h" />
+		<Unit filename="include/Data.h" />
+		<Unit filename="include/Emissor.h" />
+		<Unit filename="include/Endereco.h" />
+		<Unit filename="include/Horario.h" />
+		<Unit filename="include/Nome.h" />
+		<Unit filename="include/Numero.h" />
+		<Unit filename="include/Prazo.h" />
+		<Unit filename="include/Senha.h" />
+		<Unit filename="include/Taxa.h" />
+		<Unit filename="include/ValorDeAplicacao.h" />
+		<Unit filename="include/ValorMinimo.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/CPF.cpp" />
-		<Extensions>
-			<envvars />
-			<code_completion />
-			<debugger />
-		</Extensions>
+		<Unit filename="src/Classe.cpp" />
+		<Unit filename="src/CodigoDeAgencia.cpp" />
+		<Unit filename="src/CodigoDeAplicacao.cpp" />
+		<Unit filename="src/CodigoDeBanco.cpp" />
+		<Unit filename="src/CodigoDeProduto.cpp" />
+		<Unit filename="src/Data.cpp" />
+		<Unit filename="src/Emissor.cpp" />
+		<Unit filename="src/Endereco.cpp" />
+		<Unit filename="src/Horario.cpp" />
+		<Unit filename="src/Nome.cpp" />
+		<Unit filename="src/Numero.cpp" />
+		<Unit filename="src/Prazo.cpp" />
+		<Unit filename="src/Senha.cpp" />
+		<Unit filename="src/Taxa.cpp" />
+		<Unit filename="src/ValorDeAplicacao.cpp" />
+		<Unit filename="src/ValorMinimo.cpp" />
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
