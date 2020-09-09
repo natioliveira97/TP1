@@ -7,9 +7,8 @@ Numero::Numero()
 
 
 Numero::Numero(std::string numero){
-    if(valida(numero)){
-        this->numero = numero;
-    }
+    valida(numero);
+    this->numero = numero;
 }
 
 
@@ -18,19 +17,16 @@ std::string Numero::getNumero(){
 }
 
 
-bool Numero::valida(std::string numero){
+void Numero::valida(std::string numero){
     std::regex formato = std::regex("^[0-9]{6}-[0-9]$");
     if(std::regex_match(numero, formato)){
-        return true;
+        return;
     }
-    return false;
+    throw std::invalid_argument("Numero em formato invalido.");
 }
 
 
-bool Numero::setNumero(std::string numero){
-    if(valida(numero)){
-        this->numero = numero;
-        return true;
-    }
-    return false;
+void Numero::setNumero(std::string numero){
+    valida(numero);
+    this->numero = numero;
 }

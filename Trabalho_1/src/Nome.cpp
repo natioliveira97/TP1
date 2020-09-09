@@ -7,9 +7,8 @@ Nome::Nome()
 
 
 Nome::Nome(std::string nome){
-    if(valida(nome)){
-        this->nome = nome;
-    }
+    valida(nome);
+    this->nome = nome;
 }
 
 
@@ -18,24 +17,21 @@ std::string Nome::getNome(){
 }
 
 
-bool Nome::valida(std::string nome){
+void Nome::valida(std::string nome){
     if(nome.length()<MIN_CARACTERE || nome.length()>MAX_CARACTERE){
-        return false;
+        throw std::invalid_argument("Nome com tamanho invalido.");
     }
 
-    // Perguntar se o nome como um todo tem pelo menos cinco letras ou o primeiro nome
+    // O primeiro nome deve ter pelo menos 5 letras, isso até eu descobrir como faz de outra forma
     std::regex formato = std::regex("^[ ]?([[:upper:]][[:alpha:]]{4,}[ ]?)([[:upper:]][[:alpha:]]*[ ]?)*$");
     if(std::regex_match(nome, formato)){
-        return true;
+        return;
     }
-    return false;
+    throw std::invalid_argument("Nome em formato invalido.");
 }
 
 
-bool Nome::setNome(std::string nome){
-    if(valida(nome)){
-        this->nome = nome;
-        return true;
-    }
-    return false;
+void Nome::setNome(std::string nome){
+    valida(nome);
+    this->nome = nome;
 }

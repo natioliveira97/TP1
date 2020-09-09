@@ -3,18 +3,19 @@
 
 #include <string>
 #include <regex>
+#include <stdexcept>
 
 class Numero
 {
     public:
         Numero();
         Numero(std::string);
-        bool setNumero(std::string);
+        void setNumero(std::string);
         std::string getNumero();
 
     private:
         std::string numero;
-        bool valida(std::string);
+        void valida(std::string);
 };
 
 #endif // NUMERO_H

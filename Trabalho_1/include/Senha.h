@@ -4,18 +4,19 @@
 #include <string>
 #include <regex>
 #include <algorithm>
+#include <stdexcept>
 
 class Senha
 {
     public:
         Senha();
         Senha(std::string);
-        bool setSenha(std::string);
+        void setSenha(std::string);
         std::string getSenha();
 
     private:
         std::string senha;
-        bool valida(std::string);
+        void valida(std::string);
 };
 
 #endif // SENHA_H

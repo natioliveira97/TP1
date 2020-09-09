@@ -3,20 +3,21 @@
 
 #include <string>
 #include <regex>
+#include <stdexcept>
 
 class Nome
 {
     public:
         Nome();
         Nome(std::string);
-        bool setNome(std::string);
+        void setNome(std::string);
         std::string getNome();
 
     private:
         static const int MIN_CARACTERE = 5;
         static const int MAX_CARACTERE = 30;
         std::string nome;
-        bool valida(std::string);
+        void valida(std::string);
 };
 
 #endif // NOME_H

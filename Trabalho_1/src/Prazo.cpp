@@ -7,9 +7,8 @@ Prazo::Prazo()
 
 
 Prazo::Prazo(int prazo){
-    if(valida(prazo)){
-        this->prazo = prazo;
-    }
+    valida(prazo);
+    this->prazo = prazo;
 }
 
 
@@ -18,15 +17,14 @@ int Prazo::getPrazo(){
 }
 
 
-bool Prazo::valida(int prazo){
-    return std::binary_search(PRAZOS.begin(), PRAZOS.end(), prazo);
+void Prazo::valida(int prazo){
+    if(!std::binary_search(PRAZOS.begin(), PRAZOS.end(), prazo)){
+        throw std::invalid_argument("Prazo invalido.");
+    }
 }
 
 
-bool Prazo::setPrazo(int prazo){
-    if(valida(prazo)){
-        this->prazo = prazo;
-        return true;
-    }
-    return false;
+void Prazo::setPrazo(int prazo){
+    valida(prazo);
+    this->prazo = prazo;
 }

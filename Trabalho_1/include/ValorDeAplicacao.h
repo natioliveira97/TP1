@@ -1,20 +1,21 @@
 #ifndef VALORDEAPLICACAO_H
 #define VALORDEAPLICACAO_H
 
+#include <stdexcept>
 
 class ValorDeAplicacao
 {
     public:
         ValorDeAplicacao();
         ValorDeAplicacao(float);
-        bool setValor(float);
+        void setValor(float);
         float getValor();
 
     private:
         float MIN_VALOR = 0.0;
         float MAX_VALOR = 1000000.0;
         float valor;
-        bool valida(float);
+        void valida(float);
 };
 
 #endif // VALORDEAPLICACAO_H

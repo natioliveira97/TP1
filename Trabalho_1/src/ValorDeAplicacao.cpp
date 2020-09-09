@@ -6,11 +6,9 @@ ValorDeAplicacao::ValorDeAplicacao()
 }
 
 
-ValorDeAplicacao::ValorDeAplicacao(float valor)
-{
-    if(valida(valor)){
-        this->valor = valor;
-    }
+ValorDeAplicacao::ValorDeAplicacao(float valor){
+    valida(valor);
+    this->valor = valor;
 }
 
 
@@ -19,18 +17,14 @@ float ValorDeAplicacao::getValor(){
 }
 
 
-bool ValorDeAplicacao::valida(float valor){
+void ValorDeAplicacao::valida(float valor){
     if(valor<MIN_VALOR || valor>MAX_VALOR){
-        return false;
+        throw std::invalid_argument("Valor de aplicacao invalido.");
     }
-    return true;
 }
 
 
-bool ValorDeAplicacao::setValor(float valor){
-    if(valida(valor)){
-        this->valor = valor;
-        return true;
-    }
-    return false;
+void ValorDeAplicacao::setValor(float valor){
+    valida(valor);
+    this->valor = valor;
 }

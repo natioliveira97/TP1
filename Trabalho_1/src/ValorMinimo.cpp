@@ -7,9 +7,8 @@ ValorMinimo::ValorMinimo()
 
 
 ValorMinimo::ValorMinimo(float valor){
-    if(valida(valor)){
-        this->valor = valor;
-    }
+    valida(valor);
+    this->valor = valor;
 }
 
 
@@ -17,15 +16,14 @@ float ValorMinimo::getValor(){
     return valor;
 }
 
-bool ValorMinimo::valida(float valor){
-    return std::binary_search(VALORES.begin(), VALORES.end(), valor);
+void ValorMinimo::valida(float valor){
+    if(!std::binary_search(VALORES.begin(), VALORES.end(), valor)){
+        throw std::invalid_argument("Valor minimo invalido.");
+    }
 }
 
 
-bool ValorMinimo::setValor(float valor){
-    if(valida(valor)){
-        this->valor = valor;
-        return true;
-    }
-    return false;
+void ValorMinimo::setValor(float valor){
+    valida(valor);
+    this->valor = valor;
 }

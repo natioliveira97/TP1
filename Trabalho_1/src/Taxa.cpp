@@ -7,9 +7,8 @@ Taxa::Taxa()
 
 
 Taxa::Taxa(int taxa){
-    if(valida(taxa)){
-        this->taxa = taxa;
-    }
+    valida(taxa);
+    this->taxa = taxa;
 }
 
 
@@ -18,18 +17,14 @@ int Taxa::getTaxa(){
 }
 
 
-bool Taxa::valida(int taxa){
+void Taxa::valida(int taxa){
     if(taxa<MIN_TAXA || taxa>MAX_TAXA){
-        return false;
+        throw std::invalid_argument("Taxa invalida.");
     }
-    return true;
 }
 
 
-bool Taxa::setTaxa(int taxa){
-    if(valida(taxa)){
-        this->taxa = taxa;
-        return true;
-    }
-    return false;
+void Taxa::setTaxa(int taxa){
+    valida(taxa);
+    this->taxa = taxa;
 }

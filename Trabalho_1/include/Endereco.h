@@ -3,20 +3,21 @@
 
 #include <string>
 #include <regex>
+#include <stdexcept>
 
 class Endereco
 {
     public:
         Endereco();
         Endereco(std::string);
-        bool setEndereco(std::string);
+        void setEndereco(std::string);
         std::string getEndereco();
 
     private:
         static const int MIN_CARACTERE = 5;
         static const int MAX_CARACTERE = 20;
         std::string endereco;
-        bool valida(std::string);
+        void valida(std::string);
 
 };
 

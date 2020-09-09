@@ -7,9 +7,8 @@ Senha::Senha()
 
 
 Senha::Senha(std::string senha){
-    if(valida(senha)){
-        this->senha = senha;
-    }
+    valida(senha);
+    this->senha = senha;
 }
 
 
@@ -18,24 +17,20 @@ std::string Senha::getSenha(){
 }
 
 
-bool Senha::valida(std::string senha){
+void Senha::valida(std::string senha){
     std::regex formato = std::regex("^[0-9]{6}$");  // para verificar se há seis dígitos
-    std::regex invalida = std::regex("(.).*\\1.*"); // para verificar se eles se repetem
+    std::regex invalida = std::regex("(.).*\\1.*"); // para verificar se os dígitos se repetem
 
     if(!std::regex_match(senha, formato)){
-        return false;
+        throw std::invalid_argument("Senha nao possui seis digitos.");
     }
     if(std::regex_search(senha, invalida)){
-        return false;
+        throw std::invalid_argument("Senha possui digitos repetidos.");
     }
-    return true;
 }
 
 
-bool Senha::setSenha(std::string senha){
-    if(valida(senha)){
-        this->senha = senha;
-        return true;
-    }
-    return false;
+void Senha::setSenha(std::string senha){
+    valida(senha);
+    this->senha = senha;
 }
