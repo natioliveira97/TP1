@@ -5,6 +5,12 @@
 #include <regex>
 
 /**
+* @file CodigoDeAplicacao.h
+* @author Lívia Gomes Costa Fonseca <br>
+* @author Natalia Oliveira Borges - 16/0015863
+*/
+
+/**
 * Classe de domínio que armazena o código de aplicação.
 */
 class CodigoDeAplicacao

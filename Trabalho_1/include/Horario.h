@@ -9,7 +9,7 @@ class Horario
     public:
         /**
         * @brief Construtor default.
-        * Inicializa o atributo horario como 00:00.
+        * @details Inicializa o atributo horario como 00:00.
         */
         Horario();
 

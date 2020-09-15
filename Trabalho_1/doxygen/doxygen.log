@@ -1,0 +1,6 @@
+warning: The selected output language "portuguese" has not been updated
+since release 1.8.19.  As a result some sentences may appear in English.
+
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CEP.h:35: warning: documented empty return type of CEP::setCEP
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Classe.h:24: warning: documented empty return type of Classe::setClasse
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAgencia.h:24: warning: documented empty return type of CodigoDeAgencia::setCodigoDeAgencia

@@ -50,6 +50,7 @@
 		<Unit filename="include/Prazo.h" />
 		<Unit filename="include/Senha.h" />
 		<Unit filename="include/Taxa.h" />
+		<Unit filename="include/TestHorario.h" />
 		<Unit filename="include/ValorDeAplicacao.h" />
 		<Unit filename="include/ValorMinimo.h" />
 		<Unit filename="main.cpp" />
@@ -69,8 +70,22 @@
 		<Unit filename="src/Prazo.cpp" />
 		<Unit filename="src/Senha.cpp" />
 		<Unit filename="src/Taxa.cpp" />
+		<Unit filename="src/TestHorario.cpp" />
 		<Unit filename="src/ValorDeAplicacao.cpp" />
 		<Unit filename="src/ValorMinimo.cpp" />
-		<Extensions />
+		<Extensions>
+			<envvars />
+			<code_completion />
+			<debugger />
+			<DoxyBlocks>
+				<comment_style block="0" line="0" />
+				<doxyfile_project output_directory="doxygen" output_language="Portuguese" />
+				<doxyfile_build />
+				<doxyfile_warnings />
+				<doxyfile_output />
+				<doxyfile_dot />
+				<general use_at_in_tags="1" />
+			</DoxyBlocks>
+		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
