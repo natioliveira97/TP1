@@ -17,6 +17,7 @@ float ValorMinimo::getValor(){
 }
 
 void ValorMinimo::valida(float valor){
+    // verifica se o valor pertence à lista
     if(!std::binary_search(VALORES.begin(), VALORES.end(), valor)){
         throw std::invalid_argument("Valor minimo invalido.");
     }

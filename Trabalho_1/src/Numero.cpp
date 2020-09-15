@@ -19,10 +19,9 @@ std::string Numero::getNumero(){
 
 void Numero::valida(std::string numero){
     std::regex formato = std::regex("^[0-9]{6}-[0-9]$");
-    if(std::regex_match(numero, formato)){
-        return;
+    if(!std::regex_match(numero, formato)){
+        throw std::invalid_argument("Numero em formato invalido.");
     }
-    throw std::invalid_argument("Numero em formato invalido.");
 }
 
 

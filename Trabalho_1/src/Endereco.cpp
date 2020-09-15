@@ -18,15 +18,16 @@ std::string Endereco::getEndereco(){
 
 
 void Endereco::valida(std::string endereco){
+    // verifica se possui o numero correto de caracteres
     if(endereco.length()<MIN_CARACTERE || endereco.length()>MAX_CARACTERE){
         throw std::invalid_argument("Endereco com tamanho invalido.");
     }
 
+    // verifica o formato
     std::regex formato = std::regex("^[ ]?([[:upper:]0-9][[:alnum:]]*[. ]?)+$");
-    if(std::regex_match(endereco, formato)){
-        return;
+    if(!std::regex_match(endereco, formato)){
+        throw std::invalid_argument("Endereco em formato invalido.");
     }
-    throw std::invalid_argument("Endereco em formato invalido.");
 }
 
 
