@@ -29,14 +29,13 @@ class CodigoDeAgencia
         std::string getCodigoDeAgencia();
 
     private:
-        void valida(std::string);
+
         /**
         * @brief Verifica se o código é válido.
         * Verifica se o código fornecido possui exatamente quatro dígitos e é diferente de '0000'.
         * @param codigo Código a ser verificado.
-        * @return true Se o valor é válido.
-        * @return false Se o valor não é válido.
         */
+        void valida(std::string);
         std::string codigo;
 };
 

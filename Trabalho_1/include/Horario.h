@@ -9,12 +9,12 @@ class Horario
     public:
         Horario();
         Horario(std::string);
-        bool setHorario(std::string);
+        void setHorario(std::string);
         std::string getHorario();
 
     private:
         std::string horario;
-        bool valida(std::string);
+        void valida(std::string);
 };
 
 #endif // HORARIO_H
