@@ -163,16 +163,9 @@
 	<regex>
 	<iostream>
 
-1600134075 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
+1600136132 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
 	<iostream>
-	<CEP.h>
-	<Classe.h>
-	<CodigoDeAgencia.h>
-	<CodigoDeAplicacao.h>
-	<CodigoDeBanco.h>
-	<CodigoDeProduto.h>
-	<CPF.h>
-	<Data.h>
+	<TestHorario.h>
 
 1600131601 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CEP.h
 	<string>
@@ -249,10 +242,10 @@
 	<regex>
 	<stdexcept>
 
-1599858436 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Horario.cpp
+1600134540 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Horario.cpp
 	"Horario.h"
 
-1599858435 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Horario.h
+1600137273 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Horario.h
 	<string>
 	<regex>
 
@@ -264,7 +257,7 @@
 	<regex>
 	<stdexcept>
 
-1599858436 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Numero.cpp
+1600134196 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Numero.cpp
 	"Numero.h"
 
 1599858435 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Numero.h
@@ -296,7 +289,7 @@
 1600129432 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CPF.cpp
 	"CPF.h"
 
-1600127634 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Prazo.cpp
+1600134196 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Prazo.cpp
 	"Prazo.h"
 
 1600127634 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Prazo.h
@@ -304,11 +297,19 @@
 	<algorithm>
 	<stdexcept>
 
-1600127661 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/ValorMinimo.cpp
+1600134196 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/ValorMinimo.cpp
 	"ValorMinimo.h"
 
 1600127661 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/ValorMinimo.h
 	<vector>
 	<algorithm>
 	<stdexcept>
+
+1600136648 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestHorario.cpp
+	"TestHorario.h"
+
+1600136648 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestHorario.h
+	<string>
+	<Horario.h>
+	<iostream>
 
