@@ -8,18 +8,16 @@ std::string Classe::getClasse(){
     return classe;
 }
 
-bool Classe::valida(std::string classe){
-    if(classe == "CDB" || classe == "LCA" || classe == "LCI" || classe == "FI" || classe == "LC"){
-        return true;
-    }
-    return false;
+void Classe::setClasse(std::string classe){
+    valida(classe);
+    this->classe = classe;
 }
 
-bool Classe::setClasse(std::string classe){
-    if(valida(classe)){
-        this->classe = classe;
-        return true;
+void Classe::valida(std::string classe){
+    for(int i = 0; i < CLASSES.size(); ++i){
+        if(classe == CLASSES[i])
+            return;
     }
-    return false;
+    throw std::invalid_argument("Classe invalida.");
 }
 

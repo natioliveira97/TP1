@@ -11,12 +11,12 @@ class CPF
     public:
 
         CPF();
-        bool setCPF(std::string);
+        void setCPF(std::string);
         std::string getCPF();
 
     private:
-        bool validaDigitoVerificador(std::string);
-        bool valida(std::string);
+        void valida(std::string);
+        void validaDigitoVerificador(std::string);
         std::string cpf;
 };
 

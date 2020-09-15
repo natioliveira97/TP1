@@ -10,14 +10,11 @@ class Data
 {
     public:
         Data();
-        bool setData(std::string);
+        void setData(std::string);
         std::string getData();
 
     private:
-        bool valida(std::string);
-        int dia;
-        int mes;
-        int ano;
+        void valida(std::string);
         std::string data;
 };
 

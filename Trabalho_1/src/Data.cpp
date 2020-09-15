@@ -1,78 +1,63 @@
 #include "Data.h"
 
-Data::Data(){
-    mes = 1;
-    dia = 1;
-    ano = 2020;
-
-}
+Data::Data(){}
 
 std::string Data::getData(){
     return data;
 }
 
-bool Data::valida(std::string data){
+
+void Data::setData(std::string data){
+    valida(data);
+    this->data = data;
+}
+
+void Data::valida(std::string data){
 
     std::regex formato = std::regex("^[0-3][0-9]/[0-1][0-9]/20[2-9][0-9]$");
     bool bisexto = false;
     int n_dias = 30;
 
-    if(regex_match(data, formato)){
-
-        int dia = std::stoi(data.substr(0, 2));
-        int mes = std::stoi(data.substr(3, 2));
-        int ano = std::stoi(data.substr(6, 4));
-
-        /**
-        * Verifica ano
-        */
-        if(ano < 2020 || ano > 2099){
-            return false;
-        }
-        else if (ano%4 == 0){
-            bisexto = true;
-        }
-
-        /**
-        * Verifica mes
-        */
-        if(mes < 1 || mes > 12){
-            return false;
-        }
-        if(mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 9 || mes == 10 || mes == 12){
-            n_dias = 31;
-        }
-        if(mes == 2){
-            if(bisexto){
-                n_dias = 29;
-            }
-            else{
-                n_dias = 28;
-            }
-        }
-
-        /**
-        * Verifica dia
-        */
-        if(dia < 1 || dia > n_dias){
-            return false;
-        }
-
-
-        this->dia = dia;
-        this->mes = mes;
-        this->ano = ano;
-        return true;
-
+    if(!regex_match(data, formato)){
+        throw std::invalid_argument("Data com formato invalido. Formato deve ser DD/MM/AAAA.");
     }
-    return false;
-}
 
+    int dia = std::stoi(data.substr(0, 2));
+    int mes = std::stoi(data.substr(3, 2));
+    int ano = std::stoi(data.substr(6, 4));
 
-bool Data::setData(std::string data){
-    if (valida(data)){
-        this->data = data;
-        return true;
+    /**
+    * Verifica ano
+    */
+    if(ano < 2020 || ano > 2099){
+        throw std::invalid_argument("O ano deve estar entre 2020 e 2099.");
     }
-    return false;
+    else if (ano%4 == 0){
+        bisexto = true;
+    }
+
+    /**
+    * Verifica mes
+    */
+    if(mes < 1 || mes > 12){
+        throw std::invalid_argument("O mes deve estar entre 01 e 12.");
+    }
+    if(mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 9 || mes == 10 || mes == 12){
+        n_dias = 31;
+    }
+    if(mes == 2){
+        if(bisexto){
+            n_dias = 29;
+        }
+        else{
+            n_dias = 28;
+        }
+    }
+
+    /**
+    * Verifica dia
+    */
+    if(dia < 1 || dia > n_dias){
+        throw std::invalid_argument("O dia do mes " + std::to_string(mes) + " deve estar entre 01 e " + std::to_string(n_dias) + ".");
+    }
 }

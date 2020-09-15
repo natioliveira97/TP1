@@ -8,11 +8,11 @@ class CodigoDeProduto
 {
     public:
         CodigoDeProduto();
-        bool setCodigoDeProduto(std::string);
+        void setCodigoDeProduto(std::string);
         std::string getCodigoDeProduto();
 
     private:
-        bool valida(std::string);
+        void valida(std::string);
         std::string codigo;
 };
 

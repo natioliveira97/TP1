@@ -9,34 +9,33 @@ std::string CodigoDeBanco::getCodigoDeBanco(){
     return codigo;
 }
 
-bool CodigoDeBanco::valida(std::string codigo){
-    if(codigo == "341"){
-        banco = "Banco Itau Unibanco";
+std::string CodigoDeBanco::getBanco(){
+    for(int i = 0; i < CODIGOS.size(); ++i){
+        if(codigo == CODIGOS[i]){
+            return BANCOS[i];
+        }
     }
-    else if(codigo == "001"){
-        banco = "Banco do Brasil";
-    }
-    else if(codigo == "237"){
-        banco = "Banco Bradesco";
-    }
-    else if(codigo == "104"){
-        banco = "Caixa Economica Federal";
-    }
-    else if(codigo == "033"){
-        banco = "Banco Santander";
-    }
-    else{
-        return false;
-    }
-
-    return true;
+    return "";
 }
 
-bool CodigoDeBanco::setCodigoDeBanco(std::string codigo){
-    if(valida(codigo)){
-        this->codigo = codigo;
-        return true;
+void CodigoDeBanco::setCodigoDeBanco(std::string codigo){
+    valida(codigo);
+    this->codigo = codigo;
+}
+
+void CodigoDeBanco::valida(std::string codigo){
+
+    std::regex formato = std::regex("^[0-9][0-9][0-9]$");
+
+    if(!regex_match(codigo, formato)){
+        throw std::invalid_argument("Codigo com formato invalido.");
     }
-    return false;
+
+    for(int i = 0; i < CODIGOS.size(); ++i){
+        if(codigo == CODIGOS[i])
+            return;
+    }
+    throw std::invalid_argument("Codigo nao aceito.");
 
 }
+

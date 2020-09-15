@@ -9,19 +9,20 @@ std::string CodigoDeAplicacao::getCodigoDeAplicacao(){
     return codigo;
 }
 
-bool CodigoDeAplicacao::valida(std::string codigo){
+void CodigoDeAplicacao::setCodigoDeAplicacao(std::string codigo){
+    valida(codigo);
+    this->codigo = codigo;
+
+}
+
+void CodigoDeAplicacao::valida(std::string codigo){
     std::regex formato = std::regex("^[0-9][0-9][0-9][0-9][0-9]$");
-    if(regex_match(codigo, formato) && codigo != "00000"){
-          return true;
+
+    if(!regex_match(codigo, formato)){
+        throw std::invalid_argument("Codigo com formato invalido.");
     }
-    return false;
+    if(codigo == "00000"){
+        throw std::invalid_argument("Codigo nao pode ser 00000.");
+    }
 }
 
-bool CodigoDeAplicacao::setCodigoDeAplicacao(std::string codigo){
-    if(valida(codigo)){
-        this->codigo = codigo;
-        return true;
-    }
-    return false;
-
-}

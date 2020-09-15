@@ -9,19 +9,18 @@ std::string CodigoDeProduto::getCodigoDeProduto(){
     return codigo;
 }
 
-bool CodigoDeProduto::valida(std::string codigo){
-    std::regex formato = std::regex("^[0-9][0-9][0-9]$");
-    if(regex_match(codigo, formato) && codigo != "000"){
-          return true ;
-    }
-    return false;
+void CodigoDeProduto::setCodigoDeProduto(std::string codigo){
+    valida(codigo);
+    this->codigo = codigo;
 }
 
-bool CodigoDeProduto::setCodigoDeProduto(std::string codigo){
-    if(valida(codigo)){
-        this->codigo = codigo;
-        return true;
-    }
-    return false;
+void CodigoDeProduto::valida(std::string codigo){
+    std::regex formato = std::regex("^[0-9][0-9][0-9]$");
 
+    if(!regex_match(codigo, formato)){
+        throw std::invalid_argument("Codigo com formato invalido.");
+    }
+    if(codigo == "000"){
+        throw std::invalid_argument("Codigo nao pode ser 000.");
+    }
 }

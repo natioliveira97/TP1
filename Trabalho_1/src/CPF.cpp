@@ -1,26 +1,35 @@
 #include "CPF.h"
 
 CPF::CPF(){
-    cpf = "000.000.000-00";
+    cpf = "";
 }
 
 std::string CPF::getCPF(){
     return cpf;
 }
 
-bool CPF::setCPF(std::string cpf){
-    if (valida(cpf)){
-        this->cpf = cpf;
-        return true;
-    }
-    return false;
+void CPF::setCPF(std::string cpf){
+    valida(cpf);
+    this->cpf = cpf;
+
 }
 
-bool CPF::validaDigitoVerificador(std::string cpf){
+void CPF::valida(std::string cpf){
+    std::regex formato = std::regex("^[0-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9]-[0-9][0-9]$");
 
-    int digito1 = 0;
-    int digito2 = 0;
+    if(!regex_match(cpf, formato)){
+        throw std::invalid_argument("CPF com formato invalido. Formato deve ser XXX.XXX.XXX-XX.");
+    }
+
+    validaDigitoVerificador(cpf);
+}
+
+void CPF::validaDigitoVerificador(std::string cpf){
+
+    int digito_verificador_1 = 0;
+    int digito_verificador_2 = 0;
     int j = 0;
+
 
     /**
      * Retira pontuacao.
@@ -32,58 +41,45 @@ bool CPF::validaDigitoVerificador(std::string cpf){
     }
 
     /**
-     * Algoritmo digito 10.
+     * Algoritmo digito_verificador_1.
      */
-    for(int i = 10; i>=2; --i){
-        digito1 += i*std::stoi(cpf.substr(j, 1));
+    for(int i = 10; i >= 2; --i){
+        digito_verificador_1 += i*std::stoi(cpf.substr(j, 1));
         ++j;
     }
-
-    digito1 = digito1%11;
-    if (digito1<2){
-        digito1 = 0;
+    digito_verificador_1 = digito_verificador_1%11;
+    if (digito_verificador_1 < 2){
+        digito_verificador_1 = 0;
     }
     else{
-        digito1 = 11-digito1;
+        digito_verificador_1 = 11-digito_verificador_1;
     }
 
+
     /**
-     * Algoritmo digito 11.
+     * Algoritmo digito_verificador_2.
      */
     j = 0;
     for(int i=11; i>=2; --i){
-        digito2 += i*std::stoi(cpf.substr(j, 1));
+        digito_verificador_2 += i*std::stoi(cpf.substr(j, 1));
         ++j;
     }
 
-    digito2 = digito2%11;
-    if (digito2<2){
-        digito2 = 0;
+    digito_verificador_2 = digito_verificador_2%11;
+    if (digito_verificador_2 < 2){
+        digito_verificador_2 = 0;
     }
     else{
-        digito2 = 11-digito2;
+        digito_verificador_2 = 11-digito_verificador_2;
     }
 
 
     /**
      * Verificacao.
      */
-    if(digito1 == std::stoi(cpf.substr(9, 1)) && digito2 == std::stoi(cpf.substr(10, 1))){
-         return true;
+    if(digito_verificador_1 != std::stoi(cpf.substr(9, 1)) || digito_verificador_2 != std::stoi(cpf.substr(10, 1))){
+        throw std::invalid_argument("CPF invalido.");
     }
-
-    return false;
-}
-
-bool CPF::valida(std::string cpf){
-    std::regex formato = std::regex("^[0-9][0-9][0-9].[0-9][0-9][0-9].[0-9][0-9][0-9]-[0-9][0-9]$");
-
-    if(regex_match(cpf, formato)){
-            return validaDigitoVerificador(cpf);
-    }
-
-    return false;
-
 }
 
 

@@ -8,11 +8,11 @@ class CodigoDeAplicacao
 {
     public:
         CodigoDeAplicacao();
-        bool setCodigoDeAplicacao(std::string);
+        void setCodigoDeAplicacao(std::string);
         std::string getCodigoDeAplicacao();
 
     private:
-        bool valida(std::string);
+        void valida(std::string);
         std::string codigo;
 };
 

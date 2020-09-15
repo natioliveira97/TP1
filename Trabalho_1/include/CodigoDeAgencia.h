@@ -21,7 +21,7 @@ class CodigoDeAgencia
         * @return true Se foi possível escrever no atributo.
         * @return false Se não foi possível escrever no atributo.
         */
-        bool setCodigoDeAgencia(std::string);
+        void setCodigoDeAgencia(std::string);
         /**
         * @brief Leitura do valor armazenado em codigo.
         * @return codigo
@@ -29,7 +29,7 @@ class CodigoDeAgencia
         std::string getCodigoDeAgencia();
 
     private:
-        bool valida(std::string);
+        void valida(std::string);
         /**
         * @brief Verifica se o código é válido.
         * Verifica se o código fornecido possui exatamente quatro dígitos e é diferente de '0000'.

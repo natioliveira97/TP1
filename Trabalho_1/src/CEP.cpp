@@ -1,47 +1,32 @@
 #include "CEP.h"
 
-CEP::CEP(){
-    cep = 0;
-    cidade = "";
-}
+CEP::CEP(){}
 
 int CEP::getCEP(){
     return cep;
 }
 
 std::string CEP::getCidade(){
-    return cidade;
+    for(int i = 0; i < INTERVALOS.size(); ++i){
+        if(cep >= INTERVALOS[i][0] && cep <= INTERVALOS[i][1]){
+            return CIDADES[i];
+        }
+    }
+    return "";
 }
 
 
-bool CEP::valida(int cep){
-
-    if((cep >= 1000000 && cep <= 5999999) || (cep >= 8000000 && cep <= 8499999)){
-        cidade = "Sao Paulo";
-    }
-    else if((cep >= 20000000 && cep <= 26600999)){
-        cidade = "Rio de Janeiro";
-    }
-    else if((cep >= 70000000 && cep <= 70999999)){
-        cidade = "Brasilia";
-    }
-    else if((cep >= 40000000 && cep <= 41999999)){
-        cidade = "Salvador";
-    }
-    else if((cep >= 60000000 && cep <= 60999999)){
-        cidade = "Fortaleza";
-    }
-    else{
-        return false;
-    }
-    return true;
+void CEP::setCEP(int cep){
+    valida(cep);
+    this->cep = cep;
 }
 
+void CEP::valida(int cep){
 
-bool CEP::setCEP(int cep){
-    if(valida(cep)){
-        this->cep = cep;
-        return true;
+    for(int i = 0; i < INTERVALOS.size(); ++i){
+        if(cep >= INTERVALOS[i][0] && cep <= INTERVALOS[i][1]){
+            return;
+        }
     }
-    return false;
+    throw std::invalid_argument("CEP fora de intervalo aceito.");
 }

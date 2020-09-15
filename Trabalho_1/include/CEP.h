@@ -2,6 +2,8 @@
 #define CEP_H
 
 #include <string>
+#include <array>
+#include <vector>
 
 /**
 * Classe de domínio que aramzena o CEP.
@@ -30,11 +32,26 @@ class CEP
         * @return true Se foi possível escrever no atributo.
         * @return false Se não foi possível escrever no atributo.
         */
-        bool setCEP(int);
+        void setCEP(int);
 
     private:
         int cep;
-        std::string cidade;
+
+        const std::vector<std::array<int, 2>> INTERVALOS = {{1000000, 5999999},
+                                                            {8000000, 8499999},
+                                                            {20000000, 26600999},
+                                                            {70000000, 70999999},
+                                                            {40000000, 41999999},
+                                                            {60000000, 60999999}};
+
+
+        const std::vector<std::string> CIDADES = {"Sao Paulo",
+                                                  "Sao Paulo",
+                                                  "Rio de Janeiro",
+                                                  "Brasilia",
+                                                  "Salvador",
+                                                  "Fortaleza"};
+
         /**
         * @brief Verifica se o cep é válido.
         * Verifica se o cep está nas faixas pertencentes às cidades possíveis.
@@ -42,7 +59,7 @@ class CEP
         * @return true Se o valor é válido.
         * @return false Se o valor não é válido.
         */
-        bool valida(int);
+        void valida(int);
 };
 
 #endif // CEP_H
