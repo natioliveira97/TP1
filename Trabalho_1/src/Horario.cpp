@@ -18,19 +18,15 @@ std::string Horario::getHorario(){
 }
 
 
-bool Horario::valida(std::string horario){
+void Horario::valida(std::string horario){
     std::regex formato = std::regex("^1[3-7]:[0-5][0-9]$");
-    if(std::regex_match(horario, formato)){
-        return true;
+    if(!std::regex_match(horario, formato)){
+        throw std::invalid_argument("Horario invalido.");
     }
-    return false;
 }
 
 
-bool Horario::setHorario(std::string horario){
-    if(valida(horario)){
-        this->horario = horario;
-        return true;
-    }
-    return false;
+void Horario::setHorario(std::string horario){
+    valida(horario);
+    this->horario = horario;
 }
