@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Corretora de Investimentos: Referência à classe Horario</title>
+<title>Trabalho_1: Referência à classe Horario</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,8 +25,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Corretora de Investimentos
-   &#160;<span id="projectnumber">1.0.0</span>
+   <div id="projectname">Trabalho_1
    </div>
   </td>
  </tr>
@@ -99,10 +98,10 @@ Membros públicos</h2></td></tr>
 <tr class="memdesc:aa3afbffb68590e6b12e65fd3ee9153de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor que inicializa a classe com valor horario.  <a href="class_horario.html#aa3afbffb68590e6b12e65fd3ee9153de">Mais...</a><br /></td></tr>
 <tr class="separator:aa3afbffb68590e6b12e65fd3ee9153de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2daf084639f09a871b27c76705d58a18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_horario.html#a2daf084639f09a871b27c76705d58a18">setHorario</a> (std::string)</td></tr>
-<tr class="memdesc:a2daf084639f09a871b27c76705d58a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escreve valor no atributo horario, se o valor for vlido.  <a href="class_horario.html#a2daf084639f09a871b27c76705d58a18">Mais...</a><br /></td></tr>
+<tr class="memdesc:a2daf084639f09a871b27c76705d58a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escreve valor no atributo horario, se o valor for v�lido.  <a href="class_horario.html#a2daf084639f09a871b27c76705d58a18">Mais...</a><br /></td></tr>
 <tr class="separator:a2daf084639f09a871b27c76705d58a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93d8ace6915ac2103fc4e8ac31d45867"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_horario.html#a93d8ace6915ac2103fc4e8ac31d45867">getHorario</a> ()</td></tr>
-<tr class="memdesc:a93d8ace6915ac2103fc4e8ac31d45867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Le atributo horario.  <a href="class_horario.html#a93d8ace6915ac2103fc4e8ac31d45867">Mais...</a><br /></td></tr>
+<tr class="memdesc:a93d8ace6915ac2103fc4e8ac31d45867"><td class="mdescLeft">&#160;</td><td class="mdescRight">L� atributo horario.  <a href="class_horario.html#a93d8ace6915ac2103fc4e8ac31d45867">Mais...</a><br /></td></tr>
 <tr class="separator:a93d8ace6915ac2103fc4e8ac31d45867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
@@ -143,9 +142,15 @@ Membros públicos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construtor que inicializa a classe com valor horario. </p>
-<dl class="params"><dt>Parâmetros</dt><dd>
+<p>Para ser v�lido o valor hor�rio deve estar entre 13:00 e 17:00 </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">horario</td><td>String a ser escrita no atributo horario. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Excepções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">invalid_argument</td><td>se hor�rio estiver fora do intervalo 13:00 e 17:00. </td></tr>
   </table>
   </dd>
 </dl>
@@ -153,6 +158,26 @@ Membros públicos</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Documentação dos métodos</h2>
+<a id="a93d8ace6915ac2103fc4e8ac31d45867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93d8ace6915ac2103fc4e8ac31d45867">&#9670;&nbsp;</a></span>getHorario()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Horario::getHorario </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>L� atributo horario. </p>
+<dl class="section return"><dt>Retorna</dt><dd>Retorna string com valor armazenado em horario. </dd></dl>
+
+</div>
+</div>
 <a id="a2daf084639f09a871b27c76705d58a18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2daf084639f09a871b27c76705d58a18">&#9670;&nbsp;</a></span>setHorario()</h2>
 
@@ -169,36 +194,16 @@ Membros públicos</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Escreve valor no atributo horario, se o valor for vlido. </p>
-<dl class="params"><dt>Parâmetros</dt><dd>
+<p>Escreve valor no atributo horario, se o valor for v�lido. </p>
+<p>Para ser v�lido o valor hor�rio deve estar entre 13:00 e 17:00 </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">horario</td><td>String a ser escrita no atributo horario. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a93d8ace6915ac2103fc4e8ac31d45867"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93d8ace6915ac2103fc4e8ac31d45867">&#9670;&nbsp;</a></span>getHorario()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string Horario::getHorario </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Le atributo horario. </p>
-<dl class="section return"><dt>Retorna</dt><dd>Retorna string com valor armazenado em horario. </dd></dl>
 <dl class="exception"><dt>Excepções</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">invalid_argument</td><td>exception. </td></tr>
+    <tr><td class="paramname">invalid_argument</td><td>se hor�rio estiver fora do intervalo 13:00 e 17:00. </td></tr>
   </table>
   </dd>
 </dl>
@@ -207,7 +212,7 @@ Membros públicos</h2></td></tr>
 </div>
 <hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
 <li><a class="el" href="_horario_8h_source.html">Horario.h</a></li>
-<li>Horario.cpp</li>
+<li><a class="el" href="_horario_8cpp.html">Horario.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -215,7 +220,7 @@ Membros públicos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_horario.html">Horario</a></li>
-    <li class="footer">Gerado em Terça, 15 de Setembro de 2020 15:17:48 para Corretora de Investimentos por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Gerado em Terça, 15 de Setembro de 2020 17:54:54 para Trabalho_1 por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

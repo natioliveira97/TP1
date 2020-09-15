@@ -1,7 +1,12 @@
 #include "Prazo.h"
 
-Prazo::Prazo()
-{
+/**
+* @file Prazo.cpp
+* @author Lívia Gomes Costa Fonseca
+* @author Natalia Oliveira Borges
+*/
+
+Prazo::Prazo(){
     prazo = 0;
 }
 
@@ -18,7 +23,7 @@ int Prazo::getPrazo(){
 
 
 void Prazo::valida(int prazo){
-    // verifica se o prazo pertence à lista
+    // Verifica se o prazo pertence à lista
     if(!std::binary_search(PRAZOS.begin(), PRAZOS.end(), prazo)){
         throw std::invalid_argument("Prazo invalido.");
     }

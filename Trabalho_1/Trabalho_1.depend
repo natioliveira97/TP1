@@ -163,9 +163,10 @@
 	<regex>
 	<iostream>
 
-1600136132 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
+1600201502 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
 	<iostream>
 	<TestHorario.h>
+	<TestPrazo.h>
 
 1600131601 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CEP.h
 	<string>
@@ -180,7 +181,7 @@
 	<string>
 	<regex>
 
-1600134471 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAplicacao.h
+1600193860 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAplicacao.h
 	<string>
 	<regex>
 
@@ -242,10 +243,10 @@
 	<regex>
 	<stdexcept>
 
-1600134540 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Horario.cpp
+1600202536 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Horario.cpp
 	"Horario.h"
 
-1600178768 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Horario.h
+1600203462 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Horario.h
 	<string>
 	<regex>
 
@@ -289,13 +290,11 @@
 1600129432 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CPF.cpp
 	"CPF.h"
 
-1600134196 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Prazo.cpp
+1600203150 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Prazo.cpp
 	"Prazo.h"
 
-1600127634 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Prazo.h
+1600203462 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Prazo.h
 	<vector>
-	<algorithm>
-	<stdexcept>
 
 1600134196 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/ValorMinimo.cpp
 	"ValorMinimo.h"
@@ -305,11 +304,18 @@
 	<algorithm>
 	<stdexcept>
 
-1600136648 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestHorario.cpp
+1600202545 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestHorario.cpp
 	"TestHorario.h"
 
-1600136648 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestHorario.h
+1600202222 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestHorario.h
 	<string>
 	<Horario.h>
+	<iostream>
+
+1600203288 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestPrazo.cpp
+	"TestPrazo.h"
+
+1600203288 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestPrazo.h
+	<Prazo.h>
 	<iostream>
 

@@ -1,7 +1,12 @@
 #include "Horario.h"
 
-Horario::Horario()
-{
+/**
+* @file Horario.cpp
+* @author L’via Gomes Costa Fonseca
+* @author Natalia Oliveira Borges
+*/
+
+Horario::Horario(){
     horario = "00:00";
 }
 
@@ -20,6 +25,9 @@ std::string Horario::getHorario(){
 void Horario::valida(std::string horario){
     std::regex formato = std::regex("^1[3-7]:[0-5][0-9]$");
     if(!std::regex_match(horario, formato)){
+        throw std::invalid_argument("Horario invalido.");
+    }
+    if(horario.substr(0, 2) == "17" && horario.substr(3, 2) != "00"){
         throw std::invalid_argument("Horario invalido.");
     }
 }

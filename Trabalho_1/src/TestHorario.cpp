@@ -1,22 +1,30 @@
 #include "TestHorario.h"
 
+/**
+* @file TestHorario.cpp
+* @author L’via Gomes Costa Fonseca
+* @author Natalia Oliveira Borges
+*/
 
-TestHorario::TestHorario(){}
+TestHorario::TestHorario(){
+    horario = new Horario();
+}
+
+TestHorario::~TestHorario(){
+    delete(horario);
+}
+
 
 void TestHorario::run(){
-    std::cout << "EXECUTANDO TESTE DE HORARIO VALIDO..." << std::endl;
     testHorarioValido();
-
     std::cout << std::endl;
-
-    std::cout << "EXECUTANDO TESTE DE HORARIO INVALIDO..." << std::endl;
     testHorarioInvalido();
 }
 
 void TestHorario::testHorarioValido(){
+    std::cout << "EXECUTANDO TESTE DE HORARIO VALIDO..." << std::endl;
+    std::cout << "Entrada valida: " << VALOR_VALIDO << std::endl;
     try{
-
-        horario = new Horario();
         horario->setHorario(VALOR_VALIDO);
 
         if(horario->getHorario() != VALOR_VALIDO){
@@ -33,10 +41,11 @@ void TestHorario::testHorarioValido(){
 }
 
 void TestHorario::testHorarioInvalido(){
+    std::cout << "EXECUTANDO TESTE DE HORARIO INVALIDO..." << std::endl;
+    std::cout << "Entrada invalida: " << VALOR_INVALIDO << std::endl;
     try{
-        horario = new Horario();
         horario->setHorario(VALOR_INVALIDO);
-        std::cout << "Nao ocorreu excessao, teste de horario invalido falhou." << std::endl;
+        std::cout << "Nao ocorreu excecao, teste de horario invalido falhou." << std::endl;
     }
     catch(std::invalid_argument &exp){
         std::cout << "Ocorreu excecao: " << exp.what() << std::endl;
