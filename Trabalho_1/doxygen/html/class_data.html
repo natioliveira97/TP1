@@ -89,23 +89,27 @@ $(document).ready(function(){initNavTree('class_data.html',''); initResizable();
 </div><!--header-->
 <div class="contents">
 
+<p>Armazena a data em dia, mês e ano.  
+ <a href="class_data.html#details">Mais...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_data_8h_source.html">Data.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Membros públicos</h2></td></tr>
 <tr class="memitem:af11f741cb7f587e2e495452a8905a22a"><td class="memItemLeft" align="right" valign="top"><a id="af11f741cb7f587e2e495452a8905a22a"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data.html#af11f741cb7f587e2e495452a8905a22a">Data</a> ()</td></tr>
-<tr class="memdesc:af11f741cb7f587e2e495452a8905a22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor. Inicializa os atributos dia/m�s/ano com 1/1/2020. <br /></td></tr>
+<tr class="memdesc:af11f741cb7f587e2e495452a8905a22a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor default. <br /></td></tr>
 <tr class="separator:af11f741cb7f587e2e495452a8905a22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe290f1411527568a08ede019a047694"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data.html#afe290f1411527568a08ede019a047694">setData</a> (std::string)</td></tr>
-<tr class="memdesc:afe290f1411527568a08ede019a047694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escrita da data no atributo data.  <a href="class_data.html#afe290f1411527568a08ede019a047694">Mais...</a><br /></td></tr>
+<tr class="memdesc:afe290f1411527568a08ede019a047694"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escrita do valor em data, se válido.  <a href="class_data.html#afe290f1411527568a08ede019a047694">Mais...</a><br /></td></tr>
 <tr class="separator:afe290f1411527568a08ede019a047694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a76ac4ac268da92dc15f7e69e8601b2ae"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data.html#a76ac4ac268da92dc15f7e69e8601b2ae">getData</a> ()</td></tr>
 <tr class="memdesc:a76ac4ac268da92dc15f7e69e8601b2ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Leitura do valor armazenado em data.  <a href="class_data.html#a76ac4ac268da92dc15f7e69e8601b2ae">Mais...</a><br /></td></tr>
 <tr class="separator:a76ac4ac268da92dc15f7e69e8601b2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
-<div class="textblock"><p><a class="el" href="class_classe.html">Classe</a> de dom�nio que armazena a data em di, m�s e ano. </p>
+<div class="textblock"><p>Armazena a data em dia, mês e ano. </p>
+<p><a class="el" href="class_data.html" title="Armazena a data em dia, mês e ano.">Data</a> de vencimento na qual os valores estarão disponíveis. </p>
 </div><h2 class="groupheader">Documentação dos métodos</h2>
 <a id="a76ac4ac268da92dc15f7e69e8601b2ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a76ac4ac268da92dc15f7e69e8601b2ae">&#9670;&nbsp;</a></span>getData()</h2>
@@ -123,7 +127,7 @@ Membros públicos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Leitura do valor armazenado em data. </p>
-<dl class="section return"><dt>Retorna</dt><dd>data </dd></dl>
+<dl class="section return"><dt>Retorna</dt><dd>data Retorna string com valor armazenado em data no formato dia/mês/ano. </dd></dl>
 
 </div>
 </div>
@@ -143,10 +147,16 @@ Membros públicos</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Escrita da data no atributo data. </p>
-<dl class="params"><dt>Parâmetros</dt><dd>
+<p>Escrita do valor em data, se válido. </p>
+<p>A data está no formato dia/mês/ano e para ser válida precisa estar no período de 1/1/2020 a 31/12/2099. </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
-    <tr><td class="paramname">data</td><td>String a ser escrita nos atributos. </td></tr>
+    <tr><td class="paramname">data</td><td>String a ser escrita no atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Excepções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">invalid_argument</td><td>Se valor passado não estiver no período de 1/1/2020 a 31/12/2099. </td></tr>
   </table>
   </dd>
 </dl>
@@ -163,7 +173,7 @@ Membros públicos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_data.html">Data</a></li>
-    <li class="footer">Gerado em Terça, 15 de Setembro de 2020 17:54:54 para Trabalho_1 por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Gerado em Domingo, 20 de Setembro de 2020 21:46:43 para Trabalho_1 por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

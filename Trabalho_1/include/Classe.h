@@ -5,39 +5,54 @@
 #include <vector>
 
 /**
-* Classe de domÌnio que armazena a classe de investimento.
+* @file Classe.h
+* @author L√≠via Gomes Costa Fonseca
+* @author Natalia Oliveira Borges
+*
+* Esse arquivo cont√©m a implementa√ß√£o da classe de dom√≠nio Classe. Essa classe armazena o atributo classe no formato
+* de uma string que corresponde √† classe do produto de investimento.
+*/
+
+/**
+* @brief Armazena a classe do produto de investimento.
 */
 class Classe
 {
     public:
         /**
-        * @brief Construtor.
-        * Inicializa o atributo classe como string vazia.
+        * @brief Construtor default.
+        * @details Inicializa o atributo classe como string vazia.
         */
         Classe();
+
         /**
-        * @brief Escrita do valor em classe, se v·lido.
+        * @brief Escrita do valor em classe, se v√°lido.
+        * @details Para ser v√°lida, a classe fornecida deve corresponder a uma das classes de investimento
+        *          existentes. As classes existentes s√£o "CDB", "LCA", "LCI", "FI" e "LC".
         * @param classe String a ser escrita no atributo.
-        * @return true Se foi possÌvel escrever no atributo.
-        * @return false Se n„o foi possÌvel escrever no atributo.
+        * @throw invalid_argument Se valor passado n√£o for v√°lido.
         */
         void setClasse(std::string);
+
         /**
         * @brief Leitura do valor armazenado em classe.
-        * @return classe
+        * @return classe Retorna string com valor armazenado em classe.
         */
         std::string getClasse();
 
     private:
         std::string classe;
+
+        /**
+        * Classes v√°lidas.
+        */
         const std::vector<std::string> CLASSES = {"CDB", "LCA", "LCI", "FI", "LC"};
 
         /**
-        * @brief Verifica se a classe È v·lida.
-        * Verifica se a classe fornecida corresponde a uma das classes de investimento existentes.
+        * @brief Verifica se a classe √© v√°lida.
+        * @details Verifica se a classe fornecida corresponde a uma das classes de investimento existentes.
         * @param classe Classe a ser verificada.
-        * @return true Se o valor È v·lido.
-        * @return false Se o valor n„o È v·lido.
+        * @throw invalid_argument Se valor passado n√£o for v√°lido.
         */
         void valida(std::string);
 };

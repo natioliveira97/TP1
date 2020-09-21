@@ -5,33 +5,49 @@
 #include <regex>
 
 /**
-* Classe de dom�nio que armazena o c�digo de produto.
+* @file CodigoDeProduto.h
+* @author Lívia Gomes Costa Fonseca
+* @author Natalia Oliveira Borges
+*
+* Esse arquivo contém a implementação da classe de domínio Código de Produto. Essa classe armazena o atributo codigo no formato
+* de uma string.
+*/
+
+/**
+* @brief Armazena o código de produto.
 */
 class CodigoDeProduto
 {
     public:
         /**
-        * @brief Construtor.
-        * Inicializa o atributo codigo como string vazia.
+        * @brief Construtor default.
+        * @details Inicializa o atributo codigo como string vazia.
         */
         CodigoDeProduto();
+
         /**
-        * @brief Escrita do valor em codigo, se v�lido.
+        * @brief Escrita do valor em codigo, se válido.
+        * @details Para ser válido, o código fornecido deve possuir exatamente
+        *          três dígitos e ser diferente de '000'.
         * @param codigo String a ser escrita no atributo.
+        * @throw invalid_argument Se valor passado não for válido.
         */
         void setCodigoDeProduto(std::string);
+
         /**
         * @brief Leitura do valor armazenado em codigo.
-        * @return codigo
+        * @return codigo Retorna string com valor armazenado em codigo.
         */
         std::string getCodigoDeProduto();
 
     private:
         std::string codigo;
+
         /**
-        * @brief Verifica se o c�digo � v�lido.
-        * Verifica se o c�digo fornecido possui exatamente tr�s d�gitos e � diferente de '000'.
-        * @param codigo C�digo a ser verificado.
+        * @brief Verifica se o código é válido.
+        * @details Verifica se o código fornecido possui exatamente três dígitos e é diferente de '000'.
+        * @param codigo Código a ser verificado.
+        * @throw invalid_argument Se valor passado não for válido.
         */
         void valida(std::string);
 };

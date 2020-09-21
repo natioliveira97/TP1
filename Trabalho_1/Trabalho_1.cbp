@@ -74,12 +74,9 @@
 		<Unit filename="src/ValorDeAplicacao.cpp" />
 		<Unit filename="src/ValorMinimo.cpp" />
 		<Extensions>
-			<envvars />
-			<code_completion />
-			<debugger />
 			<DoxyBlocks>
 				<comment_style block="0" line="0" />
-				<doxyfile_project output_directory="doxygen" output_language="Portuguese" />
+				<doxyfile_project output_directory="doxygen" output_language="Brazilian" />
 				<doxyfile_build />
 				<doxyfile_warnings />
 				<doxyfile_output />

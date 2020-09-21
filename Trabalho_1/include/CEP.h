@@ -6,37 +6,55 @@
 #include <vector>
 
 /**
-* Classe de domÌnio que aramzena o CEP.
+* @file CEP.h
+* @author L√≠via Gomes Costa Fonseca
+* @author Natalia Oliveira Borges
+*
+* Esse arquivo cont√©m a implementa√ß√£o da classe de dom√≠nio CEP. Essa classe armazena o atributo cep no formato
+* de uma string e a cidade correspondente.
+*/
+
+/**
+* @brief Armazena o CEP e sua cidade correspondente.
 */
 class CEP
 {
     public:
         /**
-        * @brief Construtor.
-        * Inicializa os atributos cep com valor zero e cidade como string vazia.
+        * @brief Construtor default.
+        * @details Inicializa os atributos cep com valor zero e cidade como string vazia.
         */
         CEP();
+
         /**
-        * @brief Leitura do valor armazenado em cep.
-        * @return cep
-        */
-        int getCEP();
-        /**
-        * @brief Leitura da string armazenado em cidade.
-        * @return cidade
-        */
-        std::string getCidade();
-        /**
-        * @brief Escrita do valor em cep, se v·lido.
+        * @brief Escrita do valor em cep, se v√°lido.
+        * @details Para ser v√°lido, o cep passado deve pertencer √†s faixas de valores correspondentes
+        *          √†s cidades: "Sao Paulo", "Sao Paulo", "Rio de Janeiro", "Brasilia", "Salvador", "Fortaleza".
+        *          As faixas poss√≠veis s√£o: {1000000, 5999999}, {8000000, 8499999}, {20000000, 26600999},
+        *          {70000000, 70999999}, {40000000, 41999999}, {60000000, 60999999}.
         * @param cep Valor a ser escrito no atributo cep.
-        * @return true Se foi possÌvel escrever no atributo.
-        * @return false Se n„o foi possÌvel escrever no atributo.
+        * @throw invalid_argument Se valor passado n√£o for v√°lido.
         */
         void setCEP(int);
+
+        /**
+        * @brief Leitura do valor armazenado em cep.
+        * @return cep Retorna inteiro com valor armazenado em cep.
+        */
+        int getCEP();
+
+        /**
+        * @brief Leitura da string armazenado em cidade.
+        * @return cidade Retorna inteiro com valor armazenado em cep.
+        */
+        std::string getCidade();
 
     private:
         int cep;
 
+        /**
+        * CEPs v√°lidos.
+        */
         const std::vector<std::array<int, 2>> INTERVALOS = {{1000000, 5999999},
                                                             {8000000, 8499999},
                                                             {20000000, 26600999},
@@ -44,7 +62,9 @@ class CEP
                                                             {40000000, 41999999},
                                                             {60000000, 60999999}};
 
-
+        /**
+        * Cidades correspondentes aos CEPs v√°lidos.
+        */
         const std::vector<std::string> CIDADES = {"Sao Paulo",
                                                   "Sao Paulo",
                                                   "Rio de Janeiro",
@@ -53,11 +73,10 @@ class CEP
                                                   "Fortaleza"};
 
         /**
-        * @brief Verifica se o cep È v·lido.
-        * Verifica se o cep est· nas faixas pertencentes ‡s cidades possÌveis.
+        * @brief Verifica se o cep √© v√°lido.
+        * @details Verifica se o cep est√° nas faixas pertencentes √†s cidades poss√≠veis.
         * @param cep Cep a ser verificado.
-        * @return true Se o valor È v·lido.
-        * @return false Se o valor n„o È v·lido.
+        * @throw invalid_argument Se valor passado n√£o for v√°lido.
         */
         void valida(int);
 };

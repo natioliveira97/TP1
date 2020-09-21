@@ -7,38 +7,55 @@
 #include <stdlib.h>
 
 /**
-* Classe de dom�nio que armazena o CPF.
+* @file CPF.h
+* @author Lívia Gomes Costa Fonseca
+* @author Natalia Oliveira Borges
+*
+* Esse arquivo contém a implementação da classe de domínio CPF. Essa classe armazena o atributo cpf no formato
+* de uma string.
+*/
+
+/**
+* @brief Armazena o CPF.
 */
 class CPF
 {
     public:
         /**
-        * @brief Construtor.
-        * Inicializa o atributo cpf com a string '000.000.000-00'.
+        * @brief Construtor default.
+        * @details Inicializa o atributo cpf com a string '000.000.000-00'.
         */
         CPF();
+
         /**
-        * @brief Escrita do valor em cpf, se v�lido.
+        * @brief Escrita do valor em cpf, se válido.
+        * @details Para ser válido, o cpf fornecido deve estar no formato 'XXX.XXX.XXX-XX'
+        *          e os dígitos verificadores devem ser válidos de acordo com a legislação brasileira.
+        *          Os dígitos verificadores correspondem aos dois dígitos após o traço "-".
         * @param cpf String a ser escrita no atributo.
+        * @throw invalid_argument Se valor passado não for válido.
         */
         void setCPF(std::string);
+
         /**
         * @brief Leitura do valor armazenado em cpf.
-        * @return cpf
+        * @return cpf Retorna string com valor armazenado em cpf.
         */
         std::string getCPF();
 
     private:
         std::string cpf;
+
         /**
-        * @brief Verifica se o d�gito verificador � v�lido.
-        * @param codigo C�digo a ser verificado.
+        * @brief Verifica se o dígito verificador é válido.
+        * @param codigo Código a ser verificado.
         */
         void validaDigitoVerificador(std::string);
+
         /**
-        * @brief Verifica se o cpf � v�lido.
-        * Verifica se o cpf fornecido est� no formato certo e, ao chamar validaDigitoVerificador(),
-        * verifica se o d�gito verificador est� correto.
+        * @brief Verifica se o cpf é válido.
+        * @details Verifica se o cpf fornecido está no formato certo e, ao chamar validaDigitoVerificador(),
+        *          verifica se o dígito verificador está correto.
         * @param cpf CPF a ser verificado.
         */
         void valida(std::string);

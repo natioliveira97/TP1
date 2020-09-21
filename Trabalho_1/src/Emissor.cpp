@@ -8,20 +8,15 @@ std::string Emissor::getEmissor(){
     return emissor;
 }
 
-bool Emissor::setEmissor(std::string emissor){
-    if (valida(emissor)){
-        this->emissor = emissor;
-        return true;
-    }
-    return false;
+void Emissor::setEmissor(std::string emissor){
+    valida(emissor)
+    this->emissor = emissor;
 }
 
-bool Emissor::valida(std::string emissor){
+void Emissor::valida(std::string emissor){
     std::regex formato = std::regex("^.{5,50}$");
 
     if(!regex_match(emissor, formato)){
-            return false;
+            throw std::invalid_argument("Emissor com formato invalido.");
     }
-
-    return false;
 }

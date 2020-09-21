@@ -85,55 +85,58 @@ $(document).ready(function(){initNavTree('_c_e_p_8h_source.html',''); initResiza
 <div class="title">CEP.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CEP_H</span></div>
+<a href="_c_e_p_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CEP_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CEP_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;array&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_c_e_p.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_e_p.html">CEP</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <a class="code" href="class_c_e_p.html#a3f399f92a3d3e1e00d9711ae659d83d4">CEP</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_c_e_p.html#a67fb4f8d4e1496e4ad46b7ae50bbb737">getCEP</a>();</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        std::string <a class="code" href="class_c_e_p.html#a5470bb91859bfe048ea07956a03ddbfd">getCidade</a>();</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_c_e_p.html#a29e23e0ed6bc4d7c55551e748b2e9a8d">setCEP</a>(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">int</span> cep;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_c_e_p.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_e_p.html">CEP</a></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="class_c_e_p.html#a3f399f92a3d3e1e00d9711ae659d83d4">CEP</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_c_e_p.html#a29e23e0ed6bc4d7c55551e748b2e9a8d">setCEP</a>(<span class="keywordtype">int</span>);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keyword">const</span> std::vector&lt;std::array&lt;int, 2&gt;&gt; INTERVALOS = {{1000000, 5999999},</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                            {8000000, 8499999},</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                                            {20000000, 26600999},</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                            {70000000, 70999999},</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                                            {40000000, 41999999},</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                            {60000000, 60999999}};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">const</span> std::vector&lt;std::string&gt; CIDADES = {<span class="stringliteral">&quot;Sao Paulo&quot;</span>,</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                  <span class="stringliteral">&quot;Sao Paulo&quot;</span>,</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                  <span class="stringliteral">&quot;Rio de Janeiro&quot;</span>,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                                                  <span class="stringliteral">&quot;Brasilia&quot;</span>,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                  <span class="stringliteral">&quot;Salvador&quot;</span>,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                  <span class="stringliteral">&quot;Fortaleza&quot;</span>};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_c_e_p.html#a67fb4f8d4e1496e4ad46b7ae50bbb737">getCEP</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        std::string <a class="code" href="class_c_e_p.html#a5470bb91859bfe048ea07956a03ddbfd">getCidade</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordtype">int</span> cep;</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> valida(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">const</span> std::vector&lt;std::array&lt;int, 2&gt;&gt; INTERVALOS = {{1000000, 5999999},</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                            {8000000, 8499999},</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                                            {20000000, 26600999},</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                            {70000000, 70999999},</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                                            {40000000, 41999999},</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                                                            {60000000, 60999999}};</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif // CEP_H</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keyword">const</span> std::vector&lt;std::string&gt; CIDADES = {<span class="stringliteral">&quot;Sao Paulo&quot;</span>,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                  <span class="stringliteral">&quot;Sao Paulo&quot;</span>,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                  <span class="stringliteral">&quot;Rio de Janeiro&quot;</span>,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                  <span class="stringliteral">&quot;Brasilia&quot;</span>,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                  <span class="stringliteral">&quot;Salvador&quot;</span>,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                  <span class="stringliteral">&quot;Fortaleza&quot;</span>};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordtype">void</span> valida(<span class="keywordtype">int</span>);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif // CEP_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_c_e_p_html"><div class="ttname"><a href="class_c_e_p.html">CEP</a></div><div class="ttdef"><b>Definition:</b> CEP.h:12</div></div>
+<div class="ttc" id="aclass_c_e_p_html"><div class="ttname"><a href="class_c_e_p.html">CEP</a></div><div class="ttdoc">Armazena o CEP e sua cidade correspondente.</div><div class="ttdef"><b>Definition:</b> CEP.h:21</div></div>
 <div class="ttc" id="aclass_c_e_p_html_a5470bb91859bfe048ea07956a03ddbfd"><div class="ttname"><a href="class_c_e_p.html#a5470bb91859bfe048ea07956a03ddbfd">CEP::getCidade</a></div><div class="ttdeci">std::string getCidade()</div><div class="ttdoc">Leitura da string armazenado em cidade.</div><div class="ttdef"><b>Definition:</b> CEP.cpp:9</div></div>
 <div class="ttc" id="aclass_c_e_p_html_a67fb4f8d4e1496e4ad46b7ae50bbb737"><div class="ttname"><a href="class_c_e_p.html#a67fb4f8d4e1496e4ad46b7ae50bbb737">CEP::getCEP</a></div><div class="ttdeci">int getCEP()</div><div class="ttdoc">Leitura do valor armazenado em cep.</div><div class="ttdef"><b>Definition:</b> CEP.cpp:5</div></div>
-<div class="ttc" id="aclass_c_e_p_html_a3f399f92a3d3e1e00d9711ae659d83d4"><div class="ttname"><a href="class_c_e_p.html#a3f399f92a3d3e1e00d9711ae659d83d4">CEP::CEP</a></div><div class="ttdeci">CEP()</div><div class="ttdoc">Construtor. Inicializa os atributos cep com valor zero e cidade como string vazia.</div><div class="ttdef"><b>Definition:</b> CEP.cpp:3</div></div>
-<div class="ttc" id="aclass_c_e_p_html_a29e23e0ed6bc4d7c55551e748b2e9a8d"><div class="ttname"><a href="class_c_e_p.html#a29e23e0ed6bc4d7c55551e748b2e9a8d">CEP::setCEP</a></div><div class="ttdeci">void setCEP(int)</div><div class="ttdoc">Escrita do valor em cep, se v�lido.</div><div class="ttdef"><b>Definition:</b> CEP.cpp:19</div></div>
+<div class="ttc" id="aclass_c_e_p_html_a3f399f92a3d3e1e00d9711ae659d83d4"><div class="ttname"><a href="class_c_e_p.html#a3f399f92a3d3e1e00d9711ae659d83d4">CEP::CEP</a></div><div class="ttdeci">CEP()</div><div class="ttdoc">Construtor default.</div><div class="ttdef"><b>Definition:</b> CEP.cpp:3</div></div>
+<div class="ttc" id="aclass_c_e_p_html_a29e23e0ed6bc4d7c55551e748b2e9a8d"><div class="ttname"><a href="class_c_e_p.html#a29e23e0ed6bc4d7c55551e748b2e9a8d">CEP::setCEP</a></div><div class="ttdeci">void setCEP(int)</div><div class="ttdoc">Escrita do valor em cep, se válido.</div><div class="ttdef"><b>Definition:</b> CEP.cpp:19</div></div>
+<div class="ttc" id="a_c_e_p_8h_html"><div class="ttname"><a href="_c_e_p_8h.html">CEP.h</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>CEP.h</b></li>
-    <li class="footer">Gerado em Terça, 15 de Setembro de 2020 17:54:54 para Trabalho_1 por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_c_e_p_8h.html">CEP.h</a></li>
+    <li class="footer">Gerado em Domingo, 20 de Setembro de 2020 21:46:42 para Trabalho_1 por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

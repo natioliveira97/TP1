@@ -5,38 +5,51 @@
 #include <regex>
 
 /**
-* Classe de domÌnio que armazena o cÛdigo de agÍncia.
+* @file CodigoDeAgencia.h
+* @author L√≠via Gomes Costa Fonseca
+* @author Natalia Oliveira Borges
+*
+* Esse arquivo cont√©m a implementa√ß√£o da classe de dom√≠nio C√≥digo de Ag√™ncia. Essa classe armazena o atributo codigo no formato
+* de uma string.
+*/
+
+/**
+* @brief Armazena o c√≥digo de ag√™ncia.
 */
 class CodigoDeAgencia
 {
     public:
         /**
-        * @brief Construtor.
-        * Inicializa o atributo codigo como string vazia.
+        * @brief Construtor default.
+        * @details Inicializa o atributo codigo como string vazia.
         */
         CodigoDeAgencia();
+
         /**
-        * @brief Escrita do valor em codigo, se v·lido.
+        * @brief Escrita do valor em codigo, se v√°lido.
+        * @details Para ser v√°lido, o c√≥digo fornecido deve possuir exatamente
+        *          quatro d√≠gitos e ser diferente de '0000'.
         * @param codigo String a ser escrita no atributo.
-        * @return true Se foi possÌvel escrever no atributo.
-        * @return false Se n„o foi possÌvel escrever no atributo.
+        * @throw invalid_argument Se valor passado n√£o for v√°lido.
         */
         void setCodigoDeAgencia(std::string);
+
         /**
         * @brief Leitura do valor armazenado em codigo.
-        * @return codigo
+        * @return codigo Retorna string com valor armazenado em codigo.
         */
         std::string getCodigoDeAgencia();
 
     private:
+        std::string codigo;
 
         /**
-        * @brief Verifica se o cÛdigo È v·lido.
-        * Verifica se o cÛdigo fornecido possui exatamente quatro dÌgitos e È diferente de '0000'.
-        * @param codigo CÛdigo a ser verificado.
+        * @brief Verifica se o c√≥digo √© v√°lido.
+        * @details Verifica se o c√≥digo fornecido possui exatamente quatro d√≠gitos e √© diferente de '0000'.
+        * @param codigo C√≥digo a ser verificado.
+        * @throw invalid_argument Se valor passado n√£o for v√°lido.
         */
         void valida(std::string);
-        std::string codigo;
 };
 
 #endif // CODIGODEAGENCIA_H
