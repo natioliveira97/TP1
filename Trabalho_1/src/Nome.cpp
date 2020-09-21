@@ -21,12 +21,12 @@ void Nome::valida(std::string nome){
     int pos = nome.length();
     int num = 0;
 
-    // verifica se possui o número correto de caracteres
+    // verifica se possui o nÃºmero correto de caracteres
     if(pos<MIN_CARACTERE || pos>MAX_CARACTERE){
         throw std::invalid_argument("Nome com tamanho invalido.");
     }
 
-    // verifica se possui 5 letras, não necessariamente em sequência
+    // verifica se possui 5 letras, nÃ£o necessariamente em sequÃªncia
     while(pos-- && num<5){
         if(std::isalpha(nome.at(pos))){
             num++;

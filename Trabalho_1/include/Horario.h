@@ -6,11 +6,11 @@
 
 /**
 * @file Horario.h
-* @author LÌvia Gomes Costa Fonseca
+* @author L√≠via Gomes Costa Fonseca
 * @author Natalia Oliveira Borges
 *
-* Esse arquivo contÈm a implementaÁ„o da classe de domÌnio Horario. Essa classe armazena o atributo horario no formato
-* string e possui mÈtodos para leitura, escrita e validaÁ„o.
+* Esse arquivo cont√©m a implementa√ß√£o da classe de dom√≠nio Horario. Essa classe armazena o atributo horario no formato
+* string e possui m√©todos para leitura, escrita e valida√ß√£o.
 */
 class Horario
 {
@@ -23,22 +23,22 @@ class Horario
 
         /**
         * @brief Construtor que inicializa a classe com valor horario.
-        * @details Para ser v·lido o valor hor·rio deve estar entre 13:00 e 17:00
+        * @details Para ser v√°lido o valor hor√°rio deve estar entre 13:00 e 17:00
         * @param horario String a ser escrita no atributo horario.
-        * @throw invalid_argument se hor·rio estiver fora do intervalo 13:00 e 17:00.
+        * @throw invalid_argument se hor√°rio estiver fora do intervalo 13:00 e 17:00.
         */
         Horario(std::string);
 
         /**
-        * @brief Escreve valor no atributo horario, se o valor for v·lido.
-        * @details Para ser v·lido o valor hor·rio deve estar entre 13:00 e 17:00
+        * @brief Escreve valor no atributo horario, se o valor for v√°lido.
+        * @details Para ser v√°lido o valor hor√°rio deve estar entre 13:00 e 17:00
         * @param horario String a ser escrita no atributo horario.
-        * @throw invalid_argument se hor·rio estiver fora do intervalo 13:00 e 17:00.
+        * @throw invalid_argument se hor√°rio estiver fora do intervalo 13:00 e 17:00.
         */
         void setHorario(std::string);
 
         /**
-        * @brief LÍ atributo horario.
+        * @brief L√™ atributo horario.
         * @return Retorna string com valor armazenado em horario.
         */
         std::string getHorario();
@@ -48,9 +48,9 @@ class Horario
 
         /**
         * @brief Valida string horario, verificando se esta no formato correto e no range permitido.
-        * @details Para ser v·lido o valor hor·rio deve estar entre 13:00 e 17:00
+        * @details Para ser v√°lido o valor hor√°rio deve estar entre 13:00 e 17:00
         * @param horario String a ser validada.
-        * @throw invalid_argument se hor·rio estiver fora do intervalo 13:00 e 17:00.
+        * @throw invalid_argument se hor√°rio estiver fora do intervalo 13:00 e 17:00.
         */
         void valida(std::string);
 };

@@ -2,7 +2,7 @@
 
 /**
 * @file Horario.cpp
-* @author L’via Gomes Costa Fonseca
+* @author Lâ€™via Gomes Costa Fonseca
 * @author Natalia Oliveira Borges
 */
 

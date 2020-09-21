@@ -7,29 +7,29 @@
 
 /**
 * @file TestHorario.h
-* @author Lívia Gomes Costa Fonseca
+* @author L‚Äôvia Gomes Costa Fonseca
 * @author Natalia Oliveira Borges
 *
-* Esse arquivo contém a implementação da classe de teste da classe Horario. Essa classe realiza exemplo de teste
-* com valor válido e exemplo de teste com valor inválido
+* Esse arquivo cont≈Ωm a implementa¬ç‚Äπo da classe de teste da classe Horario. Essa classe realiza exemplo de teste
+* com valor v‚Ä°lido e exemplo de teste com valor inv‚Ä°lido
 */
 class TestHorario
 {
     public:
         /**
         * @brief Construtor default.
-        * @details Cria ponteiro e aloca memória para instancia da classe Horario.
+        * @details Cria ponteiro e aloca mem‚Äîria para instancia da classe Horario.
         */
         TestHorario();
 
         /**
         * @brief Destrutor default.
-        * @details Desaloca memória.
+        * @details Desaloca mem‚Äîria.
         */
         ~TestHorario();
 
         /**
-        * @brief Realiza teste de entrada válida e de entrada inválida.
+        * @brief Realiza teste de entrada v‚Ä°lida e de entrada inv‚Ä°lida.
         */
         void run();
 
@@ -40,12 +40,12 @@ class TestHorario
         Horario *horario;
 
         /**
-        * @brief Realiza teste de entrada válida.
+        * @brief Realiza teste de entrada v‚Ä°lida.
         */
         void testHorarioValido();
 
         /**
-        * @brief Realiza teste de entrada inválida.
+        * @brief Realiza teste de entrada inv‚Ä°lida.
         */
         void testHorarioInvalido();
 };

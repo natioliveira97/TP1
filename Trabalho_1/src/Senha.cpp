@@ -18,8 +18,8 @@ std::string Senha::getSenha(){
 
 
 void Senha::valida(std::string senha){
-    std::regex formato = std::regex("^[0-9]{6}$");  // para verificar se há seis dígitos
-    std::regex invalida = std::regex("(.).*\\1.*"); // para verificar se os dígitos se repetem
+    std::regex formato = std::regex("^[0-9]{6}$");  // para verificar se hÃ¡ seis dÃ­gitos
+    std::regex invalida = std::regex("(.).*\\1.*"); // para verificar se os dÃ­gitos se repetem
 
     if(!std::regex_match(senha, formato)){
         throw std::invalid_argument("Senha nao possui seis digitos.");
