@@ -163,44 +163,46 @@
 	<regex>
 	<iostream>
 
-1600201502 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
+1600804790 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
 	<iostream>
 	<TestHorario.h>
 	<TestPrazo.h>
+	<BaseTest.h>
+	<vector>
 
-1600131601 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CEP.h
+1600801094 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CEP.h
 	<string>
 	<array>
 	<vector>
 
-1600131942 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Classe.h
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Classe.h
 	<string>
 	<vector>
 
-1600134500 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAgencia.h
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAgencia.h
 	<string>
 	<regex>
 
-1600193860 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAplicacao.h
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAplicacao.h
 	<string>
 	<regex>
 
-1600134471 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeBanco.h
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeBanco.h
 	<regex>
 	<string>
 	<vector>
 
-1600134471 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeProduto.h
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeProduto.h
 	<string>
 	<regex>
 
-1600134471 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CPF.h
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CPF.h
 	<string>
 	<regex>
 	<iostream>
 	<stdlib.h>
 
-1600134471 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Data.h
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Data.h
 	<string>
 	<regex>
 	<iostream>
@@ -227,10 +229,10 @@
 1600134001 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Data.cpp
 	"Data.h"
 
-1599353451 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Emissor.cpp
+1600801146 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Emissor.cpp
 	"Emissor.h"
 
-1599353445 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Emissor.h
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Emissor.h
 	<string>
 	<regex>
 	<iostream>
@@ -243,14 +245,14 @@
 	<regex>
 	<stdexcept>
 
-1600202536 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Horario.cpp
+1600799577 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Horario.cpp
 	"Horario.h"
 
-1600203462 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Horario.h
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Horario.h
 	<string>
 	<regex>
 
-1600134196 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Nome.cpp
+1600799577 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Nome.cpp
 	"Nome.h"
 
 1599858435 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Nome.h
@@ -266,7 +268,7 @@
 	<regex>
 	<stdexcept>
 
-1599858436 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Senha.cpp
+1600799577 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Senha.cpp
 	"Senha.h"
 
 1599858435 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Senha.h
@@ -290,13 +292,13 @@
 1600129432 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CPF.cpp
 	"CPF.h"
 
-1600203150 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Prazo.cpp
+1600799577 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Prazo.cpp
 	"Prazo.h"
 
-1600203462 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Prazo.h
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Prazo.h
 	<vector>
 
-1600134196 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/ValorMinimo.cpp
+1600799577 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/ValorMinimo.cpp
 	"ValorMinimo.h"
 
 1600127661 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/ValorMinimo.h
@@ -304,18 +306,23 @@
 	<algorithm>
 	<stdexcept>
 
-1600202545 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestHorario.cpp
+1600804950 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestHorario.cpp
 	"TestHorario.h"
 
-1600202222 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestHorario.h
+1600804677 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestHorario.h
 	<string>
+	<BaseTest.h>
 	<Horario.h>
-	<iostream>
 
-1600203288 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestPrazo.cpp
+1600801480 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestPrazo.cpp
 	"TestPrazo.h"
 
-1600203288 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestPrazo.h
+1600804701 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestPrazo.h
+	<BaseTest.h>
 	<Prazo.h>
-	<iostream>
+
+1600805452 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/BaseTest.h
+
+1600804258 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/BaseTest.cpp
+	"BaseTest.h"
 

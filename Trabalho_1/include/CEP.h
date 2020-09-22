@@ -45,7 +45,7 @@ class CEP
 
         /**
         * @brief Leitura da string armazenado em cidade.
-        * @return cidade Retorna inteiro com valor armazenado em cep.
+        * @return cidade Retorna string com nome da cidade.
         */
         std::string getCidade();
 

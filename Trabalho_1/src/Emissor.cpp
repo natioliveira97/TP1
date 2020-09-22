@@ -9,7 +9,7 @@ std::string Emissor::getEmissor(){
 }
 
 void Emissor::setEmissor(std::string emissor){
-    valida(emissor)
+    valida(emissor);
     this->emissor = emissor;
 }
 

@@ -2,51 +2,29 @@
 #define TESTHORARIO_H
 
 #include <string>
+#include <BaseTest.h>
 #include <Horario.h>
-#include <iostream>
 
-/**
-* @file TestHorario.h
-* @author L’via Gomes Costa Fonseca
-* @author Natalia Oliveira Borges
-*
-* Esse arquivo contŽm a implementa‹o da classe de teste da classe Horario. Essa classe realiza exemplo de teste
-* com valor v‡lido e exemplo de teste com valor inv‡lido
-*/
-class TestHorario
+
+
+class TestHorario: public BaseTest
 {
     public:
-        /**
-        * @brief Construtor default.
-        * @details Cria ponteiro e aloca mem—ria para instancia da classe Horario.
-        */
+        static const int SUCESSO = 1;
+        static const int FALHA = 0;
         TestHorario();
-
-        /**
-        * @brief Destrutor default.
-        * @details Desaloca mem—ria.
-        */
         ~TestHorario();
 
-        /**
-        * @brief Realiza teste de entrada v‡lida e de entrada inv‡lida.
-        */
-        void run();
+        int run();
 
     private:
         std::string VALOR_VALIDO = "13:03";
         std::string VALOR_INVALIDO = "17:01";
+        int estado;
 
         Horario *horario;
 
-        /**
-        * @brief Realiza teste de entrada v‡lida.
-        */
         void testHorarioValido();
-
-        /**
-        * @brief Realiza teste de entrada inv‡lida.
-        */
         void testHorarioInvalido();
 };
 
