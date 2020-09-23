@@ -1,208 +1,31 @@
 # depslib dependency file v1.0
-1599351457 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
-	<iostream>
-	<CEP.h>
-	<Classe.h>
-	<CodigoDeAgencia.h>
-	<CodigoDeAplicacao.h>
-	<CodigoDeBanco.h>
-	<CodigoDeProduto.h>
-	<CPF.h>
-	<Data.h>
-
-1599523007 
-
-1599353401 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CPF.cpp
-	"CPF.h"
-
-1599352888 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CPF.h
-	<string>
-	<regex>
-	<iostream>
-	<stdlib.h>
-
-1599352697 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CEP.cpp
-	"CEP.h"
-
-1599352691 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CEP.h
-	<string>
-
-1599352888 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeBanco.h
-	<string>
-
-1599352888 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeBanco.cpp
-	"CodigoDeBanco.h"
-
-1599523007 anco.h"
-
-1599352721 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Classe.cpp
-	"Classe.h"
-
-1599352721 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Classe.h
-	<string>
-
-1599353402 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeAgencia.cpp
-	"CodigoDeAgencia.h"
-
-1599523007 gencia.h"
-
-1599352888 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAgencia.h
-	<string>
-	<regex>
-
-1599353402 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeAplicacao.cpp
-	"CodigoDeAplicacao.h"
-
-1599523007 plicacao.h"
-
-1599352888 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAplicacao.h
-	<string>
-	<regex>
-
-1599353402 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeProduto.cpp
-	"CodigoDeProduto.h"
-
-1599523007 roduto.h"
-
-1599352888 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeProduto.h
-	<string>
-	<regex>
-
-1599353401 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Data.h
-	<string>
-	<regex>
-	<iostream>
-	<stdlib.h>
-
-1599353402 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Data.cpp
-	"Data.h"
-
-1599352560 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Emissor.cpp
-	"Emissor.h"
-
-1599523007 "
-
-1599352529 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Emissor.h
-	<string>
-	<regex>
-	<iostream>
-
-1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\main.cpp
-	<iostream>
-	<CEP.h>
-	<Classe.h>
-	<CodigoDeAgencia.h>
-	<CodigoDeAplicacao.h>
-	<CodigoDeBanco.h>
-	<CodigoDeProduto.h>
-	<CPF.h>
-	<Data.h>
-
-1599529284 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\cep.h
-	<string>
-
-1599529249 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\classe.h
-	<string>
-
-1599529241 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\codigodeagencia.h
-	<string>
-	<regex>
-
-1599523007 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\codigodeaplicacao.h
-	<string>
-	<regex>
-
-1599523007 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\codigodebanco.h
-	<string>
-
-1599523007 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\codigodeproduto.h
-	<string>
-	<regex>
-
-1599523007 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\cpf.h
-	<string>
-	<regex>
-	<iostream>
-	<stdlib.h>
-
-1599523007 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\data.h
-	<string>
-	<regex>
-	<iostream>
-	<stdlib.h>
-
-1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\cep.cpp
-	"CEP.h"
-
-1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\classe.cpp
-	"Classe.h"
-
-1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\codigodeagencia.cpp
-	"CodigoDeAgencia.h"
-
-1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\codigodeaplicacao.cpp
-	"CodigoDeAplicacao.h"
-
-1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\codigodebanco.cpp
-	"CodigoDeBanco.h"
-
-1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\codigodeproduto.cpp
-	"CodigoDeProduto.h"
-
-1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\cpf.cpp
-	"CPF.h"
-
-1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\data.cpp
-	"Data.h"
-
-1599523007 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\emissor.cpp
-	"Emissor.h"
-
-1599523007 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\emissor.h
-	<string>
-	<regex>
-	<iostream>
-
 1600804790 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
+	<iostream>
+	<CEP.h>
+	<Classe.h>
+	<CodigoDeAgencia.h>
+	<CodigoDeAplicacao.h>
+	<CodigoDeBanco.h>
+	<CodigoDeProduto.h>
+	<CPF.h>
+	<Data.h>
 	<iostream>
 	<TestHorario.h>
 	<TestPrazo.h>
 	<BaseTest.h>
 	<vector>
 
-1600801094 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CEP.h
-	<string>
-	<array>
-	<vector>
+1599523007 
 
-1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Classe.h
-	<string>
-	<vector>
-
-1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAgencia.h
-	<string>
-	<regex>
-
-1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAplicacao.h
-	<string>
-	<regex>
-
-1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeBanco.h
-	<regex>
-	<string>
-	<vector>
-
-1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeProduto.h
-	<string>
-	<regex>
+1600129432 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CPF.cpp
+	"CPF.h"
+	"CPF.h"
 
 1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CPF.h
 	<string>
 	<regex>
 	<iostream>
 	<stdlib.h>
-
-1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Data.h
 	<string>
 	<regex>
 	<iostream>
@@ -210,29 +33,172 @@
 
 1600132966 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CEP.cpp
 	"CEP.h"
+	"CEP.h"
 
-1600131971 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Classe.cpp
-	"Classe.h"
+1600801094 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CEP.h
+	<string>
+	<string>
+	<array>
+	<vector>
 
-1600132966 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeAgencia.cpp
-	"CodigoDeAgencia.h"
-
-1600132344 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeAplicacao.cpp
-	"CodigoDeAplicacao.h"
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeBanco.h
+	<string>
+	<regex>
+	<string>
+	<vector>
 
 1600132966 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeBanco.cpp
 	"CodigoDeBanco.h"
+	"CodigoDeBanco.h"
+
+1599523007 anco.h"
+
+1600131971 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Classe.cpp
+	"Classe.h"
+	"Classe.h"
+
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Classe.h
+	<string>
+	<string>
+	<vector>
+
+1600132966 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeAgencia.cpp
+	"CodigoDeAgencia.h"
+	"CodigoDeAgencia.h"
+
+1599523007 gencia.h"
+
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAgencia.h
+	<string>
+	<regex>
+	<string>
+	<regex>
+
+1600132344 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeAplicacao.cpp
+	"CodigoDeAplicacao.h"
+	"CodigoDeAplicacao.h"
+
+1599523007 plicacao.h"
+
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAplicacao.h
+	<string>
+	<regex>
+	<string>
+	<regex>
 
 1600133168 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeProduto.cpp
 	"CodigoDeProduto.h"
+	"CodigoDeProduto.h"
+
+1599523007 roduto.h"
+
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeProduto.h
+	<string>
+	<regex>
+	<string>
+	<regex>
+
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Data.h
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
 
 1600134001 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Data.cpp
+	"Data.h"
 	"Data.h"
 
 1600801146 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Emissor.cpp
 	"Emissor.h"
+	"Emissor.h"
+
+1599523007 "
 
 1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Emissor.h
+	<string>
+	<regex>
+	<iostream>
+	<string>
+	<regex>
+	<iostream>
+
+1600806139 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\main.cpp
+	<iostream>
+	<TestHorario.h>
+	<TestPrazo.h>
+	<BaseTest.h>
+	<vector>
+
+1600806137 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\cep.h
+	<string>
+	<array>
+	<vector>
+
+1600642886 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\classe.h
+	<string>
+	<vector>
+
+1600644116 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\codigodeagencia.h
+	<string>
+	<regex>
+
+1600644133 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\codigodeaplicacao.h
+	<string>
+	<regex>
+
+1600644923 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\codigodebanco.h
+	<regex>
+	<string>
+	<vector>
+
+1600645129 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\codigodeproduto.h
+	<string>
+	<regex>
+
+1600646811 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\cpf.h
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
+
+1600647407 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\data.h
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
+
+1600649519 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\cep.cpp
+	"CEP.h"
+
+1600649527 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\classe.cpp
+	"Classe.h"
+
+1600649535 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\codigodeagencia.cpp
+	"CodigoDeAgencia.h"
+
+1600649544 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\codigodeaplicacao.cpp
+	"CodigoDeAplicacao.h"
+
+1600649576 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\codigodebanco.cpp
+	"CodigoDeBanco.h"
+
+1600649610 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\codigodeproduto.cpp
+	"CodigoDeProduto.h"
+
+1600649657 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\cpf.cpp
+	"CPF.h"
+
+1600649665 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\data.cpp
+	"Data.h"
+
+1600806143 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\emissor.cpp
+	"Emissor.h"
+
+1600648124 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\emissor.h
 	<string>
 	<regex>
 	<iostream>
@@ -289,9 +255,6 @@
 1599858435 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/ValorDeAplicacao.h
 	<stdexcept>
 
-1600129432 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CPF.cpp
-	"CPF.h"
-
 1600799577 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Prazo.cpp
 	"Prazo.h"
 
@@ -325,4 +288,22 @@
 
 1600804258 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/BaseTest.cpp
 	"BaseTest.h"
+
+1600806137 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\testhorario.h
+	<string>
+	<BaseTest.h>
+	<Horario.h>
+
+1600806137 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\basetest.h
+
+1600649306 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\horario.h
+	<string>
+	<regex>
+
+1600806138 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\testprazo.h
+	<BaseTest.h>
+	<Prazo.h>
+
+1600649329 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\prazo.h
+	<vector>
 
