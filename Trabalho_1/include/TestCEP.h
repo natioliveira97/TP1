@@ -3,6 +3,7 @@
 
 #include <BaseTest.h>
 #include <CEP.h>
+#include <string>
 
 class TestCEP: public BaseTest
 {

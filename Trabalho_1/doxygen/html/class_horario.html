@@ -88,6 +88,11 @@ $(document).ready(function(){initNavTree('class_horario.html',''); initResizable
 <div class="title">Referência à classe Horario</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Armazena um horário.  
+ <a href="class_horario.html#details">Mais...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_horario_8h_source.html">Horario.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Membros públicos</h2></td></tr>
@@ -98,13 +103,15 @@ Membros públicos</h2></td></tr>
 <tr class="memdesc:aa3afbffb68590e6b12e65fd3ee9153de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor que inicializa a classe com valor horario.  <a href="class_horario.html#aa3afbffb68590e6b12e65fd3ee9153de">Mais...</a><br /></td></tr>
 <tr class="separator:aa3afbffb68590e6b12e65fd3ee9153de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2daf084639f09a871b27c76705d58a18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_horario.html#a2daf084639f09a871b27c76705d58a18">setHorario</a> (std::string)</td></tr>
-<tr class="memdesc:a2daf084639f09a871b27c76705d58a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escreve valor no atributo horario, se o valor for v�lido.  <a href="class_horario.html#a2daf084639f09a871b27c76705d58a18">Mais...</a><br /></td></tr>
+<tr class="memdesc:a2daf084639f09a871b27c76705d58a18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escreve valor no atributo horario, se o valor for válido.  <a href="class_horario.html#a2daf084639f09a871b27c76705d58a18">Mais...</a><br /></td></tr>
 <tr class="separator:a2daf084639f09a871b27c76705d58a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93d8ace6915ac2103fc4e8ac31d45867"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_horario.html#a93d8ace6915ac2103fc4e8ac31d45867">getHorario</a> ()</td></tr>
-<tr class="memdesc:a93d8ace6915ac2103fc4e8ac31d45867"><td class="mdescLeft">&#160;</td><td class="mdescRight">L� atributo horario.  <a href="class_horario.html#a93d8ace6915ac2103fc4e8ac31d45867">Mais...</a><br /></td></tr>
+<tr class="memdesc:a93d8ace6915ac2103fc4e8ac31d45867"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lê atributo horario.  <a href="class_horario.html#a93d8ace6915ac2103fc4e8ac31d45867">Mais...</a><br /></td></tr>
 <tr class="separator:a93d8ace6915ac2103fc4e8ac31d45867"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
+<div class="textblock"><p>Armazena um horário. </p>
+</div><h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
 <a id="a46801f79049e424c1a520838c33397b2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a46801f79049e424c1a520838c33397b2">&#9670;&nbsp;</a></span>Horario() <span class="overload">[1/2]</span></h2>
 
@@ -121,7 +128,7 @@ Membros públicos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construtor default. </p>
-<p>Inicializa o atributo horario como 00:00. </p>
+<p>Inicializa o atributo horario como string vazia. </p>
 
 </div>
 </div>
@@ -142,7 +149,7 @@ Membros públicos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construtor que inicializa a classe com valor horario. </p>
-<p>Para ser v�lido o valor hor�rio deve estar entre 13:00 e 17:00 </p><dl class="params"><dt>Parâmetros</dt><dd>
+<p>Para ser válido, o valor horário deve estar entre 13:00 e 17:00 </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">horario</td><td>String a ser escrita no atributo horario. </td></tr>
   </table>
@@ -150,7 +157,7 @@ Membros públicos</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Excepções</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">invalid_argument</td><td>se hor�rio estiver fora do intervalo 13:00 e 17:00. </td></tr>
+    <tr><td class="paramname">invalid_argument</td><td>se horário estiver fora do intervalo 13:00 e 17:00. </td></tr>
   </table>
   </dd>
 </dl>
@@ -173,7 +180,7 @@ Membros públicos</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>L� atributo horario. </p>
+<p>Lê atributo horario. </p>
 <dl class="section return"><dt>Retorna</dt><dd>Retorna string com valor armazenado em horario. </dd></dl>
 
 </div>
@@ -194,8 +201,8 @@ Membros públicos</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Escreve valor no atributo horario, se o valor for v�lido. </p>
-<p>Para ser v�lido o valor hor�rio deve estar entre 13:00 e 17:00 </p><dl class="params"><dt>Parâmetros</dt><dd>
+<p>Escreve valor no atributo horario, se o valor for válido. </p>
+<p>Para ser válido, o valor horário deve estar entre 13:00 e 17:00 </p><dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">horario</td><td>String a ser escrita no atributo horario. </td></tr>
   </table>
@@ -203,7 +210,7 @@ Membros públicos</h2></td></tr>
 </dl>
 <dl class="exception"><dt>Excepções</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">invalid_argument</td><td>se hor�rio estiver fora do intervalo 13:00 e 17:00. </td></tr>
+    <tr><td class="paramname">invalid_argument</td><td>se horário estiver fora do intervalo 13:00 e 17:00. </td></tr>
   </table>
   </dd>
 </dl>
@@ -220,7 +227,7 @@ Membros públicos</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_horario.html">Horario</a></li>
-    <li class="footer">Gerado em Domingo, 20 de Setembro de 2020 21:46:43 para Trabalho_1 por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Gerado em Domingo, 27 de Setembro de 2020 19:45:18 para Trabalho_1 por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

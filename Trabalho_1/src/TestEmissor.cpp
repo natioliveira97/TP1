@@ -3,6 +3,7 @@
 TestEmissor::TestEmissor(){
     emissor = new Emissor();
     estado = SUCESSO;
+    nome_dominio = "Emissor";
 }
 
 TestEmissor::~TestEmissor(){

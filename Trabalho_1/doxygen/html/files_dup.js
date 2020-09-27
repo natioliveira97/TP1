@@ -27,27 +27,31 @@ var files_dup =
     [ "Emissor.h", "_emissor_8h.html", [
       [ "Emissor", "class_emissor.html", "class_emissor" ]
     ] ],
-    [ "Endereco.h", "_endereco_8h_source.html", null ],
+    [ "Endereco.h", "_endereco_8h.html", [
+      [ "Endereco", "class_endereco.html", "class_endereco" ]
+    ] ],
     [ "Horario.cpp", "_horario_8cpp.html", null ],
     [ "Horario.h", "_horario_8h.html", [
       [ "Horario", "class_horario.html", "class_horario" ]
     ] ],
-    [ "Nome.h", "_nome_8h_source.html", null ],
-    [ "Numero.h", "_numero_8h_source.html", null ],
+    [ "Nome.h", "_nome_8h.html", [
+      [ "Nome", "class_nome.html", "class_nome" ]
+    ] ],
+    [ "Numero.h", "_numero_8h.html", [
+      [ "Numero", "class_numero.html", "class_numero" ]
+    ] ],
     [ "Prazo.cpp", "_prazo_8cpp.html", null ],
     [ "Prazo.h", "_prazo_8h.html", [
       [ "Prazo", "class_prazo.html", "class_prazo" ]
     ] ],
-    [ "Senha.h", "_senha_8h_source.html", null ],
-    [ "Taxa.h", "_taxa_8h_source.html", null ],
-    [ "TestHorario.cpp", "_test_horario_8cpp.html", null ],
-    [ "TestHorario.h", "_test_horario_8h.html", [
-      [ "TestHorario", "class_test_horario.html", "class_test_horario" ]
+    [ "Senha.h", "_senha_8h.html", [
+      [ "Senha", "class_senha.html", "class_senha" ]
     ] ],
-    [ "TestPrazo.cpp", "_test_prazo_8cpp.html", null ],
-    [ "TestPrazo.h", "_test_prazo_8h.html", [
-      [ "TestPrazo", "class_test_prazo.html", "class_test_prazo" ]
+    [ "Taxa.h", "_taxa_8h.html", [
+      [ "Taxa", "class_taxa.html", "class_taxa" ]
     ] ],
-    [ "ValorDeAplicacao.h", "_valor_de_aplicacao_8h_source.html", null ],
+    [ "ValorDeAplicacao.h", "_valor_de_aplicacao_8h.html", [
+      [ "ValorDeAplicacao", "class_valor_de_aplicacao.html", "class_valor_de_aplicacao" ]
+    ] ],
     [ "ValorMinimo.h", "_valor_minimo_8h_source.html", null ]
 ];

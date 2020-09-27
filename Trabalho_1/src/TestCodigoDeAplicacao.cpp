@@ -3,6 +3,7 @@
 TestCodigoDeAplicacao::TestCodigoDeAplicacao(){
     codigo = new CodigoDeAplicacao();
     estado = SUCESSO;
+    nome_dominio = "CodigoDeAplicacao";
 }
 
 TestCodigoDeAplicacao::~TestCodigoDeAplicacao(){

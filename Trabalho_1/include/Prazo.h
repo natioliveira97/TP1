@@ -5,10 +5,10 @@
 
 /**
 * @file Prazo.h
-* @author L’via Gomes Costa Fonseca
+* @author Lívia Gomes Costa Fonseca
 * @author Natalia Oliveira Borges
 *
-* Esse arquivo contŽm a implementa‹o da classe de dom’nio Prazo. Essa classe armazena o atributo prazo no formato
+* Esse arquivo contém a implementação da classe de domínio Prazo. Essa classe armazena o atributo prazo no formato
 * inteiro.
 */
 
@@ -23,22 +23,22 @@ class Prazo
 
         /**
         * @brief Construtor que inicializa a classe com valor prazo.
-        * @details Prazos v‡lidos: 6,12,18,24,30,36,42,48,54,60,66,72.
+        * @details Prazos válidos: 6,12,18,24,30,36,42,48,54,60,66,72.
         * @param prazo Inteiro a ser escrito no atributo prazo.
-        * @throw invalid_argument se prazo n‹o pertence a lista de prazos v‡lidos.
+        * @throw invalid_argument se prazo não pertence a lista de prazos válidos.
         */
         Prazo(int);
 
         /**
-        * @brief Escreve valor no atributo prazo, se o valor for v‡lido.
-        * @details Prazos v‡lidos: 6,12,18,24,30,36,42,48,54,60,66,72.
+        * @brief Escreve valor no atributo prazo, se o valor for válido.
+        * @details Prazos válidos: 6,12,18,24,30,36,42,48,54,60,66,72.
         * @param prazo Inteiro a ser escrito no atributo prazo.
-        * @throw invalid_argument se prazo n‹o pertence a lista de prazos v‡lidos.
+        * @throw invalid_argument se prazo não pertence a lista de prazos válidos.
         */
         void setPrazo(int);
 
         /**
-        * @brief L atributo prazo.
+        * @brief Lê atributo prazo.
         * @return Retorna inteiro com valor armazenado em prazo.
         */
         int getPrazo();
@@ -53,9 +53,9 @@ class Prazo
 
         /**
         * @brief Verifica se o valor passado pertence aos valores permitidos.
-        * @details Prazos v‡lidos: 6,12,18,24,30,36,42,48,54,60,66,72.
+        * @details Prazos válidos: 6,12,18,24,30,36,42,48,54,60,66,72.
         * @param prazo Inteiro a ser validado.
-        * @throw invalid_argument se prazo n‹o pertence a lista de prazos v‡lidos.
+        * @throw invalid_argument se prazo não pertence a lista de prazos válidos.
         */
         void valida(int);
 };

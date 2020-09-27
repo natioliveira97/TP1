@@ -2,12 +2,12 @@
 
 /**
 * @file Horario.cpp
-* @author L’via Gomes Costa Fonseca
+* @author Lívia Gomes Costa Fonseca
 * @author Natalia Oliveira Borges
 */
 
 Horario::Horario(){
-    horario = "00:00";
+    horario = "";
 }
 
 

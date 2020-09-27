@@ -13,6 +13,7 @@ class TestEmissor: public BaseTest
 
         int run();
 
+
     private:
         std::string VALOR_VALIDO = "Emissor Valido90.";
         std::string VALOR_INVALIDO = "emissor Invalido";

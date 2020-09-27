@@ -11,7 +11,7 @@ class TestCodigoDeAplicacao: public BaseTest
         TestCodigoDeAplicacao();
         ~TestCodigoDeAplicacao();
 
-        run();
+        int run();
 
     private:
         std::string VALOR_VALIDO = "22345";

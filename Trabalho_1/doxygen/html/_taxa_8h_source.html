@@ -85,35 +85,43 @@ $(document).ready(function(){initNavTree('_taxa_8h_source.html',''); initResizab
 <div class="title">Taxa.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TAXA_H</span></div>
+<a href="_taxa_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TAXA_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define TAXA_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_taxa.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_taxa.html">Taxa</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <a class="code" href="class_taxa.html">Taxa</a>();</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <a class="code" href="class_taxa.html">Taxa</a>(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordtype">void</span> setTaxa(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordtype">int</span> getTaxa();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MIN_TAXA = 0;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> MAX_TAXA = 200;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">int</span> taxa;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keywordtype">void</span> valida(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif // TAXA_H</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_taxa.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_taxa.html">Taxa</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <a class="code" href="class_taxa.html#a95180249365957f7735fb4467fe2f0db">Taxa</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="class_taxa.html#a95180249365957f7735fb4467fe2f0db">Taxa</a>(<span class="keywordtype">float</span>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_taxa.html#a1eb527c8ea496932320c574bd41457aa">setTaxa</a>(<span class="keywordtype">float</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordtype">float</span> <a class="code" href="class_taxa.html#a2e9bb0f35c7b515451881e347d7cada5">getTaxa</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> MIN_TAXA = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">float</span> MAX_TAXA = 200;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordtype">float</span> taxa;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> valida(<span class="keywordtype">float</span>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif // TAXA_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_taxa_html"><div class="ttname"><a href="class_taxa.html">Taxa</a></div><div class="ttdef"><b>Definition:</b> Taxa.h:7</div></div>
+<div class="ttc" id="aclass_taxa_html"><div class="ttname"><a href="class_taxa.html">Taxa</a></div><div class="ttdef"><b>Definition:</b> Taxa.h:16</div></div>
+<div class="ttc" id="aclass_taxa_html_a1eb527c8ea496932320c574bd41457aa"><div class="ttname"><a href="class_taxa.html#a1eb527c8ea496932320c574bd41457aa">Taxa::setTaxa</a></div><div class="ttdeci">void setTaxa(float)</div><div class="ttdoc">Escreve valor no atributo taxa, se o valor for válido.</div><div class="ttdef"><b>Definition:</b> Taxa.cpp:27</div></div>
+<div class="ttc" id="aclass_taxa_html_a2e9bb0f35c7b515451881e347d7cada5"><div class="ttname"><a href="class_taxa.html#a2e9bb0f35c7b515451881e347d7cada5">Taxa::getTaxa</a></div><div class="ttdeci">float getTaxa()</div><div class="ttdoc">Lê atributo taxa.</div><div class="ttdef"><b>Definition:</b> Taxa.cpp:15</div></div>
+<div class="ttc" id="a_taxa_8h_html"><div class="ttname"><a href="_taxa_8h.html">Taxa.h</a></div></div>
+<div class="ttc" id="aclass_taxa_html_a95180249365957f7735fb4467fe2f0db"><div class="ttname"><a href="class_taxa.html#a95180249365957f7735fb4467fe2f0db">Taxa::Taxa</a></div><div class="ttdeci">Taxa()</div><div class="ttdoc">Construtor default.</div><div class="ttdef"><b>Definition:</b> Taxa.cpp:3</div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><b>Taxa.h</b></li>
-    <li class="footer">Gerado em Domingo, 20 de Setembro de 2020 21:46:42 para Trabalho_1 por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="_taxa_8h.html">Taxa.h</a></li>
+    <li class="footer">Gerado em Domingo, 27 de Setembro de 2020 19:45:18 para Trabalho_1 por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

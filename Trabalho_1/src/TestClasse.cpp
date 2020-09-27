@@ -3,6 +3,7 @@
 TestClasse::TestClasse(){
     classe = new Classe();
     estado = SUCESSO;
+    nome_dominio = "Classe";
 }
 
 TestClasse::~TestClasse(){

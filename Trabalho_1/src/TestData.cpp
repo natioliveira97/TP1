@@ -3,6 +3,7 @@
 TestData::TestData(){
     data = new Data();
     estado = SUCESSO;
+    nome_dominio = "Data";
 }
 
 TestData::~TestData(){

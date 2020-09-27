@@ -28,5 +28,5 @@ void CEP::valida(int cep){
             return;
         }
     }
-    throw std::invalid_argument("CEP fora de intervalo aceito.");
+    throw std::invalid_argument("CEP invalido.");
 }

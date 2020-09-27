@@ -12,18 +12,22 @@
 * Esse arquivo contém a implementação da classe de domínio Horario. Essa classe armazena o atributo horario no formato
 * string e possui métodos para leitura, escrita e validação.
 */
+
+/**
+* @brief Armazena um horário.
+*/
 class Horario
 {
     public:
         /**
         * @brief Construtor default.
-        * @details Inicializa o atributo horario como 00:00.
+        * @details Inicializa o atributo horario como string vazia.
         */
         Horario();
 
         /**
         * @brief Construtor que inicializa a classe com valor horario.
-        * @details Para ser válido o valor horário deve estar entre 13:00 e 17:00
+        * @details Para ser válido, o valor horário deve estar entre 13:00 e 17:00
         * @param horario String a ser escrita no atributo horario.
         * @throw invalid_argument se horário estiver fora do intervalo 13:00 e 17:00.
         */
@@ -31,7 +35,7 @@ class Horario
 
         /**
         * @brief Escreve valor no atributo horario, se o valor for válido.
-        * @details Para ser válido o valor horário deve estar entre 13:00 e 17:00
+        * @details Para ser válido, o valor horário deve estar entre 13:00 e 17:00
         * @param horario String a ser escrita no atributo horario.
         * @throw invalid_argument se horário estiver fora do intervalo 13:00 e 17:00.
         */
@@ -48,7 +52,7 @@ class Horario
 
         /**
         * @brief Valida string horario, verificando se esta no formato correto e no range permitido.
-        * @details Para ser válido o valor horário deve estar entre 13:00 e 17:00
+        * @details Para ser válido, o valor horário deve estar entre 13:00 e 17:00
         * @param horario String a ser validada.
         * @throw invalid_argument se horário estiver fora do intervalo 13:00 e 17:00.
         */

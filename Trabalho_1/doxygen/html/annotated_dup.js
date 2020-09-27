@@ -16,8 +16,6 @@ var annotated_dup =
     [ "Prazo", "class_prazo.html", "class_prazo" ],
     [ "Senha", "class_senha.html", "class_senha" ],
     [ "Taxa", "class_taxa.html", "class_taxa" ],
-    [ "TestHorario", "class_test_horario.html", "class_test_horario" ],
-    [ "TestPrazo", "class_test_prazo.html", "class_test_prazo" ],
     [ "ValorDeAplicacao", "class_valor_de_aplicacao.html", "class_valor_de_aplicacao" ],
     [ "ValorMinimo", "class_valor_minimo.html", "class_valor_minimo" ]
 ];

@@ -3,6 +3,7 @@
 TestCEP::TestCEP(){
     cep = new CEP();
     estado = SUCESSO;
+    nome_dominio = "CEP";
 }
 
 TestCEP::~TestCEP(){

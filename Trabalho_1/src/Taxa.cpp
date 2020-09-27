@@ -6,25 +6,25 @@ Taxa::Taxa()
 }
 
 
-Taxa::Taxa(int taxa){
+Taxa::Taxa(float taxa){
     valida(taxa);
     this->taxa = taxa;
 }
 
 
-int Taxa::getTaxa(){
+float Taxa::getTaxa(){
     return taxa;
 }
 
 
-void Taxa::valida(int taxa){
+void Taxa::valida(float taxa){
     if(taxa<MIN_TAXA || taxa>MAX_TAXA){
         throw std::invalid_argument("Taxa invalida.");
     }
 }
 
 
-void Taxa::setTaxa(int taxa){
+void Taxa::setTaxa(float taxa){
     valida(taxa);
     this->taxa = taxa;
 }

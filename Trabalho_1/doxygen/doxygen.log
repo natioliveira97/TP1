@@ -1,6 +1,7 @@
 warning: The selected output language "portuguese" has not been updated
 since release 1.8.19.  As a result some sentences may appear in English.
 
-/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CEP.h:35: warning: documented empty return type of CEP::setCEP
-/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Classe.h:24: warning: documented empty return type of Classe::setClasse
-/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAgencia.h:24: warning: documented empty return type of CodigoDeAgencia::setCodigoDeAgencia
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Emissor.h:29: warning: argument 'codigo' of command @param is not found in the argument list of Emissor::setEmissor(std::string emissor)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Emissor.h:38: warning: The following parameter of Emissor::setEmissor(std::string emissor) is not documented:
+  parameter 'emissor'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Endereco.h:45: warning: argument 'endereco' of command @param is not found in the argument list of Endereco::setEndereco(std::string)

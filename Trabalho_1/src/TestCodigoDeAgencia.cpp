@@ -3,6 +3,7 @@
 TestCodigoDeAgencia::TestCodigoDeAgencia(){
     codigo = new CodigoDeAgencia();
     estado = SUCESSO;
+    nome_dominio = "CodigoDeAgencia";
 }
 
 TestCodigoDeAgencia::~TestCodigoDeAgencia(){

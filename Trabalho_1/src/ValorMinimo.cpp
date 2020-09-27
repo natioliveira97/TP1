@@ -12,19 +12,19 @@ ValorMinimo::ValorMinimo(float valor){
 }
 
 
-float ValorMinimo::getValor(){
+float ValorMinimo::getValorMinimo(){
     return valor;
 }
 
 void ValorMinimo::valida(float valor){
-    // verifica se o valor pertence à lista
+    // Verifica se o valor pertence à lista
     if(!std::binary_search(VALORES.begin(), VALORES.end(), valor)){
         throw std::invalid_argument("Valor minimo invalido.");
     }
 }
 
 
-void ValorMinimo::setValor(float valor){
+void ValorMinimo::setValorMinimo(float valor){
     valida(valor);
     this->valor = valor;
 }

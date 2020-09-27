@@ -23,6 +23,7 @@ int Prazo::getPrazo(){
 
 
 void Prazo::valida(int prazo){
+
     // Verifica se o prazo pertence à lista
     if(!std::binary_search(PRAZOS.begin(), PRAZOS.end(), prazo)){
         throw std::invalid_argument("Prazo invalido.");

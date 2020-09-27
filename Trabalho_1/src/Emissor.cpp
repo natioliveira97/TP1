@@ -17,6 +17,12 @@ void Emissor::valida(std::string emissor){
     std::regex formato = std::regex("^.{5,50}$");
 
     if(!regex_match(emissor, formato)){
+            throw std::invalid_argument("Emissor com tamanho invalido.");
+    }
+
+    formato = std::regex("^[ ]?([[:upper:]0-9][[:alnum:]]*[. -]?)+$");
+
+    if(!regex_match(emissor, formato)){
             throw std::invalid_argument("Emissor com formato invalido.");
     }
 }

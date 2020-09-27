@@ -3,6 +3,7 @@
 TestCPF::TestCPF(){
     cpf = new CPF();
     estado = SUCESSO;
+    nome_dominio = "CPF";
 }
 
 TestCPF::~TestCPF(){

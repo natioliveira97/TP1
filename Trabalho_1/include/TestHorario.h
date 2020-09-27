@@ -10,8 +10,6 @@
 class TestHorario: public BaseTest
 {
     public:
-        static const int SUCESSO = 1;
-        static const int FALHA = 0;
         TestHorario();
         ~TestHorario();
 

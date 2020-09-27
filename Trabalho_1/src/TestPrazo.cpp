@@ -2,6 +2,8 @@
 
 TestPrazo::TestPrazo(){
     prazo = new Prazo();
+    estado = SUCESSO;
+    nome_dominio = "Prazo";
 }
 
 TestPrazo::~TestPrazo(){

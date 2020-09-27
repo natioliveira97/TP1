@@ -3,6 +3,7 @@
 TestCodigoDeBanco::TestCodigoDeBanco(){
     codigo = new CodigoDeBanco();
     estado = SUCESSO;
+    nome_dominio = "CodigoDeBanco";
 }
 
 TestCodigoDeBanco::~TestCodigoDeBanco(){

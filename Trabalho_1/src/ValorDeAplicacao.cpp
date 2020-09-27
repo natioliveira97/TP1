@@ -12,7 +12,7 @@ ValorDeAplicacao::ValorDeAplicacao(float valor){
 }
 
 
-float ValorDeAplicacao::getValor(){
+float ValorDeAplicacao::getValorDeAplicacao(){
     return valor;
 }
 
@@ -24,7 +24,7 @@ void ValorDeAplicacao::valida(float valor){
 }
 
 
-void ValorDeAplicacao::setValor(float valor){
+void ValorDeAplicacao::setValorDeAplicacao(float valor){
     valida(valor);
     this->valor = valor;
 }

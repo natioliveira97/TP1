@@ -2,6 +2,9 @@
 
 TestHorario::TestHorario(){
     horario = new Horario();
+    estado = SUCESSO;
+    nome_dominio = "Horario";
+
 }
 
 TestHorario::~TestHorario(){

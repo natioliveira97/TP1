@@ -3,6 +3,7 @@
 TestCodigoDeProduto::TestCodigoDeProduto(){
     codigo = new CodigoDeProduto();
     estado = SUCESSO;
+    nome_dominio = "CodigoDeProduto";
 }
 
 TestCodigoDeProduto::~TestCodigoDeProduto(){
