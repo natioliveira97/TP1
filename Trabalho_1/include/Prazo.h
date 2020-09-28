@@ -2,6 +2,8 @@
 #define PRAZO_H
 
 #include <vector>
+#include <algorithm>
+#include <stdexcept>
 
 /**
 * @file Prazo.h

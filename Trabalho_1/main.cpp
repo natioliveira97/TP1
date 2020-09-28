@@ -38,6 +38,7 @@ int main()
     test_vector.push_back(new TestCodigoDeAgencia());
     test_vector.push_back(new TestCodigoDeAplicacao());
     test_vector.push_back(new TestCodigoDeBanco());
+    test_vector.push_back(new TestCodigoDeProduto());
     test_vector.push_back(new TestCPF());
     test_vector.push_back(new TestData());
     test_vector.push_back(new TestEmissor());

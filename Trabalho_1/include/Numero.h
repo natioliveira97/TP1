@@ -54,6 +54,15 @@ class Numero
         std::string numero;
 
         /**
+        * @brief Verifica se o dígito verificador é válido.
+        * @details Para ser válido, o dígito verificador deve corresponder a onze menos
+        * o resto da divisão por onze de um valor apropriado. Esse valor é calculado multiplicando
+        * os dígitos antes do traço por 7,6,5,4,3,2 e somando os resultados.
+        * @param numero Valor a ser verificado.
+        */
+        void validaDigitoVerificador(std::string);
+
+        /**
         * @brief Verifica se o numero é válido.
         * @details Para ser válido, o numero fornecido deve estar no formato XXXXXX-Y onde cada X é dígito (0 – 9)
         * e Y é dígito verificador calculado por meio de algorítmo apropriado.
