@@ -6,6 +6,12 @@ int CEP::getCEP(){
     return cep;
 }
 
+CEP::CEP(int cep){
+    valida(cep);
+    this->cep = cep;
+}
+
+
 std::string CEP::getCidade(){
     for(int i = 0; i < INTERVALOS.size(); ++i){
         if(cep >= INTERVALOS[i][0] && cep <= INTERVALOS[i][1]){

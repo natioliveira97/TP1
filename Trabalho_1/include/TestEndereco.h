@@ -3,8 +3,8 @@
 
 
 #include <string>
-#include <BaseTest.h>
-#include <Endereco.h>
+#include "BaseTest.h"
+#include "Endereco.h"
 
 class TestEndereco: public BaseTest
 {

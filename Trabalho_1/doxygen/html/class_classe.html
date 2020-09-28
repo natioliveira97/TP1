@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Trabalho_1: Referência à classe Classe</title>
+<title>Plataforma de Investimentos: Referência à classe Classe</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Trabalho_1
+   <div id="projectname">Plataforma de Investimentos
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
   </td>
  </tr>
@@ -99,6 +101,9 @@ Membros públicos</h2></td></tr>
 <tr class="memitem:a707a7d41c73e8b7981ed6413fc3989fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_classe.html#a707a7d41c73e8b7981ed6413fc3989fd">Classe</a> ()</td></tr>
 <tr class="memdesc:a707a7d41c73e8b7981ed6413fc3989fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor default.  <a href="class_classe.html#a707a7d41c73e8b7981ed6413fc3989fd">Mais...</a><br /></td></tr>
 <tr class="separator:a707a7d41c73e8b7981ed6413fc3989fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade9547f2a257ae8b996dbe21df4b4e2d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_classe.html#ade9547f2a257ae8b996dbe21df4b4e2d">Classe</a> (std::string)</td></tr>
+<tr class="memdesc:ade9547f2a257ae8b996dbe21df4b4e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor que inicializa classe com um valor.  <a href="class_classe.html#ade9547f2a257ae8b996dbe21df4b4e2d">Mais...</a><br /></td></tr>
+<tr class="separator:ade9547f2a257ae8b996dbe21df4b4e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ffdc5ca56ffb487fa62c6527dc19c6a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_classe.html#a9ffdc5ca56ffb487fa62c6527dc19c6a">setClasse</a> (std::string)</td></tr>
 <tr class="memdesc:a9ffdc5ca56ffb487fa62c6527dc19c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escrita do valor em classe, se válido.  <a href="class_classe.html#a9ffdc5ca56ffb487fa62c6527dc19c6a">Mais...</a><br /></td></tr>
 <tr class="separator:a9ffdc5ca56ffb487fa62c6527dc19c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,7 +115,7 @@ Membros públicos</h2></td></tr>
 <div class="textblock"><p>Armazena a classe do produto de investimento. </p>
 </div><h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
 <a id="a707a7d41c73e8b7981ed6413fc3989fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a707a7d41c73e8b7981ed6413fc3989fd">&#9670;&nbsp;</a></span>Classe()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a707a7d41c73e8b7981ed6413fc3989fd">&#9670;&nbsp;</a></span>Classe() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,6 +131,38 @@ Membros públicos</h2></td></tr>
 
 <p>Construtor default. </p>
 <p>Inicializa o atributo classe como string vazia. </p>
+
+</div>
+</div>
+<a id="ade9547f2a257ae8b996dbe21df4b4e2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade9547f2a257ae8b996dbe21df4b4e2d">&#9670;&nbsp;</a></span>Classe() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Classe::Classe </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>classe</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor que inicializa classe com um valor. </p>
+<p>Para ser válida, a classe fornecida deve corresponder a uma das classes de investimento existentes. As classes existentes são "CDB", "LCA", "LCI", "FI" e "LC". </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">classe</td><td>String a ser escrita no atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Excepções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">invalid_argument</td><td>Se valor passado não for válido. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -182,17 +219,13 @@ Membros públicos</h2></td></tr>
 
 </div>
 </div>
-<hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
-<li><a class="el" href="_classe_8h_source.html">Classe.h</a></li>
-<li>Classe.cpp</li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_classe.html">Classe</a></li>
-    <li class="footer">Gerado em Domingo, 27 de Setembro de 2020 19:45:18 para Trabalho_1 por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Gerado em Segunda, 28 de Setembro de 2020 18:06:56 para Plataforma de Investimentos por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

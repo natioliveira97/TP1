@@ -14,6 +14,9 @@
 * inteiro.
 */
 
+/**
+* @brief Armazena um prazo.
+*/
 class Prazo
 {
     public:

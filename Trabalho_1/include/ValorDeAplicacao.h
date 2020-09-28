@@ -11,6 +11,10 @@
 * Esse arquivo contém a implementação da classe de domínio ValorDeAplicacao. Essa classe armazena o atributo valor no formato
 * ponto flutuante.
 */
+
+/**
+* @brief Armazena um valor para aplicação.
+*/
 class ValorDeAplicacao
 {
     public:

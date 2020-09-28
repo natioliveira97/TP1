@@ -2,8 +2,8 @@
 #define TESTDATA_H
 
 #include <string>
-#include <BaseTest.h>
-#include <Data.h>
+#include "BaseTest.h"
+#include "Data.h"
 
 class TestData: public BaseTest
 {

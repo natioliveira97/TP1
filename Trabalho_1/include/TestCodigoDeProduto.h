@@ -2,8 +2,8 @@
 #define TESTCODIGODEPRODUTO_H
 
 #include <string>
-#include <BaseTest.h>
-#include <CodigoDeProduto.h>
+#include "BaseTest.h"
+#include "CodigoDeProduto.h"
 
 class TestCodigoDeProduto: public BaseTest
 {

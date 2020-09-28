@@ -2,9 +2,8 @@
 #define TESTTAXA_H
 
 
-#include <string>
-#include <BaseTest.h>
-#include <Taxa.h>
+#include "BaseTest.h"
+#include "Taxa.h"
 
 class TestTaxa: public BaseTest
 {

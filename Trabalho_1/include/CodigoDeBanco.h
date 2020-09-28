@@ -27,6 +27,17 @@ class CodigoDeBanco
         CodigoDeBanco();
 
         /**
+        * @brief Construtor que inicializa codigo com um valor.
+        * @details Para ser válido, o código fornecido deve corresponder ao código dos cinco maiores bancos
+        *          brasilieros, são eles: "Banco Itau Unibanco", "Banco do Brasil", "Banco Bradesco",
+        *          "Caixa Economica Federal" e "Banco Santander".
+        *          Seus respectivos códigos são: "341", "001", "237", "104" e "033".
+        * @param codigo String a ser escrita no atributo.
+        * @throw invalid_argument Se valor passado não for válido.
+        */
+        CodigoDeBanco(std::string);
+
+        /**
         * @brief Escrita do valor em codigo, se válido.
         * @details Para ser válido, o código fornecido deve corresponder ao código dos cinco maiores bancos
         *          brasilieros, são eles: "Banco Itau Unibanco", "Banco do Brasil", "Banco Bradesco",

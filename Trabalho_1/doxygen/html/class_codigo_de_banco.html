@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Trabalho_1: Referência à classe CodigoDeBanco</title>
+<title>Plataforma de Investimentos: Referência à classe CodigoDeBanco</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Trabalho_1
+   <div id="projectname">Plataforma de Investimentos
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
   </td>
  </tr>
@@ -99,6 +101,9 @@ Membros públicos</h2></td></tr>
 <tr class="memitem:aebc998705d7d4f720c74ae33a57281e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_codigo_de_banco.html#aebc998705d7d4f720c74ae33a57281e6">CodigoDeBanco</a> ()</td></tr>
 <tr class="memdesc:aebc998705d7d4f720c74ae33a57281e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor default.  <a href="class_codigo_de_banco.html#aebc998705d7d4f720c74ae33a57281e6">Mais...</a><br /></td></tr>
 <tr class="separator:aebc998705d7d4f720c74ae33a57281e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09bce2de9e5bf69ee61c7e9f8d63e075"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_codigo_de_banco.html#a09bce2de9e5bf69ee61c7e9f8d63e075">CodigoDeBanco</a> (std::string)</td></tr>
+<tr class="memdesc:a09bce2de9e5bf69ee61c7e9f8d63e075"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor que inicializa codigo com um valor.  <a href="class_codigo_de_banco.html#a09bce2de9e5bf69ee61c7e9f8d63e075">Mais...</a><br /></td></tr>
+<tr class="separator:a09bce2de9e5bf69ee61c7e9f8d63e075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeb3f9291821c009d0b5fca1e5f8e30a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_codigo_de_banco.html#abeb3f9291821c009d0b5fca1e5f8e30a">setCodigoDeBanco</a> (std::string)</td></tr>
 <tr class="memdesc:abeb3f9291821c009d0b5fca1e5f8e30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escrita do valor em codigo, se válido.  <a href="class_codigo_de_banco.html#abeb3f9291821c009d0b5fca1e5f8e30a">Mais...</a><br /></td></tr>
 <tr class="separator:abeb3f9291821c009d0b5fca1e5f8e30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -113,7 +118,7 @@ Membros públicos</h2></td></tr>
 <div class="textblock"><p>Armazena o código de Banco e seu respectivo Banco. </p>
 </div><h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
 <a id="aebc998705d7d4f720c74ae33a57281e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebc998705d7d4f720c74ae33a57281e6">&#9670;&nbsp;</a></span>CodigoDeBanco()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aebc998705d7d4f720c74ae33a57281e6">&#9670;&nbsp;</a></span>CodigoDeBanco() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,6 +134,38 @@ Membros públicos</h2></td></tr>
 
 <p>Construtor default. </p>
 <p>Inicializa o atributo codigo como string vazia. </p>
+
+</div>
+</div>
+<a id="a09bce2de9e5bf69ee61c7e9f8d63e075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09bce2de9e5bf69ee61c7e9f8d63e075">&#9670;&nbsp;</a></span>CodigoDeBanco() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CodigoDeBanco::CodigoDeBanco </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>codigo</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construtor que inicializa codigo com um valor. </p>
+<p>Para ser válido, o código fornecido deve corresponder ao código dos cinco maiores bancos brasilieros, são eles: "Banco Itau Unibanco", "Banco do Brasil", "Banco Bradesco", "Caixa Economica Federal" e "Banco Santander". Seus respectivos códigos são: "341", "001", "237", "104" e "033". </p><dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">codigo</td><td>String a ser escrita no atributo. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Excepções</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">invalid_argument</td><td>Se valor passado não for válido. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -205,17 +242,13 @@ Membros públicos</h2></td></tr>
 
 </div>
 </div>
-<hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
-<li><a class="el" href="_codigo_de_banco_8h_source.html">CodigoDeBanco.h</a></li>
-<li>CodigoDeBanco.cpp</li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_codigo_de_banco.html">CodigoDeBanco</a></li>
-    <li class="footer">Gerado em Domingo, 27 de Setembro de 2020 19:45:18 para Trabalho_1 por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Gerado em Segunda, 28 de Setembro de 2020 18:06:56 para Plataforma de Investimentos por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

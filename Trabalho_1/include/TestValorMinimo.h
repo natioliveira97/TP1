@@ -1,8 +1,8 @@
 #ifndef TESTVALORMINIMO_H
 #define TESTVALORMINIMO_H
 
-#include <BaseTest.h>
-#include <ValorMinimo.h>
+#include "BaseTest.h"
+#include "ValorMinimo.h"
 
 class TestValorMinimo: public BaseTest
 {

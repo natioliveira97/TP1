@@ -1,8 +1,8 @@
 #ifndef TESTPRAZO_H
 #define TESTPRAZO_H
 
-#include <BaseTest.h>
-#include <Prazo.h>
+#include "BaseTest.h"
+#include "Prazo.h"
 
 class TestPrazo: public BaseTest
 {

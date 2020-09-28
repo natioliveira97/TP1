@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.20"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Trabalho_1: Referência à classe CPF</title>
+<title>Plataforma de Investimentos: Referência à classe CPF</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -24,8 +24,10 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Trabalho_1
+   <div id="projectname">Plataforma de Investimentos
+   &#160;<span id="projectnumber">1.0.0</span>
    </div>
   </td>
  </tr>
@@ -89,7 +91,7 @@ $(document).ready(function(){initNavTree('class_c_p_f.html',''); initResizable()
 </div><!--header-->
 <div class="contents">
 
-<p>Armazena o <a class="el" href="class_c_p_f.html" title="Armazena o CPF.">CPF</a>.  
+<p>Armazena um cpf.  
  <a href="class_c_p_f.html#details">Mais...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_c_p_f_8h_source.html">CPF.h</a>&gt;</code></p>
@@ -99,6 +101,9 @@ Membros públicos</h2></td></tr>
 <tr class="memitem:a1bf36231dd7d0e07194da539c8f539b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_f.html#a1bf36231dd7d0e07194da539c8f539b7">CPF</a> ()</td></tr>
 <tr class="memdesc:a1bf36231dd7d0e07194da539c8f539b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construtor default.  <a href="class_c_p_f.html#a1bf36231dd7d0e07194da539c8f539b7">Mais...</a><br /></td></tr>
 <tr class="separator:a1bf36231dd7d0e07194da539c8f539b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88ea19386ded427b947e84d587269907"><td class="memItemLeft" align="right" valign="top"><a id="a88ea19386ded427b947e84d587269907"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CPF</b> (std::string)</td></tr>
+<tr class="separator:a88ea19386ded427b947e84d587269907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88db338f81098d8ec1cf3683455a70a2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_c_p_f.html#a88db338f81098d8ec1cf3683455a70a2">setCPF</a> (std::string)</td></tr>
 <tr class="memdesc:a88db338f81098d8ec1cf3683455a70a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escrita do valor em cpf, se válido.  <a href="class_c_p_f.html#a88db338f81098d8ec1cf3683455a70a2">Mais...</a><br /></td></tr>
 <tr class="separator:a88db338f81098d8ec1cf3683455a70a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -107,7 +112,7 @@ Membros públicos</h2></td></tr>
 <tr class="separator:afdfa2c340d8fd076fc74a7070b4a8af7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição detalhada</h2>
-<div class="textblock"><p>Armazena o <a class="el" href="class_c_p_f.html" title="Armazena o CPF.">CPF</a>. </p>
+<div class="textblock"><p>Armazena um cpf. </p>
 </div><h2 class="groupheader">Documentação dos Construtores &amp; Destrutor</h2>
 <a id="a1bf36231dd7d0e07194da539c8f539b7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1bf36231dd7d0e07194da539c8f539b7">&#9670;&nbsp;</a></span>CPF()</h2>
@@ -125,7 +130,7 @@ Membros públicos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Construtor default. </p>
-<p>Inicializa o atributo cpf com a string '000.000.000-00'. </p>
+<p>Inicializa o atributo cpf com a string vazia. </p>
 
 </div>
 </div>
@@ -167,7 +172,10 @@ Membros públicos</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Escrita do valor em cpf, se válido. </p>
-<p>Para ser válido, o cpf fornecido deve estar no formato 'XXX.XXX.XXX-XX' e os dígitos verificadores devem ser válidos de acordo com a legislação brasileira. Os dígitos verificadores correspondem aos dois dígitos após o traço "-". </p><dl class="params"><dt>Parâmetros</dt><dd>
+<p>Para ser válido, o cpf fornecido deve estar no formato 'XXX.XXX.XXX-YY' e os dígitos verificadores devem ser válidos de acordo com a legislação brasileira. Os dígitos verificadores correspondem aos dois dígitos após o traço "-" e devem ser calculados de acordo com: </p><div class="image">
+<img src="eq_cpf.jpg" alt=""/>
+</div>
+<dl class="params"><dt>Parâmetros</dt><dd>
   <table class="params">
     <tr><td class="paramname">cpf</td><td>String a ser escrita no atributo. </td></tr>
   </table>
@@ -182,17 +190,13 @@ Membros públicos</h2></td></tr>
 
 </div>
 </div>
-<hr/>A documentação para esta classe foi gerada a partir dos seguintes ficheiros:<ul>
-<li><a class="el" href="_c_p_f_8h_source.html">CPF.h</a></li>
-<li>CPF.cpp</li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="class_c_p_f.html">CPF</a></li>
-    <li class="footer">Gerado em Domingo, 27 de Setembro de 2020 19:45:18 para Trabalho_1 por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+    <li class="footer">Gerado em Segunda, 28 de Setembro de 2020 18:06:56 para Plataforma de Investimentos por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
   </ul>
 </div>
 </body>

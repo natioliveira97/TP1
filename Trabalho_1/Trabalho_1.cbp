@@ -34,6 +34,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/BaseTest.h" />
 		<Unit filename="include/CEP.h" />
 		<Unit filename="include/CPF.h" />
 		<Unit filename="include/Classe.h" />
@@ -50,10 +51,28 @@
 		<Unit filename="include/Prazo.h" />
 		<Unit filename="include/Senha.h" />
 		<Unit filename="include/Taxa.h" />
+		<Unit filename="include/TestCEP.h" />
+		<Unit filename="include/TestCPF.h" />
+		<Unit filename="include/TestClasse.h" />
+		<Unit filename="include/TestCodigoDeAgencia.h" />
+		<Unit filename="include/TestCodigoDeAplicacao.h" />
+		<Unit filename="include/TestCodigoDeBanco.h" />
+		<Unit filename="include/TestCodigoDeProduto.h" />
+		<Unit filename="include/TestData.h" />
+		<Unit filename="include/TestEmissor.h" />
+		<Unit filename="include/TestEndereco.h" />
 		<Unit filename="include/TestHorario.h" />
+		<Unit filename="include/TestNome.h" />
+		<Unit filename="include/TestNumero.h" />
+		<Unit filename="include/TestPrazo.h" />
+		<Unit filename="include/TestSenha.h" />
+		<Unit filename="include/TestTaxa.h" />
+		<Unit filename="include/TestValorDeAplicacao.h" />
+		<Unit filename="include/TestValorMinimo.h" />
 		<Unit filename="include/ValorDeAplicacao.h" />
 		<Unit filename="include/ValorMinimo.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/BaseTest.cpp" />
 		<Unit filename="src/CEP.cpp" />
 		<Unit filename="src/CPF.cpp" />
 		<Unit filename="src/Classe.cpp" />
@@ -70,7 +89,24 @@
 		<Unit filename="src/Prazo.cpp" />
 		<Unit filename="src/Senha.cpp" />
 		<Unit filename="src/Taxa.cpp" />
+		<Unit filename="src/TestCEP.cpp" />
+		<Unit filename="src/TestCPF.cpp" />
+		<Unit filename="src/TestClasse.cpp" />
+		<Unit filename="src/TestCodigoDeAgencia.cpp" />
+		<Unit filename="src/TestCodigoDeAplicacao.cpp" />
+		<Unit filename="src/TestCodigoDeBanco.cpp" />
+		<Unit filename="src/TestCodigoDeProduto.cpp" />
+		<Unit filename="src/TestData.cpp" />
+		<Unit filename="src/TestEmissor.cpp" />
+		<Unit filename="src/TestEndereco.cpp" />
 		<Unit filename="src/TestHorario.cpp" />
+		<Unit filename="src/TestNome.cpp" />
+		<Unit filename="src/TestNumero.cpp" />
+		<Unit filename="src/TestPrazo.cpp" />
+		<Unit filename="src/TestSenha.cpp" />
+		<Unit filename="src/TestTaxa.cpp" />
+		<Unit filename="src/TestValorDeAplicacao.cpp" />
+		<Unit filename="src/TestValorMinimo.cpp" />
 		<Unit filename="src/ValorDeAplicacao.cpp" />
 		<Unit filename="src/ValorMinimo.cpp" />
 		<Extensions>
@@ -83,6 +119,9 @@
 				<doxyfile_dot />
 				<general use_at_in_tags="1" />
 			</DoxyBlocks>
+			<envvars />
+			<code_completion />
+			<debugger />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

@@ -12,6 +12,9 @@
 * ponto flutuante.
 */
 
+/**
+* @brief Armazena uma taxa.
+*/
 class Taxa
 {
     public:

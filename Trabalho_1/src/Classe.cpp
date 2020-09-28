@@ -4,6 +4,11 @@ Classe::Classe(){
     classe = "";
 }
 
+Classe::Classe(std::string classe){
+    valida(classe);
+    this->classe = classe;
+}
+
 std::string Classe::getClasse(){
     return classe;
 }

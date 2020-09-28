@@ -1,8 +1,8 @@
 #ifndef TESTCEP_H
 #define TESTCEP_H
 
-#include <BaseTest.h>
-#include <CEP.h>
+#include "BaseTest.h"
+#include "CEP.h"
 #include <string>
 
 class TestCEP: public BaseTest

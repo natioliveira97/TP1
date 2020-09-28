@@ -3,8 +3,8 @@
 
 
 #include <string>
-#include <BaseTest.h>
-#include <Senha.h>
+#include "BaseTest.h"
+#include "Senha.h"
 
 class TestSenha: public BaseTest
 {

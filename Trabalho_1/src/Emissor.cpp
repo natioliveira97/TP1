@@ -4,6 +4,11 @@ Emissor::Emissor(){
     emissor = "";
 }
 
+Emissor::Emissor(std::string emissor){
+    valida(emissor);
+    this->emissor = emissor;
+}
+
 std::string Emissor::getEmissor(){
     return emissor;
 }

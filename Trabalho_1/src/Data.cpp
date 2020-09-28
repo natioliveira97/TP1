@@ -1,6 +1,13 @@
 #include "Data.h"
 
-Data::Data(){}
+Data::Data(){
+    data = "";
+}
+
+Data::Data(std::string data){
+    valida(data);
+    this->data = data;
+}
 
 std::string Data::getData(){
     return data;

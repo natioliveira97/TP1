@@ -2,8 +2,8 @@
 #define TESTCPF_H
 
 #include <string>
-#include <BaseTest.h>
-#include <CPF.h>
+#include "BaseTest.h"
+#include "CPF.h"
 
 class TestCPF: public BaseTest
 {

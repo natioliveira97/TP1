@@ -32,11 +32,10 @@ void Numero::validaDigitoVerificador(std::string numero){
     }
     digito_verificador = 11-digito_verificador%11;
 
-
     /**
      * Verificacao.
      */
-    if(digito_verificador != std::stoi(numero.substr(6, 1))){
+    if(digito_verificador != std::stoi(numero.substr(7, 1))){
         throw std::invalid_argument("Numero com digito verificador invalido.");
     }
 }

@@ -26,6 +26,15 @@ class CodigoDeAgencia
         CodigoDeAgencia();
 
         /**
+        * @brief Construtor que inicializa código com um valor.
+        * @details Para ser válido, o código fornecido deve possuir exatamente
+        *          quatro dígitos e ser diferente de '0000'.
+        * @param codigo String a ser escrita no atributo.
+        * @throw invalid_argument Se valor passado não for válido.
+        */
+        CodigoDeAgencia(std::string);
+
+        /**
         * @brief Escrita do valor em codigo, se válido.
         * @details Para ser válido, o código fornecido deve possuir exatamente
         *          quatro dígitos e ser diferente de '0000'.

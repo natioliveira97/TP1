@@ -24,10 +24,10 @@
 */
 var NAVTREE =
 [
-  [ "Trabalho_1", "index.html", [
+  [ "Plataforma de Investimentos", "index.html", [
+    [ "Documentação de Plataforma de Investimentos (Parte 1)", "index.html", null ],
     [ "Classes", "annotated.html", [
       [ "Lista de componentes", "annotated.html", "annotated_dup" ],
-      [ "Índice dos componentes", "classes.html", null ],
       [ "Componentes membro", "functions.html", [
         [ "Tudo", "functions.html", null ],
         [ "Funções", "functions_func.html", null ]

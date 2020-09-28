@@ -4,6 +4,12 @@ CodigoDeAgencia::CodigoDeAgencia(){
     codigo = "";
 }
 
+CodigoDeAgencia::CodigoDeAgencia(std::string codigo){
+    valida(codigo);
+    this->codigo = codigo;
+}
+
+
 std::string CodigoDeAgencia::getCodigoDeAgencia(){
     return codigo;
 }

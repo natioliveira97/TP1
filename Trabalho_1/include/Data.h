@@ -27,6 +27,16 @@ class Data
         */
         Data();
 
+
+        /**
+        * @brief Construtor que inicializa data com valor
+        * @details A data está no formato dia/mês/ano e para ser válida precisa estar
+        *          no período de 1/1/2020 a 31/12/2099.
+        * @param data String a ser escrita no atributo.
+        * @throw invalid_argument Se valor passado não estiver no período de 1/1/2020 a 31/12/2099.
+        */
+        Data(std::string);
+
         /**
         * @brief Escrita do valor em data, se válido.
         * @details A data está no formato dia/mês/ano e para ser válida precisa estar

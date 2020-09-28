@@ -2,8 +2,8 @@
 #define TESTCODIGODEAPLICACAO_H
 
 #include <string>
-#include <BaseTest.h>
-#include <CodigoDeAplicacao.h>
+#include "BaseTest.h"
+#include "CodigoDeAplicacao.h"
 
 class TestCodigoDeAplicacao: public BaseTest
 {

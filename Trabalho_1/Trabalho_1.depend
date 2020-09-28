@@ -36,7 +36,7 @@
 	<BaseTest.h>
 	<vector>
 
-1600134196 
+1601312593 
 
 1600129432 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CPF.cpp
 	"CPF.h"
@@ -168,7 +168,7 @@
 	"Emissor.h"
 	"Emissor.h"
 
-1600799577 "
+1601312593 "
 
 1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Emissor.h
 	<string>
@@ -213,6 +213,8 @@
 	<string>
 	<vector>
 	<stdexcept>
+
+1601312593 >
 
 1600644116 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\codigodeagencia.h
 	<string>
@@ -279,7 +281,7 @@
 	"Endereco.h"
 	"Endereco.h"
 
-1600804258 h"
+1601312593 h"
 
 1601246712 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Endereco.h
 	<string>
@@ -288,8 +290,6 @@
 	<string>
 	<regex>
 	<stdexcept>
-
-1600806137 >
 
 1601241352 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Horario.cpp
 	"Horario.h"
@@ -351,7 +351,7 @@
 	"ValorDeAplicacao.h"
 	"ValorDeAplicacao.h"
 
-1599858436 licacao.h"
+1601312593 licacao.h"
 
 1601246712 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/ValorDeAplicacao.h
 	<stdexcept>
@@ -369,7 +369,7 @@
 	"ValorMinimo.h"
 	"ValorMinimo.h"
 
-1600799577 mo.h"
+1601312593 mo.h"
 
 1601244158 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/ValorMinimo.h
 	<vector>
@@ -383,7 +383,7 @@
 	"TestHorario.h"
 	"TestHorario.h"
 
-1600804950 io.h"
+1601312593 io.h"
 
 1601240315 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestHorario.h
 	<string>
@@ -397,7 +397,7 @@
 	"TestPrazo.h"
 	"TestPrazo.h"
 
-1600801480 .h"
+1601312593 .h"
 
 1601242036 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestPrazo.h
 	<BaseTest.h>
@@ -444,6 +444,8 @@
 1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestClasse.cpp
 	"TestClasse.h"
 
+1601312593 e.h"
+
 1601246712 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestClasse.h
 	<string>
 	<BaseTest.h>
@@ -452,26 +454,38 @@
 1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestCodigoDeAgencia.cpp
 	"TestCodigoDeAgencia.h"
 
+1601312593 oDeAgencia.h"
+
 1601246713 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestCodigoDeAgencia.h
 	<string>
 	<BaseTest.h>
 	<CodigoDeAgencia.h>
 
+1600814222 gencia.h>
+
 1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestCodigoDeBanco.cpp
 	"TestCodigoDeBanco.h"
+
+1601312593 oDeBanco.h"
 
 1601240315 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestCodigoDeBanco.h
 	<string>
 	<BaseTest.h>
 	<CodigoDeBanco.h>
 
+1600810702 anco.h>
+
 1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestCodigoDeProduto.cpp
 	"TestCodigoDeProduto.h"
+
+1601312593 oDeProduto.h"
 
 1601240315 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestCodigoDeProduto.h
 	<string>
 	<BaseTest.h>
 	<CodigoDeProduto.h>
+
+1600811151 roduto.h>
 
 1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestCPF.cpp
 	"TestCPF.h"
@@ -481,13 +495,19 @@
 	<BaseTest.h>
 	<CPF.h>
 
+1601312593 h>
+
 1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestCodigoDeAplicacao.cpp
 	"TestCodigoDeAplicacao.h"
+
+1601312593 oDeAplicacao.h"
 
 1601240315 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestCodigoDeAplicacao.h
 	<string>
 	<BaseTest.h>
 	<CodigoDeAplicacao.h>
+
+1601312593 plicacao.h>
 
 1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestData.cpp
 	"TestData.h"
@@ -516,6 +536,8 @@
 1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestNumero.cpp
 	"TestNumero.h"
 
+1601312593 o.h"
+
 1601240315 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestNumero.h
 	<BaseTest.h>
 	<Numero.h>
@@ -523,16 +545,24 @@
 1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestValorMinimo.cpp
 	"TestValorMinimo.h"
 
+1601312593 Minimo.h"
+
 1601243434 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestValorMinimo.h
 	<BaseTest.h>
 	<ValorMinimo.h>
 
+1601312593 mo.h>
+
 1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestValorDeAplicacao.cpp
 	"TestValorDeAplicacao.h"
+
+1601312593 DeAplicacao.h"
 
 1601243332 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestValorDeAplicacao.h
 	<BaseTest.h>
 	<ValorDeAplicacao.h>
+
+1601312593 licacao.h>
 
 1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestNome.cpp
 	"TestNome.h"
@@ -558,6 +588,8 @@
 
 1601240026 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestEmissor.cpp
 	"TestEmissor.h"
+
+1601312593 or.h"
 
 1601312593 c:\users\livia\documents\unb\tp1\tp1\trabalho_1\include\testcep.h
 	<BaseTest.h>
@@ -752,4 +784,312 @@
 
 1601312593 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\testvalorminimo.cpp
 	"TestValorMinimo.h"
+
+1601328330 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
+	<iostream>
+	<TestCEP.h>
+	<TestClasse.h>
+	<TestCodigoDeAgencia.h>
+	<TestCodigoDeAplicacao.h>
+	<TestCodigoDeBanco.h>
+	<TestCodigoDeProduto.h>
+	<TestCPF.h>
+	<TestData.h>
+	<TestEmissor.h>
+	<TestEndereco.h>
+	<TestHorario.h>
+	<TestNome.h>
+	<TestNumero.h>
+	<TestPrazo.h>
+	<TestSenha.h>
+	<TestTaxa.h>
+	<TestValorDeAplicacao.h>
+	<TestValorMinimo.h>
+	<BaseTest.h>
+	<vector>
+
+1601329078 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestCEP.h
+	"BaseTest.h"
+	"CEP.h"
+	<string>
+
+1601246712 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/BaseTest.h
+	<string>
+
+1601326393 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CEP.h
+	<string>
+	<array>
+	<vector>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestClasse.h
+	<string>
+	"BaseTest.h"
+	"Classe.h"
+
+1601322576 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Classe.h
+	<string>
+	<vector>
+	<stdexcept>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestCodigoDeAgencia.h
+	<string>
+	"BaseTest.h"
+	"CodigoDeAgencia.h"
+
+1601322576 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAgencia.h
+	<string>
+	<regex>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestCodigoDeAplicacao.h
+	<string>
+	"BaseTest.h"
+	"CodigoDeAplicacao.h"
+
+1600799577 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeAplicacao.h
+	<string>
+	<regex>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestCodigoDeBanco.h
+	<string>
+	"BaseTest.h"
+	"CodigoDeBanco.h"
+
+1601322782 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeBanco.h
+	<regex>
+	<string>
+	<vector>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestCodigoDeProduto.h
+	<string>
+	"BaseTest.h"
+	"CodigoDeProduto.h"
+
+1601322798 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CodigoDeProduto.h
+	<string>
+	<regex>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestCPF.h
+	<string>
+	"BaseTest.h"
+	"CPF.h"
+
+1601326402 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/CPF.h
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestData.h
+	<string>
+	"BaseTest.h"
+	"Data.h"
+
+1601323648 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Data.h
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestEmissor.h
+	<string>
+	"BaseTest.h"
+	"Emissor.h"
+
+1601323655 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Emissor.h
+	<string>
+	<regex>
+	<iostream>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestEndereco.h
+	<string>
+	"BaseTest.h"
+	"Endereco.h"
+
+1601326532 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Endereco.h
+	<string>
+	<regex>
+	<stdexcept>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestHorario.h
+	<string>
+	"BaseTest.h"
+	"Horario.h"
+
+1601241525 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Horario.h
+	<string>
+	<regex>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestNome.h
+	<string>
+	"BaseTest.h"
+	"Nome.h"
+
+1601326402 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Nome.h
+	<string>
+	<regex>
+	<stdexcept>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestNumero.h
+	"BaseTest.h"
+	"Numero.h"
+
+1601326535 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Numero.h
+	<string>
+	<regex>
+	<stdexcept>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestPrazo.h
+	"BaseTest.h"
+	"Prazo.h"
+
+1601326402 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Prazo.h
+	<vector>
+	<algorithm>
+	<stdexcept>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestSenha.h
+	<string>
+	"BaseTest.h"
+	"Senha.h"
+
+1601326402 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Senha.h
+	<string>
+	<regex>
+	<algorithm>
+	<stdexcept>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestTaxa.h
+	"BaseTest.h"
+	"Taxa.h"
+
+1601326402 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Taxa.h
+	<stdexcept>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestValorDeAplicacao.h
+	"BaseTest.h"
+	"ValorDeAplicacao.h"
+
+1601326535 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/ValorDeAplicacao.h
+	<stdexcept>
+
+1601329250 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestValorMinimo.h
+	"BaseTest.h"
+	"ValorMinimo.h"
+
+1601326503 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/ValorMinimo.h
+	<vector>
+	<algorithm>
+	<stdexcept>
+
+1601246554 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/BaseTest.cpp
+	"BaseTest.h"
+
+1601322576 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Classe.cpp
+	"Classe.h"
+
+1601322576 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeAgencia.cpp
+	"CodigoDeAgencia.h"
+
+1600132344 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeAplicacao.cpp
+	"CodigoDeAplicacao.h"
+
+1601322782 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeBanco.cpp
+	"CodigoDeBanco.h"
+
+1601322782 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CodigoDeProduto.cpp
+	"CodigoDeProduto.h"
+
+1601323349 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CPF.cpp
+	"CPF.h"
+
+1601323648 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Data.cpp
+	"Data.h"
+
+1601323648 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Emissor.cpp
+	"Emissor.h"
+
+1601246415 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Endereco.cpp
+	"Endereco.h"
+
+1601241352 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Horario.cpp
+	"Horario.h"
+
+1601242257 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Prazo.cpp
+	"Prazo.h"
+
+1601242257 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Senha.cpp
+	"Senha.h"
+
+1601242665 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Taxa.cpp
+	"Taxa.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestCEP.cpp
+	"TestCEP.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestClasse.cpp
+	"TestClasse.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestCodigoDeAgencia.cpp
+	"TestCodigoDeAgencia.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestCodigoDeAplicacao.cpp
+	"TestCodigoDeAplicacao.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestCodigoDeBanco.cpp
+	"TestCodigoDeBanco.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestCodigoDeProduto.cpp
+	"TestCodigoDeProduto.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestCPF.cpp
+	"TestCPF.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestData.cpp
+	"TestData.h"
+
+1601240026 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestEmissor.cpp
+	"TestEmissor.h"
+
+1601245935 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestEndereco.cpp
+	"TestEndereco.h"
+	<iostream>
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestHorario.cpp
+	"TestHorario.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestNome.cpp
+	"TestNome.h"
+
+1601329000 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestNumero.cpp
+	"TestNumero.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestPrazo.cpp
+	"TestPrazo.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestSenha.cpp
+	"TestSenha.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestTaxa.cpp
+	"TestTaxa.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestValorDeAplicacao.cpp
+	"TestValorDeAplicacao.h"
+
+1601240315 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/TestValorMinimo.cpp
+	"TestValorMinimo.h"
+
+1601234182 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/ValorDeAplicacao.cpp
+	"ValorDeAplicacao.h"
+
+1601243434 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/ValorMinimo.cpp
+	"ValorMinimo.h"
+
+1601322291 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/CEP.cpp
+	"CEP.h"
+
+1601317081 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Nome.cpp
+	"Nome.h"
+
+1601328979 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Numero.cpp
+	"Numero.h"
 

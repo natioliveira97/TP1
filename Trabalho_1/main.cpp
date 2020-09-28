@@ -1,31 +1,59 @@
 #include <iostream>
 
-#include <TestCEP.h>
-#include <TestClasse.h>
-#include <TestCodigoDeAgencia.h>
-#include <TestCodigoDeAplicacao.h>
-#include <TestCodigoDeBanco.h>
-#include <TestCodigoDeProduto.h>
-#include <TestCPF.h>
-#include <TestData.h>
-#include <TestEmissor.h>
-#include <TestEndereco.h>
-#include <TestHorario.h>
-#include <TestNome.h>
-#include <TestNumero.h>
-#include <TestPrazo.h>
-#include <TestSenha.h>
-#include <TestTaxa.h>
-#include <TestValorDeAplicacao.h>
-#include <TestValorMinimo.h>
-#include <BaseTest.h>
+#include "TestCEP.h"
+#include "TestClasse.h"
+#include "TestCodigoDeAgencia.h"
+#include "TestCodigoDeAplicacao.h"
+#include "TestCodigoDeBanco.h"
+#include "TestCodigoDeProduto.h"
+#include "TestCPF.h"
+#include "TestData.h"
+#include "TestEmissor.h"
+#include "TestEndereco.h"
+#include "TestHorario.h"
+#include "TestNome.h"
+#include "TestNumero.h"
+#include "TestPrazo.h"
+#include "TestSenha.h"
+#include "TestTaxa.h"
+#include "TestValorDeAplicacao.h"
+#include "TestValorMinimo.h"
+#include "BaseTest.h"
 #include <vector>
 
 
 /**
-* @author Lívia Gomes Costa Fonseca
-* @author Natalia Oliveira Borges
+* @file main.c
 */
+
+/** @mainpage Documentação de Plataforma de Investimentos (Parte 1)
+ *
+ *  @author Lívia Gomes Costa Fonseca - 16/0034078
+ *  @author Natalia Oliveira Borges - 16/0015863
+ *
+ *  Essa documentação é referente à primeira parte de um projeto de plataforma de investimentos que engloba implementação,
+ *  teste e documentação das classes de domínios:
+ *  - CEP
+ *  - Classe
+ *  - CodigoDeAgencia
+ *  - CodigoDeAplicacao
+ *  - CodigoDeBanco
+ *  - CodigoDeProduto
+ *  - CPF
+ *  - Data
+ *  - Emissor
+ *  - Endereco
+ *  - Horario
+ *  - Nome
+ *  - Numero
+ *  - Prazo
+ *  - Senha
+ *  - Taxa
+ *  - ValorDeAplicacao
+ *  - ValorMinimo
+ *
+ *
+ */
 
 using namespace std;
 

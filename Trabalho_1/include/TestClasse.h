@@ -2,8 +2,8 @@
 #define TESTCLASSE_H
 
 #include <string>
-#include <BaseTest.h>
-#include <Classe.h>
+#include "BaseTest.h"
+#include "Classe.h"
 
 class TestClasse: public BaseTest
 {

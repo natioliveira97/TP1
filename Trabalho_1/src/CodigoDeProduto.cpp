@@ -4,6 +4,11 @@ CodigoDeProduto::CodigoDeProduto(){
     codigo = "";
 }
 
+CodigoDeProduto::CodigoDeProduto(std::string codigo){
+    valida(codigo);
+    this->codigo=codigo;
+}
+
 
 std::string CodigoDeProduto::getCodigoDeProduto(){
     return codigo;

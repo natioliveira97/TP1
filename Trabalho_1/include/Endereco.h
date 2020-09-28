@@ -15,7 +15,7 @@
 */
 
 /**
-* @brief Armazena um endereco.
+* @brief Armazena um endereço.
 */
 class Endereco
 {

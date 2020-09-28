@@ -26,6 +26,15 @@ class CodigoDeProduto
         CodigoDeProduto();
 
         /**
+        * @brief Construtor que inicializa codigo com valor.
+        * @details Para ser válido, o código fornecido deve possuir exatamente
+        *          três dígitos e ser diferente de '000'.
+        * @param codigo String a ser escrita no atributo.
+        * @throw invalid_argument Se valor passado não for válido.
+        */
+        CodigoDeProduto(std::string);
+
+        /**
         * @brief Escrita do valor em codigo, se válido.
         * @details Para ser válido, o código fornecido deve possuir exatamente
         *          três dígitos e ser diferente de '000'.

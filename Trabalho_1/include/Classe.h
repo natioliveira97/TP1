@@ -27,6 +27,15 @@ class Classe
         Classe();
 
         /**
+        * @brief Construtor que inicializa classe com um valor.
+        * @details Para ser válida, a classe fornecida deve corresponder a uma das classes de investimento
+        *          existentes. As classes existentes são "CDB", "LCA", "LCI", "FI" e "LC".
+        * @param classe String a ser escrita no atributo.
+        * @throw invalid_argument Se valor passado não for válido.
+        */
+        Classe(std::string);
+
+        /**
         * @brief Escrita do valor em classe, se válido.
         * @details Para ser válida, a classe fornecida deve corresponder a uma das classes de investimento
         *          existentes. As classes existentes são "CDB", "LCA", "LCI", "FI" e "LC".

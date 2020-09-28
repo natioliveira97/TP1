@@ -4,6 +4,11 @@ CPF::CPF(){
     cpf = "";
 }
 
+CPF::CPF(std::string cpf){
+    valida(cpf);
+    this->cpf = cpf;
+}
+
 std::string CPF::getCPF(){
     return cpf;
 }

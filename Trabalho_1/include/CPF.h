@@ -16,22 +16,26 @@
 */
 
 /**
-* @brief Armazena o CPF.
+* @brief Armazena um cpf.
 */
 class CPF
 {
     public:
         /**
         * @brief Construtor default.
-        * @details Inicializa o atributo cpf com a string '000.000.000-00'.
+        * @details Inicializa o atributo cpf com a string vazia.
         */
         CPF();
 
+        CPF(std::string);
+
         /**
         * @brief Escrita do valor em cpf, se válido.
-        * @details Para ser válido, o cpf fornecido deve estar no formato 'XXX.XXX.XXX-XX'
+        * @details Para ser válido, o cpf fornecido deve estar no formato 'XXX.XXX.XXX-YY'
         *          e os dígitos verificadores devem ser válidos de acordo com a legislação brasileira.
-        *          Os dígitos verificadores correspondem aos dois dígitos após o traço "-".
+        *          Os dígitos verificadores correspondem aos dois dígitos após o traço "-" e devem ser calculados de acordo com:
+        * @image html eq_cpf.jpg
+        *
         * @param cpf String a ser escrita no atributo.
         * @throw invalid_argument Se valor passado não for válido.
         */

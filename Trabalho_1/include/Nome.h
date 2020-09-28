@@ -16,7 +16,7 @@
 
 
 /**
-* @brief Armazena um Nome.
+* @brief Armazena um nome.
 */
 class Nome
 {

@@ -1,8 +1,8 @@
 #ifndef TESTVALORDEAPLICACAO_H
 #define TESTVALORDEAPLICACAO_H
 
-#include <BaseTest.h>
-#include <ValorDeAplicacao.h>
+#include "BaseTest.h"
+#include "ValorDeAplicacao.h"
 
 class TestValorDeAplicacao: public BaseTest
 {

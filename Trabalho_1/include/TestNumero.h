@@ -2,8 +2,8 @@
 #define TESTNUMERO_H
 
 
-#include <BaseTest.h>
-#include <Numero.h>
+#include "BaseTest.h"
+#include "Numero.h"
 
 class TestNumero: public BaseTest
 {
@@ -14,8 +14,8 @@ class TestNumero: public BaseTest
         int run();
 
     private:
-        std::string VALOR_VALIDO = "70000000";
-        std::string VALOR_INVALIDO = "71000000";
+        std::string VALOR_VALIDO = "111111-6";
+        std::string VALOR_INVALIDO = "111111-5";
         int estado;
 
         Numero *numero;

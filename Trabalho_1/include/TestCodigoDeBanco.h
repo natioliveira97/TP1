@@ -2,8 +2,8 @@
 #define TESTCODIGODEBANCO_H
 
 #include <string>
-#include <BaseTest.h>
-#include <CodigoDeBanco.h>
+#include "BaseTest.h"
+#include "CodigoDeBanco.h"
 
 class TestCodigoDeBanco: public BaseTest
 {

@@ -26,7 +26,6 @@ var menudata={children:[
 {text:"Página principal",url:"index.html"},
 {text:"Classes",url:"annotated.html",children:[
 {text:"Lista de componentes",url:"annotated.html"},
-{text:"Índice dos componentes",url:"classes.html"},
 {text:"Componentes membro",url:"functions.html",children:[
 {text:"Tudo",url:"functions.html",children:[
 {text:"c",url:"functions.html#index_c"},

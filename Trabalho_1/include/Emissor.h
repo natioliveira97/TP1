@@ -27,6 +27,17 @@ class Emissor
         Emissor();
 
         /**
+        * @brief Construtor que inicializa emmissor com um valor.
+        * @details Para ser válido, o emissor fornecido deve possuir de 5 a 30 caracteres.
+        *          Cada caracter pode ser letra (A-Z ou a-z), dígito (0 –9), caracter "-",
+        *          ponto ou espaço. Apenas letras e dígitos podem estar em sequência.
+        *          Em termo cujo primeiro caracter é letra, a letra deve ser maiúscula.
+        * @param codigo String a ser escrita no atributo.
+        * @throw invalid_argument Se valor passado não for válido.
+        */
+        Emissor(std::string);
+
+        /**
         * @brief Escrita do valor em emissor, se válido.
         * @details Para ser válido, o emissor fornecido deve possuir de 5 a 30 caracteres.
         *          Cada caracter pode ser letra (A-Z ou a-z), dígito (0 –9), caracter "-",

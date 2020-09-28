@@ -15,7 +15,7 @@
 */
 
 /**
-* @brief Armazena o CEP e sua cidade correspondente.
+* @brief Armazena um cep e sua cidade correspondente.
 */
 class CEP
 {
@@ -27,11 +27,32 @@ class CEP
         CEP();
 
         /**
+        * @brief Construtor que inicializa a classe com valor para cep.
+        * @details Para ser válido, o cep passado deve pertencer às faixas de valores correspondentes
+        *          às seguintes cidades:
+        *
+        * - Sao Paulo: 1000000-5999999 e 8000000-8499999
+        * - Rio de Janeiro: 20000000-26600999
+        * - Brasilia: 70000000-70999999
+        * - Salvador: 40000000-41999999
+        * - Fortaleza: 60000000-60999999
+
+        * @param cep Valor a ser escrito no atributo cep.
+        * @throw invalid_argument Se valor passado não for válido.
+        */
+        CEP(int);
+
+        /**
         * @brief Escrita do valor em cep, se válido.
         * @details Para ser válido, o cep passado deve pertencer às faixas de valores correspondentes
-        *          às cidades: "Sao Paulo", "Sao Paulo", "Rio de Janeiro", "Brasilia", "Salvador", "Fortaleza".
-        *          As faixas possíveis são: {1000000, 5999999}, {8000000, 8499999}, {20000000, 26600999},
-        *          {70000000, 70999999}, {40000000, 41999999}, {60000000, 60999999}.
+        *          às seguintes cidades:
+        *
+        * - Sao Paulo: 1000000-5999999 e 8000000-8499999
+        * - Rio de Janeiro: 20000000-26600999
+        * - Brasilia: 70000000-70999999
+        * - Salvador: 40000000-41999999
+        * - Fortaleza: 60000000-60999999
+        *
         * @param cep Valor a ser escrito no atributo cep.
         * @throw invalid_argument Se valor passado não for válido.
         */

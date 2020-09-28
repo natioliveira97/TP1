@@ -4,6 +4,11 @@ CodigoDeBanco::CodigoDeBanco(){
     codigo = "";
 }
 
+CodigoDeBanco::CodigoDeBanco(std::string codigo){
+    valida(codigo);
+    this->codigo = codigo;
+}
+
 
 std::string CodigoDeBanco::getCodigoDeBanco(){
     return codigo;

@@ -15,6 +15,9 @@
 * string.
 */
 
+/**
+* @brief Armazena uma senha.
+*/
 class Senha
 {
     public:
