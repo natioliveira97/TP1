@@ -88,7 +88,11 @@ int main()
         else{
             std::cout << "FALHA." << std::endl;
         }
+    }
 
+    while(test_vector.size() > 0){
+        delete(test_vector[test_vector.size()-1]);
+        test_vector.pop_back();
     }
 
     return 0;

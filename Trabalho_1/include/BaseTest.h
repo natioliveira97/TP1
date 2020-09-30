@@ -6,9 +6,13 @@
 class BaseTest
 {
     public:
-        virtual int run(){
+
+        BaseTest(){};
+        ~BaseTest(){};
+        int run(){
             return 0;
-        }
+        };
+
 
         static int const SUCESSO = 0;
         static int const FALHA = 1;
