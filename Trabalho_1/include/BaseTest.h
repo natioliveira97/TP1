@@ -8,10 +8,8 @@ class BaseTest
     public:
 
         BaseTest(){};
-        ~BaseTest(){};
-        int run(){
-            return 0;
-        };
+        virtual ~BaseTest(){};
+        virtual int run() = 0;
 
 
         static int const SUCESSO = 0;

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 #include "TestCEP.h"
 #include "TestClasse.h"
@@ -19,7 +20,7 @@
 #include "TestValorDeAplicacao.h"
 #include "TestValorMinimo.h"
 #include "BaseTest.h"
-#include <vector>
+
 
 
 /**
