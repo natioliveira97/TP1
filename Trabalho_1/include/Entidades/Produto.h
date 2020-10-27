@@ -16,8 +16,8 @@ class Produto
         Produto();
         virtual ~Produto();
 
-        void setCodigoDeProduto(CodigoDeProduto&);
-        CodigoDeProduto getCodigoDeProduto();
+        void setCodigo(CodigoDeProduto&);
+        CodigoDeProduto getCodigo();
 
         void setClasse(Classe&);
         Classe getClasse();
@@ -31,14 +31,14 @@ class Produto
         void setTaxa(Taxa&);
         Taxa getTaxa();
 
-        void setData(Data&);
-        Data getData();
+        void setVencimento(Data&);
+        Data getVencimento();
 
         void setHorario(Horario&);
         Horario getHorario();
 
-        void setValorMinimo(ValorMinimo&);
-        ValorMinimo getValorMinimo();
+        void setValor(ValorMinimo&);
+        ValorMinimo getValor();
 
     private:
         CodigoDeProduto codigo;
@@ -52,10 +52,10 @@ class Produto
 
 };
 
-inline void Produto::setCodigoDeProduto(CodigoDeProduto &codigo){
+inline void Produto::setCodigo(CodigoDeProduto &codigo){
     this->codigo = codigo;
 }
-inline CodigoDeProduto Produto::getCodigoDeProduto(){
+inline CodigoDeProduto Produto::getCodigo(){
     return codigo;
 }
 
@@ -87,10 +87,10 @@ inline Taxa Produto::getTaxa(){
     return taxa;
 }
 
-inline void Produto::setData(Data &vencimento){
+inline void Produto::setVencimento(Data &vencimento){
     this->vencimento = vencimento;
 }
-inline Data Produto::getData(){
+inline Data Produto::getVencimento(){
     return vencimento;
 }
 
@@ -101,10 +101,10 @@ inline Horario Produto::getHorario(){
     return horario;
 }
 
-inline void Produto::setValorMinimo(ValorMinimo &valor){
+inline void Produto::setValor(ValorMinimo &valor){
     this->valor = valor;
 }
-inline ValorMinimo Produto::getValorMinimo(){
+inline ValorMinimo Produto::getValor(){
     return valor;
 }
 

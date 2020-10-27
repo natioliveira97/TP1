@@ -1,11 +1,5 @@
 #include "Entidades/Usuario.h"
 
-Usuario::Usuario()
-{
-    //ctor
-}
+Usuario::Usuario(){}
 
-Usuario::~Usuario()
-{
-    //dtor
-}
+Usuario::~Usuario(){}

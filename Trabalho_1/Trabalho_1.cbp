@@ -34,11 +34,6 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/CodigoDeAgencia.h" />
-		<Unit filename="include/CodigoDeAplicacao.h" />
-		<Unit filename="include/CodigoDeBanco.h" />
-		<Unit filename="include/CodigoDeProduto.h" />
-		<Unit filename="include/Data.h" />
 		<Unit filename="include/Dominios/BaseTest.h" />
 		<Unit filename="include/Dominios/CEP.h" />
 		<Unit filename="include/Dominios/CPF.h" />
@@ -76,10 +71,16 @@
 		<Unit filename="include/Dominios/TestValorMinimo.h" />
 		<Unit filename="include/Dominios/ValorDeAplicacao.h" />
 		<Unit filename="include/Dominios/ValorMinimo.h" />
+		<Unit filename="include/Entidades/Aplicacao.h" />
+		<Unit filename="include/Entidades/BaseTest.h" />
+		<Unit filename="include/Entidades/Conta.h" />
 		<Unit filename="include/Entidades/Produto.h" />
+		<Unit filename="include/Entidades/TestAplicacao.h" />
+		<Unit filename="include/Entidades/TestConta.h" />
+		<Unit filename="include/Entidades/TestProduto.h" />
+		<Unit filename="include/Entidades/TestUsuario.h" />
 		<Unit filename="include/Entidades/Usuario.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/Dominios/BaseTest.cpp" />
 		<Unit filename="src/Dominios/CEP.cpp" />
 		<Unit filename="src/Dominios/CPF.cpp" />
 		<Unit filename="src/Dominios/Classe.cpp" />
@@ -116,7 +117,13 @@
 		<Unit filename="src/Dominios/TestValorMinimo.cpp" />
 		<Unit filename="src/Dominios/ValorDeAplicacao.cpp" />
 		<Unit filename="src/Dominios/ValorMinimo.cpp" />
+		<Unit filename="src/Entidades/Aplicacao.cpp" />
+		<Unit filename="src/Entidades/Conta.cpp" />
 		<Unit filename="src/Entidades/Produto.cpp" />
+		<Unit filename="src/Entidades/TestAplicacao.cpp" />
+		<Unit filename="src/Entidades/TestConta.cpp" />
+		<Unit filename="src/Entidades/TestProduto.cpp" />
+		<Unit filename="src/Entidades/TestUsuário.cpp" />
 		<Unit filename="src/Entidades/Usuario.cpp" />
 		<Extensions>
 			<DoxyBlocks>
@@ -128,6 +135,9 @@
 				<doxyfile_dot />
 				<general use_at_in_tags="1" />
 			</DoxyBlocks>
+			<envvars />
+			<code_completion />
+			<debugger />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

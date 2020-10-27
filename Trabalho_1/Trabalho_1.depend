@@ -785,28 +785,11 @@
 1601312593 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\testvalorminimo.cpp
 	"TestValorMinimo.h"
 
-1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
+1603803951 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
 	<iostream>
 	<vector>
-	"Dominios/TestCEP.h"
-	"Dominios/TestClasse.h"
-	"Dominios/TestCodigoDeAgencia.h"
-	"Dominios/TestCodigoDeAplicacao.h"
-	"Dominios/TestCodigoDeBanco.h"
-	"Dominios/TestCodigoDeProduto.h"
-	"Dominios/TestCPF.h"
-	"Dominios/TestData.h"
-	"Dominios/TestEmissor.h"
-	"Dominios/TestEndereco.h"
-	"Dominios/TestHorario.h"
-	"Dominios/TestNome.h"
-	"Dominios/TestNumero.h"
-	"Dominios/TestPrazo.h"
-	"Dominios/TestSenha.h"
-	"Dominios/TestTaxa.h"
-	"Dominios/TestValorDeAplicacao.h"
-	"Dominios/TestValorMinimo.h"
-	"Dominios/BaseTest.h"
+	"Entidades/TestProduto.h"
+	"Entidades/BaseTest.h"
 
 1601329078 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestCEP.h
 	"BaseTest.h"
@@ -1381,7 +1364,7 @@
 1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Entidades/Produto.cpp
 	"Entidades/Produto.h"
 
-1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Produto.h
+1603804780 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Produto.h
 	<Dominios/CodigoDeProduto.h>
 	<Dominios/Classe.h>
 	<Dominios/Emissor.h>
@@ -1391,10 +1374,10 @@
 	<Dominios/Horario.h>
 	<Dominios/ValorMinimo.h>
 
-1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Entidades/Usuario.cpp
+1603805951 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Entidades/Usuario.cpp
 	"Entidades/Usuario.h"
 
-1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Usuario.h
+1603805648 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Usuario.h
 	<Dominios/Nome.h>
 	<Dominios/Endereco.h>
 	<Dominios/CEP.h>
@@ -1416,4 +1399,35 @@
 	"Dominios/CodigoDeAplicacao.h"
 	"Dominios/ValorDeAplicacao.h"
 	"Dominios/Data.h"
+
+1603800120 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Entidades/TestAplicacao.cpp
+	"Entidades/TestAplicacao.h"
+
+1603800760 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/TestAplicacao.h
+	"Entidades/BaseTest.h"
+
+1603803856 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/BaseTest.h
+	<string>
+
+1603800418 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Entidades/TestConta.cpp
+	"Entidades/TestConta.h"
+
+1603800418 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/TestConta.h
+	"Entidades/BaseTest.h"
+
+1603805287 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Entidades/TestProduto.cpp
+	"Entidades/TestProduto.h"
+
+1603805475 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/TestProduto.h
+	"Entidades/BaseTest.h"
+	"Entidades/Produto.h"
+	"Dominios/CodigoDeProduto.h"
+	"Dominios/Classe.h"
+	"Dominios/Emissor.h"
+	"Dominios/Prazo.h"
+	"Dominios/Taxa.h"
+	"Dominios/Data.h"
+	"Dominios/Horario.h"
+	"Dominios/ValorMinimo.h"
+	<string.h>
 

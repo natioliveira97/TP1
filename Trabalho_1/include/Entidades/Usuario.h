@@ -7,8 +7,7 @@
 #include <Dominios/CPF.h>
 #include <Dominios/Senha.h>
 
-class Usuario
-{
+class Usuario{
     public:
         Usuario();
         virtual ~Usuario();
