@@ -19,7 +19,6 @@ class TestUsuario : public BaseTest{
         int run();
 
     private:
-
         std::string nome_valido = "Maria Souza";
         std::string endereco_valido = "Rua 5 Bl.A Apto 503.";
         int cep_valido = 70999950;

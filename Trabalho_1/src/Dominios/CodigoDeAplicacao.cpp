@@ -4,6 +4,10 @@ CodigoDeAplicacao::CodigoDeAplicacao(){
     codigo = "";
 }
 
+CodigoDeAplicacao::CodigoDeAplicacao(std::string codigo){
+    valida(codigo);
+    this->codigo = codigo;
+}
 
 std::string CodigoDeAplicacao::getCodigoDeAplicacao(){
     return codigo;

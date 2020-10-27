@@ -22,7 +22,6 @@ class TestProduto : public BaseTest
         int run();
 
     private:
-
         std::string codigo_valido = "123";
         std::string classe_valida ="CDB";
         std::string emissor_valido = "Tesouro Direto";
