@@ -6,19 +6,58 @@
 #include "Dominios/Data.h"
 
 
+/**
+* @file Aplicacao.h
+* @author Lívia Gomes Costa Fonseca
+* @author Natalia Oliveira Borges
+*
+* Esse arquivo contém a implementação da classe de entidade Aplicacao. Essa classe contém os dados
+* que caracterizam uma aplicação em um produto de investimento, que são: código de aplicação,
+* valor de aplicação e a data da aplicação.
+*/
+
+/**
+* @brief Armazena o código de aplicação, o valor da aplicação e a data.
+* @details Contém os dados que caracterizam uma aplicação em um produto de investimento,
+* que são: código de aplicação, valor de aplicação e a data da aplicação.
+*/
 class Aplicacao
 {
     public:
+        /**
+        * @brief Construtor default.
+        */
         Aplicacao();
+        /**
+        * @brief Destrutor default.
+        */
         ~Aplicacao();
 
+        /**
+        * @brief Escrita do valor em codigo.
+        */
         void setCodigo(CodigoDeAplicacao&);
+        /**
+        * @brief Leitura do valor armazenado em codigo.
+        */
         CodigoDeAplicacao getCodigo();
 
+        /**
+        * @brief Escrita do valor em valor.
+        */
         void setValor(ValorDeAplicacao&);
+        /**
+        * @brief Leitura do valor armazenado em valor.
+        */
         ValorDeAplicacao getValor();
 
+        /**
+        * @brief Escrita do valor em data.
+        */
         void setData(Data&);
+        /**
+        * @brief Leitura do valor armazenado em data.
+        */
         Data getData();
 
 
