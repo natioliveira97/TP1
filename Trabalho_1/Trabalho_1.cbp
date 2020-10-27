@@ -123,7 +123,7 @@
 		<Unit filename="src/Entidades/TestAplicacao.cpp" />
 		<Unit filename="src/Entidades/TestConta.cpp" />
 		<Unit filename="src/Entidades/TestProduto.cpp" />
-		<Unit filename="src/Entidades/TestUsuário.cpp" />
+		<Unit filename="src/Entidades/TestUsuario.cpp" />
 		<Unit filename="src/Entidades/Usuario.cpp" />
 		<Extensions>
 			<DoxyBlocks>

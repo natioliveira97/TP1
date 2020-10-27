@@ -2,6 +2,7 @@
 #include <vector>
 
 #include "Entidades/TestProduto.h"
+#include "Entidades/TestUsuario.h"
 #include "Entidades/BaseTest.h"
 
 
@@ -46,6 +47,7 @@ int main()
 
     std::vector<BaseTest*> test_vector;
     test_vector.push_back(new TestProduto());
+    test_vector.push_back(new TestUsuario());
 
     for(int i = 0; i < test_vector.size(); ++i){
         std::cout << "Teste realizado na classe " << test_vector[i]->nome_entidade << " retornou: ";

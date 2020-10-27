@@ -785,10 +785,11 @@
 1601312593 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_1\src\testvalorminimo.cpp
 	"TestValorMinimo.h"
 
-1603803951 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
+1603806932 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp
 	<iostream>
 	<vector>
 	"Entidades/TestProduto.h"
+	"Entidades/TestUsuario.h"
 	"Entidades/BaseTest.h"
 
 1601329078 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/TestCEP.h
@@ -1403,7 +1404,7 @@
 1603800120 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Entidades/TestAplicacao.cpp
 	"Entidades/TestAplicacao.h"
 
-1603800760 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/TestAplicacao.h
+1603806394 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/TestAplicacao.h
 	"Entidades/BaseTest.h"
 
 1603803856 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/BaseTest.h
@@ -1412,13 +1413,13 @@
 1603800418 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Entidades/TestConta.cpp
 	"Entidades/TestConta.h"
 
-1603800418 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/TestConta.h
+1603806319 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/TestConta.h
 	"Entidades/BaseTest.h"
 
 1603805287 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Entidades/TestProduto.cpp
 	"Entidades/TestProduto.h"
 
-1603805475 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/TestProduto.h
+1603806319 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/TestProduto.h
 	"Entidades/BaseTest.h"
 	"Entidades/Produto.h"
 	"Dominios/CodigoDeProduto.h"
@@ -1429,5 +1430,18 @@
 	"Dominios/Data.h"
 	"Dominios/Horario.h"
 	"Dominios/ValorMinimo.h"
+	<string.h>
+
+1603806883 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/src/Entidades/TestUsuario.cpp
+	"Entidades/TestUsuario.h"
+
+1603807169 /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/TestUsuario.h
+	"Entidades/BaseTest.h"
+	"Entidades/Usuario.h"
+	<Dominios/Nome.h>
+	<Dominios/Endereco.h>
+	<Dominios/CEP.h>
+	<Dominios/CPF.h>
+	<Dominios/Senha.h>
 	<string.h>
 

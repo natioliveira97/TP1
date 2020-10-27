@@ -1,5 +1,5 @@
-#ifndef USUARIO_H
-#define USUARIO_H
+#ifndef TESTPRODUTO_H
+#define TESTPRODUTO_H
 
 #include "Entidades/BaseTest.h"
 #include "Entidades/Produto.h"
@@ -49,4 +49,4 @@ class TestProduto : public BaseTest
 };
 
 
-#endif // USUARIO_H
+#endif // TESTPRODUTO_H

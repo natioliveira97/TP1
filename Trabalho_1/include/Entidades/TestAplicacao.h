@@ -1,5 +1,5 @@
-#ifndef USUARIO_H
-#define USUARIO_H
+#ifndef TESTAPLICACAO_H
+#define TESTAPLICACAO_H
 
 #include "Entidades/BaseTest.h"
 
@@ -11,6 +11,4 @@ class TestAplicacao
 
 
 
-
-
-#endif // USUARIO_H
+#endif // TESTAPLICACAO

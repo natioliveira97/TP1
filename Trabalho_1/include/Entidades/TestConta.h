@@ -1,5 +1,5 @@
-#ifndef USUARIO_H
-#define USUARIO_H
+#ifndef TESTCONTA_H
+#define TESTCONTA_H
 
 #include "Entidades/BaseTest.h"
 
@@ -16,4 +16,4 @@ class TestConta
 
 
 
-#endif // USUARIO_H
+#endif // TESTCONTA
