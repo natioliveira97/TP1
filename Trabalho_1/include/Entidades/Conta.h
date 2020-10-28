@@ -34,28 +34,35 @@ class Conta
 
         /**
         * @brief Escrita do valor em banco.
+        * @param horario Referência para instância de CodigoDeBanco.
         */
         void setBanco(CodigoDeBanco&);
         /**
         * @brief Leitura do valor armazenado em banco.
+        * @return Instância de CodigoDeBanco.
         */
         CodigoDeBanco getBanco();
 
         /**
         * @brief Escrita do valor em agencia.
+        * @param horario Referência para instância de CodigoDeAgencia.
         */
         void setAgencia(CodigoDeAgencia&);
         /**
         * @brief Leitura do valor armazenado em agencia.
+        * @return Instância de CodigoDeAgencia.
         */
         CodigoDeAgencia getAgencia();
 
         /**
         * @brief Escrita do valor em numero.
+        * @param horario Referência para instância de Número.
         */
         void setNumero(Numero&);
+
         /**
         * @brief Leitura do valor armazenado em numero.
+        * @return Instância de Numero.
         */
         Numero getNumero();
 

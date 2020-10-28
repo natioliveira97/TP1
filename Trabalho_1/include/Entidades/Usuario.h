@@ -9,22 +9,74 @@
 
 class Usuario{
     public:
+        /**
+        * @brief Construtor default.
+        */
         Usuario();
+
+        /**
+        * @brief Destrutor default.
+        */
         virtual ~Usuario();
 
+
+        /**
+        * @brief Escrita do valor em nome.
+        * @param codigo Referência para instância de Nome.
+        */
         void setNome(Nome&);
+
+        /**
+        * @brief Leitura do valor armazenado em nome.
+        * @return Instância de Nome.
+        */
         Nome getNome();
 
+        /**
+        * @brief Escrita do valor em endereco.
+        * @param codigo Referência para instância de Endereco
+        */
         void setEndereco(Endereco&);
+
+        /**
+        * @brief Leitura do valor armazenado em endereco.
+        * @return Instância de Endereco.
+        */
         Endereco getEndereco();
 
+        /**
+        * @brief Escrita do valor em cep.
+        * @param codigo Referência para instância de CEP.
+        */
         void setCEP(CEP&);
+        /**
+        * @brief Leitura do valor armazenado em cep.
+        * @return Instância de CEP.
+        */
         CEP getCEP();
 
+        /**
+        * @brief Escrita do valor em cpf.
+        * @param codigo Referência para instância de CPF.
+        */
         void setCPF(CPF&);
+
+        /**
+        * @brief Leitura do valor armazenado em cpf.
+        * @return Instância de CPF.
+        */
         CPF getCPF();
 
+        /**
+        * @brief Escrita do valor em senha.
+        * @param codigo Referência para instância de Senha.
+        */
         void setSenha(Senha&);
+
+        /**
+        * @brief Leitura do valor armazenado em senha.
+        * @return Instância de Senha.
+        */
         Senha getSenha();
 
     private:

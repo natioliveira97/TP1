@@ -35,28 +35,34 @@ class Aplicacao
 
         /**
         * @brief Escrita do valor em codigo.
+        * @param codigo Referência para instância de CodigoDeAplicacao.
         */
         void setCodigo(CodigoDeAplicacao&);
         /**
         * @brief Leitura do valor armazenado em codigo.
+        * @return Instância de CodigoDeAplicacao.
         */
         CodigoDeAplicacao getCodigo();
 
         /**
         * @brief Escrita do valor em valor.
+        * @param valor Referência para instância de ValorDeAplicacao.
         */
         void setValor(ValorDeAplicacao&);
         /**
         * @brief Leitura do valor armazenado em valor.
+        * @return Instância de ValorDeAplicacao.
         */
         ValorDeAplicacao getValor();
 
         /**
         * @brief Escrita do valor em data.
+        * @param data Referência para instância de Data.
         */
         void setData(Data&);
         /**
         * @brief Leitura do valor armazenado em data.
+        * @return Instância de Data.
         */
         Data getData();
 
