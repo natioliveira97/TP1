@@ -9,16 +9,16 @@
 
 /**
 * @file Usuario.h
-* @author Lívia Gomes Costa Fonseca
+* @author L√≠via Gomes Costa Fonseca
 * @author Natalia Oliveira Borges
 *
-* Esse arquivo contém a implementação da classe de entidade Usuario. Essa classe armazena as características
-* de um usuario, que são: nome, endereço, cep, cpf e senha.
+* Esse arquivo cont√©m a implementa√ß√£o da classe de entidade Usuario. Essa classe armazena as caracter√≠sticas
+* de um usu√°rio, que s√£o: nome, endere√ßo, cep, cpf e senha.
 */
 
 /**
-* @brief Armazena uma estrutura de um Usuário.
-* @details Armazena as características de um usuário, que são: nome, endereço, cep, cpf e senha.
+* @brief Armazena uma estrutura de um Usu√°rio.
+* @details Armazena as caracter√≠sticas de um usu√°rio, que s√£o: nome, endere√ßo, cep, cpf e senha.
 */
 
 class Usuario{
@@ -36,60 +36,60 @@ class Usuario{
 
         /**
         * @brief Escrita do valor em nome.
-        * @param codigo Referência para instância de Nome.
+        * @param codigo Refer√™ncia para inst√¢ncia de Nome.
         */
         void setNome(Nome&);
 
         /**
         * @brief Leitura do valor armazenado em nome.
-        * @return Instância de Nome.
+        * @return Inst√¢ncia de Nome.
         */
         Nome getNome();
 
         /**
         * @brief Escrita do valor em endereco.
-        * @param codigo Referência para instância de Endereco
+        * @param endereco Refer√™ncia para inst√¢ncia de Endereco
         */
         void setEndereco(Endereco&);
 
         /**
         * @brief Leitura do valor armazenado em endereco.
-        * @return Instância de Endereco.
+        * @return Inst√¢ncia de Endereco.
         */
         Endereco getEndereco();
 
         /**
         * @brief Escrita do valor em cep.
-        * @param codigo Referência para instância de CEP.
+        * @param cep Refer√™ncia para inst√¢ncia de CEP.
         */
         void setCEP(CEP&);
         /**
         * @brief Leitura do valor armazenado em cep.
-        * @return Instância de CEP.
+        * @return Inst√¢ncia de CEP.
         */
         CEP getCEP();
 
         /**
         * @brief Escrita do valor em cpf.
-        * @param codigo Referência para instância de CPF.
+        * @param cpf Refer√™ncia para inst√¢ncia de CPF.
         */
         void setCPF(CPF&);
 
         /**
         * @brief Leitura do valor armazenado em cpf.
-        * @return Instância de CPF.
+        * @return Inst√¢ncia de CPF.
         */
         CPF getCPF();
 
         /**
         * @brief Escrita do valor em senha.
-        * @param codigo Referência para instância de Senha.
+        * @param senha Refer√™ncia para inst√¢ncia de Senha.
         */
         void setSenha(Senha&);
 
         /**
         * @brief Leitura do valor armazenado em senha.
-        * @return Instância de Senha.
+        * @return Inst√¢ncia de Senha.
         */
         Senha getSenha();
 

@@ -383,3 +383,387 @@
 	"Entidades/TestAplicacao.h"
 	"Entidades/BaseTest.h"
 
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\main.cpp
+	<iostream>
+	<vector>
+	"Entidades/TestProduto.h"
+	"Entidades/TestUsuario.h"
+	"Entidades/TestConta.h"
+	"Entidades/TestAplicacao.h"
+	"Entidades/BaseTest.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\entidades\testproduto.h
+	"Entidades/BaseTest.h"
+	"Entidades/Produto.h"
+	"Dominios/CodigoDeProduto.h"
+	"Dominios/Classe.h"
+	"Dominios/Emissor.h"
+	"Dominios/Prazo.h"
+	"Dominios/Taxa.h"
+	"Dominios/Data.h"
+	"Dominios/Horario.h"
+	"Dominios/ValorMinimo.h"
+	<string.h>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\entidades\basetest.h
+	<string>
+
+1604009573 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\entidades\produto.h
+	<Dominios/CodigoDeProduto.h>
+	<Dominios/Classe.h>
+	<Dominios/Emissor.h>
+	<Dominios/Prazo.h>
+	<Dominios/Taxa.h>
+	<Dominios/Data.h>
+	<Dominios/Horario.h>
+	<Dominios/ValorMinimo.h>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\codigodeproduto.h
+	<string>
+	<regex>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\classe.h
+	<string>
+	<vector>
+	<stdexcept>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\emissor.h
+	<string>
+	<regex>
+	<iostream>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\prazo.h
+	<vector>
+	<algorithm>
+	<stdexcept>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\taxa.h
+	<stdexcept>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\data.h
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\horario.h
+	<string>
+	<regex>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\valorminimo.h
+	<vector>
+	<algorithm>
+	<stdexcept>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\entidades\testusuario.h
+	"Entidades/BaseTest.h"
+	"Entidades/Usuario.h"
+	<Dominios/Nome.h>
+	<Dominios/Endereco.h>
+	<Dominios/CEP.h>
+	<Dominios/CPF.h>
+	<Dominios/Senha.h>
+	<string.h>
+
+1604009306 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\entidades\usuario.h
+	<Dominios/Nome.h>
+	<Dominios/Endereco.h>
+	<Dominios/CEP.h>
+	<Dominios/CPF.h>
+	<Dominios/Senha.h>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\nome.h
+	<string>
+	<regex>
+	<stdexcept>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\endereco.h
+	<string>
+	<regex>
+	<stdexcept>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\cep.h
+	<string>
+	<array>
+	<vector>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\cpf.h
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\senha.h
+	<string>
+	<regex>
+	<algorithm>
+	<stdexcept>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\entidades\testconta.h
+	"Entidades/BaseTest.h"
+	"Entidades/Conta.h"
+	"Dominios/CodigoDeBanco.h"
+	"Dominios/CodigoDeAgencia.h"
+	"Dominios/Numero.h"
+	<string>
+
+1604009419 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\entidades\conta.h
+	"Dominios/CodigoDeBanco.h"
+	"Dominios/CodigoDeAgencia.h"
+	"Dominios/Numero.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\codigodebanco.h
+	<regex>
+	<string>
+	<vector>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\codigodeagencia.h
+	<string>
+	<regex>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\numero.h
+	<string>
+	<regex>
+	<stdexcept>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\entidades\testaplicacao.h
+	"Entidades/BaseTest.h"
+	"Entidades/Aplicacao.h"
+	"Dominios/CodigoDeAplicacao.h"
+	"Dominios/ValorDeAplicacao.h"
+	"Dominios/Data.h"
+	<string>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\entidades\aplicacao.h
+	"Dominios/CodigoDeAplicacao.h"
+	"Dominios/ValorDeAplicacao.h"
+	"Dominios/Data.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\codigodeaplicacao.h
+	<string>
+	<regex>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\valordeaplicacao.h
+	<stdexcept>
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\cep.cpp
+	"Dominios/CEP.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\classe.cpp
+	"Dominios/Classe.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\codigodeagencia.cpp
+	"Dominios/CodigoDeAgencia.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\codigodeaplicacao.cpp
+	"Dominios/CodigoDeAplicacao.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\codigodebanco.cpp
+	"Dominios/CodigoDeBanco.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\codigodeproduto.cpp
+	"Dominios/CodigoDeProduto.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\cpf.cpp
+	"Dominios/CPF.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\data.cpp
+	"Dominios/Data.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\emissor.cpp
+	"Dominios/Emissor.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\endereco.cpp
+	"Dominios/Endereco.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\horario.cpp
+	"Dominios/Horario.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\nome.cpp
+	"Dominios/Nome.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\numero.cpp
+	"Dominios/Numero.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\prazo.cpp
+	"Dominios/Prazo.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\senha.cpp
+	"Dominios/Senha.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\taxa.cpp
+	"Dominios/Taxa.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testcep.cpp
+	"Dominios/TestCEP.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testcep.h
+	"Dominios/BaseTest.h"
+	"Dominios/CEP.h"
+	<string>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\basetest.h
+	<string>
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testclasse.cpp
+	"Dominios/TestClasse.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testclasse.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Classe.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testcodigodeagencia.cpp
+	"Dominios/TestCodigoDeAgencia.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testcodigodeagencia.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/CodigoDeAgencia.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testcodigodeaplicacao.cpp
+	"Dominios/TestCodigoDeAplicacao.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testcodigodeaplicacao.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/CodigoDeAplicacao.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testcodigodebanco.cpp
+	"Dominios/TestCodigoDeBanco.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testcodigodebanco.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/CodigoDeBanco.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testcodigodeproduto.cpp
+	"Dominios/TestCodigoDeProduto.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testcodigodeproduto.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/CodigoDeProduto.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testcpf.cpp
+	"Dominios/TestCPF.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testcpf.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/CPF.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testdata.cpp
+	"Dominios/TestData.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testdata.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Data.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testemissor.cpp
+	"Dominios/TestEmissor.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testemissor.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Emissor.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testendereco.cpp
+	"Dominios/TestEndereco.h"
+	<iostream>
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testendereco.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Endereco.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testhorario.cpp
+	"Dominios/TestHorario.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testhorario.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Horario.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testnome.cpp
+	"Dominios/TestNome.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testnome.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Nome.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testnumero.cpp
+	"Dominios/TestNumero.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testnumero.h
+	"Dominios/BaseTest.h"
+	"Dominios/Numero.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testprazo.cpp
+	"Dominios/TestPrazo.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testprazo.h
+	"Dominios/BaseTest.h"
+	"Dominios/Prazo.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testsenha.cpp
+	"Dominios/TestSenha.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testsenha.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Senha.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testtaxa.cpp
+	"Dominios/TestTaxa.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testtaxa.h
+	"Dominios/BaseTest.h"
+	"Dominios/Taxa.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testvalordeaplicacao.cpp
+	"Dominios/TestValorDeAplicacao.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testvalordeaplicacao.h
+	"Dominios/BaseTest.h"
+	"Dominios/ValorDeAplicacao.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\testvalorminimo.cpp
+	"Dominios/TestValorMinimo.h"
+
+1604003012 c:\users\livia\documents\unb\tp1\tp1\trabalho_2\include\dominios\testvalorminimo.h
+	"Dominios/BaseTest.h"
+	"Dominios/ValorMinimo.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\valordeaplicacao.cpp
+	"Dominios/ValorDeAplicacao.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\dominios\valorminimo.cpp
+	"Dominios/ValorMinimo.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\entidades\aplicacao.cpp
+	"Entidades/Aplicacao.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\entidades\conta.cpp
+	"Entidades/Conta.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\entidades\produto.cpp
+	"Entidades/Produto.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\entidades\testaplicacao.cpp
+	"Entidades/TestAplicacao.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\entidades\testconta.cpp
+	"Entidades/TestConta.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\entidades\testproduto.cpp
+	"Entidades/TestProduto.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\entidades\testusuario.cpp
+	"Entidades/TestUsuario.h"
+
+1604003012 source:c:\users\livia\documents\unb\tp1\tp1\trabalho_2\src\entidades\usuario.cpp
+	"Entidades/Usuario.h"
+

@@ -36,7 +36,7 @@ class Conta
 
         /**
         * @brief Escrita do valor em banco.
-        * @param horario Referência para instância de CodigoDeBanco.
+        * @param banco Referência para instância de CodigoDeBanco.
         */
         void setBanco(CodigoDeBanco&);
         /**
@@ -47,7 +47,7 @@ class Conta
 
         /**
         * @brief Escrita do valor em agencia.
-        * @param horario Referência para instância de CodigoDeAgencia.
+        * @param agencia Referência para instância de CodigoDeAgencia.
         */
         void setAgencia(CodigoDeAgencia&);
         /**
@@ -58,7 +58,7 @@ class Conta
 
         /**
         * @brief Escrita do valor em numero.
-        * @param horario Referência para instância de Número.
+        * @param numero Referência para instância de Número.
         */
         void setNumero(Numero&);
 

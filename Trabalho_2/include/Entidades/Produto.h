@@ -14,17 +14,17 @@
 
 /**
 * @file Conta.h
-* @author Lívia Gomes Costa Fonseca
+* @author L√≠via Gomes Costa Fonseca
 * @author Natalia Oliveira Borges
 *
-* Esse arquivo contém a implementação da classe de entidade Produto. Essa classe armazena as características
-* de um produto, que são: codigo, classe, emissor, prazo, taxa, vencimento, horario e valor.
+* Esse arquivo cont√©m a implementa√ß√£o da classe de entidade Produto. Essa classe armazena as caracter√≠sticas
+* de um produto, que s√£o: codigo, classe, emissor, prazo, taxa, vencimento, horario e valor.
 */
 
 /**
 * @brief Armazena uma estrutura de um produto.
-* @details Armazena as características
-* de um produto, que são: codigo, classe, emissor, prazo, taxa, vencimento, horario e valor.
+* @details Armazena as caracter√≠sticas
+* de um produto, que s√£o: codigo, classe, emissor, prazo, taxa, vencimento, horario e valor.
 */
 
 class Produto
@@ -41,99 +41,99 @@ class Produto
         ~Produto();
 
         /**
-        * @brief Escrita do valor em código.
-        * @param codigo Referência para instância de CodigoDeProduto.
+        * @brief Escrita do valor em codigo.
+        * @param codigo Refer√™ncia para inst√¢ncia de CodigoDeProduto.
         */
         void setCodigo(CodigoDeProduto&);
 
         /**
         * @brief Leitura do valor armazenado em codigo.
-        * @return Instância de CodigoDeProduto.
+        * @return Inst√¢ncia de CodigoDeProduto.
         */
         CodigoDeProduto getCodigo();
 
 
         /**
         * @brief Escrita do valor em classe.
-        * @param classe Referência para instância de Classe.
+        * @param classe Refer√™ncia para inst√¢ncia de Classe.
         */
         void setClasse(Classe&);
 
         /**
         * @brief Leitura do valor armazenado em classe.
-        * @return Instância de Classe.
+        * @return Inst√¢ncia de Classe.
         */
         Classe getClasse();
 
         /**
         * @brief Escrita do valor em emissor.
-        * @param emissor Referência para instância de Emissor.
+        * @param emissor Refer√™ncia para inst√¢ncia de Emissor.
         */
         void setEmissor(Emissor&);
 
         /**
         * @brief Leitura do valor armazenado em emissor.
-        * @return Instância de Emissor.
+        * @return Inst√¢ncia de Emissor.
         */
         Emissor getEmissor();
 
         /**
         * @brief Escrita do valor em prazo.
-        * @param prazo Referência para instância de Prazo.
+        * @param prazo Refer√™ncia para inst√¢ncia de Prazo.
         */
         void setPrazo(Prazo&);
 
         /**
         * @brief Leitura do valor armazenado em prazo.
-        * @return Instância de Prazo.
+        * @return Inst√¢ncia de Prazo.
         */
         Prazo getPrazo();
 
         /**
         * @brief Escrita do valor em taxa.
-        * @param taxa Referência para instância de Taxa.
+        * @param taxa Refer√™ncia para inst√¢ncia de Taxa.
         */
         void setTaxa(Taxa&);
 
         /**
         * @brief Leitura do valor armazenado em taxa.
-        * @return Instância de Taxa.
+        * @return Inst√¢ncia de Taxa.
         */
         Taxa getTaxa();
 
         /**
         * @brief Escrita do valor em vencimento.
-        * @param data Referência para instância de Data.
+        * @param vencimento Refer√™ncia para inst√¢ncia de Data.
         */
         void setVencimento(Data&);
 
         /**
         * @brief Leitura do valor armazenado em vencimento.
-        * @return Instância de Data.
+        * @return Inst√¢ncia de Data.
         */
         Data getVencimento();
 
         /**
-        * @brief Escrita do valor em horário.
-        * @param horario Referência para instância de Horario.
+        * @brief Escrita do valor em horario.
+        * @param horario Refer√™ncia para inst√¢ncia de Horario.
         */
         void setHorario(Horario&);
 
         /**
         * @brief Leitura do valor armazenado em horario.
-        * @return Instância de Horario.
+        * @return Inst√¢ncia de Horario.
         */
         Horario getHorario();
 
         /**
         * @brief Escrita do valor em valor.
-        * @param valor Referência para instância de ValorMinimo.
+        * @param valor Refer√™ncia para inst√¢ncia de ValorMinimo.
         */
         void setValor(ValorMinimo&);
 
         /**
         * @brief Leitura do valor armazenado em valor.
-        * @return Instância de ValorMinimo.
+        * @return Inst√¢ncia de ValorMinimo.
         */
         ValorMinimo getValor();
 
