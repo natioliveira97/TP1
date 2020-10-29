@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Plataforma de Investimentos: Código-Fonte de Aplicacao.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Plataforma de Investimentos
+   &#160;<span id="projectnumber">2.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('_aplicacao_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Aplicacao.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_aplicacao_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef APLICACAO_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define APLICACAO_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_codigo_de_aplicacao_8h.html">Dominios/CodigoDeAplicacao.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_valor_de_aplicacao_8h.html">Dominios/ValorDeAplicacao.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_data_8h.html">Dominios/Data.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">* @file Aplicacao.h</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">* @author Lívia Gomes Costa Fonseca</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">* @author Natalia Oliveira Borges</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">* Esse arquivo contém a implementação da classe de entidade Aplicacao. Essa classe contém os dados</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">* que caracterizam uma aplicação em um produto de investimento, que são: código de aplicação,</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">* valor de aplicação e a data da aplicação.</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">* @brief Armazena o código de aplicação, o valor da aplicação e a data.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">* @details Contém os dados que caracterizam uma aplicação em um produto de investimento,</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">* que são: código de aplicação, valor de aplicação e a data da aplicação.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_aplicacao.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_aplicacao.html">Aplicacao</a></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">public</span>:<span class="comment"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">        * @brief Construtor default.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_aplicacao.html#a2ea64d8a50c77fadf723205ea4104305">   30</a></span>&#160;        <a class="code" href="class_aplicacao.html#a2ea64d8a50c77fadf723205ea4104305">Aplicacao</a>();<span class="comment"></span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">        * @brief Destrutor default.</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_aplicacao.html#a34aa250f6b40006cb8d5b20641fcf881">   34</a></span>&#160;        <a class="code" href="class_aplicacao.html#a34aa250f6b40006cb8d5b20641fcf881">~Aplicacao</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">        * @brief Escrita do valor em codigo.</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">        * @param codigo Referência para instância de CodigoDeAplicacao.</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_aplicacao.html#a311f597632f532d85feb723e947020da">setCodigo</a>(<a class="code" href="class_codigo_de_aplicacao.html">CodigoDeAplicacao</a>&amp;);<span class="comment"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">        * @brief Leitura do valor armazenado em codigo.</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">        * @return Instância de CodigoDeAplicacao.</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="class_codigo_de_aplicacao.html">CodigoDeAplicacao</a> <a class="code" href="class_aplicacao.html#ac11b4c5f303a7d7df05d5a005b7dce69">getCodigo</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">        * @brief Escrita do valor em valor.</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">        * @param valor Referência para instância de ValorDeAplicacao.</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_aplicacao.html#ae7124294d646ac4efcd8724d0e6f7a47">setValor</a>(<a class="code" href="class_valor_de_aplicacao.html">ValorDeAplicacao</a>&amp;);<span class="comment"></span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">        * @brief Leitura do valor armazenado em valor.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">        * @return Instância de ValorDeAplicacao.</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="class_valor_de_aplicacao.html">ValorDeAplicacao</a> <a class="code" href="class_aplicacao.html#a149eded0891d0999ac0ada4169ec06a0">getValor</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">        * @brief Escrita do valor em data.</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">        * @param data Referência para instância de Data.</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_aplicacao.html#a5f9c7aae880c49414ed0407a55f52b12">setData</a>(<a class="code" href="class_data.html">Data</a>&amp;);<span class="comment"></span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">        /**</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">        * @brief Leitura do valor armazenado em data.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">        * @return Instância de Data.</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <a class="code" href="class_data.html">Data</a> <a class="code" href="class_aplicacao.html#aa64e5e8b6028c5bb1e0526710fa83761">getData</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <a class="code" href="class_codigo_de_aplicacao.html">CodigoDeAplicacao</a> codigo;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <a class="code" href="class_valor_de_aplicacao.html">ValorDeAplicacao</a> valor;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <a class="code" href="class_data.html">Data</a> data;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="class_aplicacao.html#a311f597632f532d85feb723e947020da">   79</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_aplicacao.html#a311f597632f532d85feb723e947020da">Aplicacao::setCodigo</a>(<a class="code" href="class_codigo_de_aplicacao.html">CodigoDeAplicacao</a> &amp;codigo){</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    this-&gt;codigo = codigo;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_aplicacao.html#ac11b4c5f303a7d7df05d5a005b7dce69">   82</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="class_codigo_de_aplicacao.html">CodigoDeAplicacao</a> <a class="code" href="class_aplicacao.html#ac11b4c5f303a7d7df05d5a005b7dce69">Aplicacao::getCodigo</a>(){</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> codigo;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="class_aplicacao.html#ae7124294d646ac4efcd8724d0e6f7a47">   87</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_aplicacao.html#ae7124294d646ac4efcd8724d0e6f7a47">Aplicacao::setValor</a>(<a class="code" href="class_valor_de_aplicacao.html">ValorDeAplicacao</a> &amp;valor){</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    this-&gt;valor = valor;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="class_aplicacao.html#a149eded0891d0999ac0ada4169ec06a0">   90</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="class_valor_de_aplicacao.html">ValorDeAplicacao</a> <a class="code" href="class_aplicacao.html#a149eded0891d0999ac0ada4169ec06a0">Aplicacao::getValor</a>(){</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> valor;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="class_aplicacao.html#a5f9c7aae880c49414ed0407a55f52b12">   95</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="class_aplicacao.html#a5f9c7aae880c49414ed0407a55f52b12">Aplicacao::setData</a>(<a class="code" href="class_data.html">Data</a> &amp;data){</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    this-&gt;data = data;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="class_aplicacao.html#aa64e5e8b6028c5bb1e0526710fa83761">   98</a></span>&#160;<span class="keyword">inline</span> <a class="code" href="class_data.html">Data</a> <a class="code" href="class_aplicacao.html#aa64e5e8b6028c5bb1e0526710fa83761">Aplicacao::getData</a>(){</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> data;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif // APLICACAO_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclass_aplicacao_html_a2ea64d8a50c77fadf723205ea4104305"><div class="ttname"><a href="class_aplicacao.html#a2ea64d8a50c77fadf723205ea4104305">Aplicacao::Aplicacao</a></div><div class="ttdeci">Aplicacao()</div><div class="ttdoc">Construtor default.</div></div>
+<div class="ttc" id="aclass_aplicacao_html_ae7124294d646ac4efcd8724d0e6f7a47"><div class="ttname"><a href="class_aplicacao.html#ae7124294d646ac4efcd8724d0e6f7a47">Aplicacao::setValor</a></div><div class="ttdeci">void setValor(ValorDeAplicacao &amp;)</div><div class="ttdoc">Escrita do valor em valor.</div><div class="ttdef"><b>Definition:</b> Aplicacao.h:87</div></div>
+<div class="ttc" id="aclass_data_html"><div class="ttname"><a href="class_data.html">Data</a></div><div class="ttdoc">Armazena a data em dia, mês e ano.</div><div class="ttdef"><b>Definition:</b> Data.h:23</div></div>
+<div class="ttc" id="aclass_aplicacao_html"><div class="ttname"><a href="class_aplicacao.html">Aplicacao</a></div><div class="ttdoc">Armazena o código de aplicação, o valor da aplicação e a data.</div><div class="ttdef"><b>Definition:</b> Aplicacao.h:25</div></div>
+<div class="ttc" id="aclass_aplicacao_html_a5f9c7aae880c49414ed0407a55f52b12"><div class="ttname"><a href="class_aplicacao.html#a5f9c7aae880c49414ed0407a55f52b12">Aplicacao::setData</a></div><div class="ttdeci">void setData(Data &amp;)</div><div class="ttdoc">Escrita do valor em data.</div><div class="ttdef"><b>Definition:</b> Aplicacao.h:95</div></div>
+<div class="ttc" id="aclass_aplicacao_html_aa64e5e8b6028c5bb1e0526710fa83761"><div class="ttname"><a href="class_aplicacao.html#aa64e5e8b6028c5bb1e0526710fa83761">Aplicacao::getData</a></div><div class="ttdeci">Data getData()</div><div class="ttdoc">Leitura do valor armazenado em data.</div><div class="ttdef"><b>Definition:</b> Aplicacao.h:98</div></div>
+<div class="ttc" id="aclass_valor_de_aplicacao_html"><div class="ttname"><a href="class_valor_de_aplicacao.html">ValorDeAplicacao</a></div><div class="ttdoc">Armazena um valor para aplicação.</div><div class="ttdef"><b>Definition:</b> ValorDeAplicacao.h:19</div></div>
+<div class="ttc" id="a_valor_de_aplicacao_8h_html"><div class="ttname"><a href="_valor_de_aplicacao_8h.html">ValorDeAplicacao.h</a></div></div>
+<div class="ttc" id="aclass_aplicacao_html_ac11b4c5f303a7d7df05d5a005b7dce69"><div class="ttname"><a href="class_aplicacao.html#ac11b4c5f303a7d7df05d5a005b7dce69">Aplicacao::getCodigo</a></div><div class="ttdeci">CodigoDeAplicacao getCodigo()</div><div class="ttdoc">Leitura do valor armazenado em codigo.</div><div class="ttdef"><b>Definition:</b> Aplicacao.h:82</div></div>
+<div class="ttc" id="aclass_aplicacao_html_a149eded0891d0999ac0ada4169ec06a0"><div class="ttname"><a href="class_aplicacao.html#a149eded0891d0999ac0ada4169ec06a0">Aplicacao::getValor</a></div><div class="ttdeci">ValorDeAplicacao getValor()</div><div class="ttdoc">Leitura do valor armazenado em valor.</div><div class="ttdef"><b>Definition:</b> Aplicacao.h:90</div></div>
+<div class="ttc" id="a_data_8h_html"><div class="ttname"><a href="_data_8h.html">Data.h</a></div></div>
+<div class="ttc" id="aclass_aplicacao_html_a311f597632f532d85feb723e947020da"><div class="ttname"><a href="class_aplicacao.html#a311f597632f532d85feb723e947020da">Aplicacao::setCodigo</a></div><div class="ttdeci">void setCodigo(CodigoDeAplicacao &amp;)</div><div class="ttdoc">Escrita do valor em codigo.</div><div class="ttdef"><b>Definition:</b> Aplicacao.h:79</div></div>
+<div class="ttc" id="aclass_aplicacao_html_a34aa250f6b40006cb8d5b20641fcf881"><div class="ttname"><a href="class_aplicacao.html#a34aa250f6b40006cb8d5b20641fcf881">Aplicacao::~Aplicacao</a></div><div class="ttdeci">~Aplicacao()</div><div class="ttdoc">Destrutor default.</div></div>
+<div class="ttc" id="aclass_codigo_de_aplicacao_html"><div class="ttname"><a href="class_codigo_de_aplicacao.html">CodigoDeAplicacao</a></div><div class="ttdoc">Armazena o código de aplicação.</div><div class="ttdef"><b>Definition:</b> CodigoDeAplicacao.h:20</div></div>
+<div class="ttc" id="a_codigo_de_aplicacao_8h_html"><div class="ttname"><a href="_codigo_de_aplicacao_8h.html">CodigoDeAplicacao.h</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ce5f4a480043d107452a96d2c52b2a64.html">Entidades</a></li><li class="navelem"><a class="el" href="_aplicacao_8h.html">Aplicacao.h</a></li>
+    <li class="footer">Gerado em Quinta, 29 de Outubro de 2020 16:30:45 para Plataforma de Investimentos por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

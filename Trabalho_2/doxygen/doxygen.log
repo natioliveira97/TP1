@@ -1,0 +1,64 @@
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp:11: warning: the name 'main.c' supplied as the argument in the \file statement is not an input file
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/CEP.h:29: warning: argument 'cep' of command @param is not found in the argument list of CEP::CEP(int)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/CEP.h:45: warning: argument 'cep' of command @param is not found in the argument list of CEP::setCEP(int)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Classe.h:29: warning: argument 'classe' of command @param is not found in the argument list of Classe::Classe(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Classe.h:38: warning: argument 'classe' of command @param is not found in the argument list of Classe::setClasse(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/CodigoDeAgencia.h:28: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeAgencia::CodigoDeAgencia(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/CodigoDeAgencia.h:37: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeAgencia::setCodigoDeAgencia(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/CodigoDeAplicacao.h:28: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeAplicacao::CodigoDeAplicacao(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/CodigoDeAplicacao.h:37: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeAplicacao::setCodigoDeAplicacao(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/CodigoDeBanco.h:29: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeBanco::CodigoDeBanco(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/CodigoDeBanco.h:40: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeBanco::setCodigoDeBanco(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/CodigoDeProduto.h:30: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeProduto::CodigoDeProduto(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/CodigoDeProduto.h:39: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeProduto::setCodigoDeProduto(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Conta.h:37: warning: argument 'horario' of command @param is not found in the argument list of Conta::setBanco(CodigoDeBanco &banco)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Conta.h:41: warning: The following parameter of Conta::setBanco(CodigoDeBanco &banco) is not documented:
+  parameter 'banco'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Conta.h:48: warning: argument 'horario' of command @param is not found in the argument list of Conta::setAgencia(CodigoDeAgencia &agencia)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Conta.h:52: warning: The following parameter of Conta::setAgencia(CodigoDeAgencia &agencia) is not documented:
+  parameter 'agencia'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Conta.h:59: warning: argument 'horario' of command @param is not found in the argument list of Conta::setNumero(Numero &numero)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Conta.h:63: warning: The following parameter of Conta::setNumero(Numero &numero) is not documented:
+  parameter 'numero'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/CPF.h:32: warning: argument 'cpf' of command @param is not found in the argument list of CPF::setCPF(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Data.h:31: warning: argument 'data' of command @param is not found in the argument list of Data::Data(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Data.h:40: warning: argument 'data' of command @param is not found in the argument list of Data::setData(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Emissor.h:29: warning: argument 'codigo' of command @param is not found in the argument list of Emissor::Emissor(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Emissor.h:40: warning: argument 'codigo' of command @param is not found in the argument list of Emissor::setEmissor(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Endereco.h:29: warning: argument 'endereco' of command @param is not found in the argument list of Endereco::Endereco(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Endereco.h:45: warning: argument 'endereco' of command @param is not found in the argument list of Endereco::setEndereco(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Horario.h:28: warning: argument 'horario' of command @param is not found in the argument list of Horario::Horario(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Horario.h:36: warning: argument 'horario' of command @param is not found in the argument list of Horario::setHorario(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Nome.h:30: warning: argument 'nome' of command @param is not found in the argument list of Nome::Nome(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Nome.h:41: warning: argument 'nome' of command @param is not found in the argument list of Nome::setNome(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Numero.h:29: warning: argument 'numero' of command @param is not found in the argument list of Numero::Numero(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Numero.h:39: warning: argument 'numero' of command @param is not found in the argument list of Numero::setNumero(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Prazo.h:29: warning: argument 'prazo' of command @param is not found in the argument list of Prazo::Prazo(int)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Prazo.h:37: warning: argument 'prazo' of command @param is not found in the argument list of Prazo::setPrazo(int)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Produto.h:104: warning: argument 'data' of command @param is not found in the argument list of Produto::setVencimento(Data &vencimento)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Produto.h:108: warning: The following parameter of Produto::setVencimento(Data &vencimento) is not documented:
+  parameter 'vencimento'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Senha.h:30: warning: argument 'senha' of command @param is not found in the argument list of Senha::Senha(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Senha.h:38: warning: argument 'senha' of command @param is not found in the argument list of Senha::setSenha(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Taxa.h:27: warning: argument 'taxa' of command @param is not found in the argument list of Taxa::Taxa(float)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/Taxa.h:35: warning: argument 'taxa' of command @param is not found in the argument list of Taxa::setTaxa(float)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Usuario.h:38: warning: argument 'codigo' of command @param is not found in the argument list of Usuario::setNome(Nome &nome)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Usuario.h:42: warning: The following parameter of Usuario::setNome(Nome &nome) is not documented:
+  parameter 'nome'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Usuario.h:50: warning: argument 'codigo' of command @param is not found in the argument list of Usuario::setEndereco(Endereco &endereco)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Usuario.h:54: warning: The following parameter of Usuario::setEndereco(Endereco &endereco) is not documented:
+  parameter 'endereco'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Usuario.h:62: warning: argument 'codigo' of command @param is not found in the argument list of Usuario::setCEP(CEP &cep)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Usuario.h:66: warning: The following parameter of Usuario::setCEP(CEP &cep) is not documented:
+  parameter 'cep'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Usuario.h:73: warning: argument 'codigo' of command @param is not found in the argument list of Usuario::setCPF(CPF &cpf)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Usuario.h:77: warning: The following parameter of Usuario::setCPF(CPF &cpf) is not documented:
+  parameter 'cpf'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Usuario.h:85: warning: argument 'codigo' of command @param is not found in the argument list of Usuario::setSenha(Senha &senha)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Entidades/Usuario.h:89: warning: The following parameter of Usuario::setSenha(Senha &senha) is not documented:
+  parameter 'senha'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/ValorDeAplicacao.h:27: warning: argument 'valor' of command @param is not found in the argument list of ValorDeAplicacao::ValorDeAplicacao(float)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/ValorDeAplicacao.h:35: warning: argument 'valor' of command @param is not found in the argument list of ValorDeAplicacao::setValorDeAplicacao(float)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/ValorMinimo.h:29: warning: argument 'valor' of command @param is not found in the argument list of ValorMinimo::ValorMinimo(float)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Dominios/ValorMinimo.h:37: warning: argument 'valor' of command @param is not found in the argument list of ValorMinimo::setValorMinimo(float)
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/graph_legend.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/graph_legend.png"'

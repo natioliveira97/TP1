@@ -1,0 +1,385 @@
+# depslib dependency file v1.0
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/CEP.cpp
+	"Dominios/CEP.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CEP.h
+	<string>
+	<array>
+	<vector>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/Classe.cpp
+	"Dominios/Classe.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Classe.h
+	<string>
+	<vector>
+	<stdexcept>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/CodigoDeAgencia.cpp
+	"Dominios/CodigoDeAgencia.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CodigoDeAgencia.h
+	<string>
+	<regex>
+
+1603926919 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/CodigoDeAplicacao.cpp
+	"Dominios/CodigoDeAplicacao.h"
+
+1603926919 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CodigoDeAplicacao.h
+	<string>
+	<regex>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/CodigoDeBanco.cpp
+	"Dominios/CodigoDeBanco.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CodigoDeBanco.h
+	<regex>
+	<string>
+	<vector>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/CodigoDeProduto.cpp
+	"Dominios/CodigoDeProduto.h"
+
+1603996912 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CodigoDeProduto.h
+	<string>
+	<regex>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/CPF.cpp
+	"Dominios/CPF.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CPF.h
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/Data.cpp
+	"Dominios/Data.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Data.h
+	<string>
+	<regex>
+	<iostream>
+	<stdlib.h>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/Emissor.cpp
+	"Dominios/Emissor.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Emissor.h
+	<string>
+	<regex>
+	<iostream>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/Endereco.cpp
+	"Dominios/Endereco.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Endereco.h
+	<string>
+	<regex>
+	<stdexcept>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/Horario.cpp
+	"Dominios/Horario.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Horario.h
+	<string>
+	<regex>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/Nome.cpp
+	"Dominios/Nome.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Nome.h
+	<string>
+	<regex>
+	<stdexcept>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/Numero.cpp
+	"Dominios/Numero.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Numero.h
+	<string>
+	<regex>
+	<stdexcept>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/Prazo.cpp
+	"Dominios/Prazo.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Prazo.h
+	<vector>
+	<algorithm>
+	<stdexcept>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/Senha.cpp
+	"Dominios/Senha.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Senha.h
+	<string>
+	<regex>
+	<algorithm>
+	<stdexcept>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/Taxa.cpp
+	"Dominios/Taxa.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Taxa.h
+	<stdexcept>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestCEP.cpp
+	"Dominios/TestCEP.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestCEP.h
+	"Dominios/BaseTest.h"
+	"Dominios/CEP.h"
+	<string>
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/BaseTest.h
+	<string>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestClasse.cpp
+	"Dominios/TestClasse.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestClasse.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Classe.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestCodigoDeAgencia.cpp
+	"Dominios/TestCodigoDeAgencia.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestCodigoDeAgencia.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/CodigoDeAgencia.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestCodigoDeAplicacao.cpp
+	"Dominios/TestCodigoDeAplicacao.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestCodigoDeAplicacao.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/CodigoDeAplicacao.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestCodigoDeBanco.cpp
+	"Dominios/TestCodigoDeBanco.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestCodigoDeBanco.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/CodigoDeBanco.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestCodigoDeProduto.cpp
+	"Dominios/TestCodigoDeProduto.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestCodigoDeProduto.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/CodigoDeProduto.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestCPF.cpp
+	"Dominios/TestCPF.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestCPF.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/CPF.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestData.cpp
+	"Dominios/TestData.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestData.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Data.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestEmissor.cpp
+	"Dominios/TestEmissor.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestEmissor.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Emissor.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestEndereco.cpp
+	"Dominios/TestEndereco.h"
+	<iostream>
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestEndereco.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Endereco.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestHorario.cpp
+	"Dominios/TestHorario.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestHorario.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Horario.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestNome.cpp
+	"Dominios/TestNome.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestNome.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Nome.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestNumero.cpp
+	"Dominios/TestNumero.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestNumero.h
+	"Dominios/BaseTest.h"
+	"Dominios/Numero.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestPrazo.cpp
+	"Dominios/TestPrazo.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestPrazo.h
+	"Dominios/BaseTest.h"
+	"Dominios/Prazo.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestSenha.cpp
+	"Dominios/TestSenha.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestSenha.h
+	<string>
+	"Dominios/BaseTest.h"
+	"Dominios/Senha.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestTaxa.cpp
+	"Dominios/TestTaxa.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestTaxa.h
+	"Dominios/BaseTest.h"
+	"Dominios/Taxa.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestValorDeAplicacao.cpp
+	"Dominios/TestValorDeAplicacao.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestValorDeAplicacao.h
+	"Dominios/BaseTest.h"
+	"Dominios/ValorDeAplicacao.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/ValorDeAplicacao.h
+	<stdexcept>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/TestValorMinimo.cpp
+	"Dominios/TestValorMinimo.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/TestValorMinimo.h
+	"Dominios/BaseTest.h"
+	"Dominios/ValorMinimo.h"
+
+1603764320 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/ValorMinimo.h
+	<vector>
+	<algorithm>
+	<stdexcept>
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/ValorDeAplicacao.cpp
+	"Dominios/ValorDeAplicacao.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Dominios/ValorMinimo.cpp
+	"Dominios/ValorMinimo.h"
+
+1603765335 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Entidades/Aplicacao.cpp
+	"Entidades/Aplicacao.h"
+
+1603928316 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Aplicacao.h
+	"Dominios/CodigoDeAplicacao.h"
+	"Dominios/ValorDeAplicacao.h"
+	"Dominios/Data.h"
+
+1603765412 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Entidades/Conta.cpp
+	"Entidades/Conta.h"
+
+1603995812 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Conta.h
+	"Dominios/CodigoDeBanco.h"
+	"Dominios/CodigoDeAgencia.h"
+	"Dominios/Numero.h"
+
+1603764320 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Entidades/Produto.cpp
+	"Entidades/Produto.h"
+
+1603997247 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Produto.h
+	<Dominios/CodigoDeProduto.h>
+	<Dominios/Classe.h>
+	<Dominios/Emissor.h>
+	<Dominios/Prazo.h>
+	<Dominios/Taxa.h>
+	<Dominios/Data.h>
+	<Dominios/Horario.h>
+	<Dominios/ValorMinimo.h>
+
+1603926919 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Entidades/TestAplicacao.cpp
+	"Entidades/TestAplicacao.h"
+
+1603998977 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/TestAplicacao.h
+	"Entidades/BaseTest.h"
+	"Entidades/Aplicacao.h"
+	"Dominios/CodigoDeAplicacao.h"
+	"Dominios/ValorDeAplicacao.h"
+	"Dominios/Data.h"
+	<string>
+
+1603803856 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/BaseTest.h
+	<string>
+
+1603926919 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Entidades/TestConta.cpp
+	"Entidades/TestConta.h"
+
+1603926919 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/TestConta.h
+	"Entidades/BaseTest.h"
+	"Entidades/Conta.h"
+	"Dominios/CodigoDeBanco.h"
+	"Dominios/CodigoDeAgencia.h"
+	"Dominios/Numero.h"
+	<string>
+
+1603805287 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Entidades/TestProduto.cpp
+	"Entidades/TestProduto.h"
+
+1603926919 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/TestProduto.h
+	"Entidades/BaseTest.h"
+	"Entidades/Produto.h"
+	"Dominios/CodigoDeProduto.h"
+	"Dominios/Classe.h"
+	"Dominios/Emissor.h"
+	"Dominios/Prazo.h"
+	"Dominios/Taxa.h"
+	"Dominios/Data.h"
+	"Dominios/Horario.h"
+	"Dominios/ValorMinimo.h"
+	<string.h>
+
+1603807248 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Entidades/TestUsuario.cpp
+	"Entidades/TestUsuario.h"
+
+1603926919 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/TestUsuario.h
+	"Entidades/BaseTest.h"
+	"Entidades/Usuario.h"
+	<Dominios/Nome.h>
+	<Dominios/Endereco.h>
+	<Dominios/CEP.h>
+	<Dominios/CPF.h>
+	<Dominios/Senha.h>
+	<string.h>
+
+1603998514 /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Usuario.h
+	<Dominios/Nome.h>
+	<Dominios/Endereco.h>
+	<Dominios/CEP.h>
+	<Dominios/CPF.h>
+	<Dominios/Senha.h>
+
+1603805951 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/src/Entidades/Usuario.cpp
+	"Entidades/Usuario.h"
+
+1603998902 source:/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/main.cpp
+	<iostream>
+	<vector>
+	"Entidades/TestProduto.h"
+	"Entidades/TestUsuario.h"
+	"Entidades/TestConta.h"
+	"Entidades/TestAplicacao.h"
+	"Entidades/BaseTest.h"
+

@@ -1,0 +1,11 @@
+digraph "Entidades" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_d44c64559bbebec7f509842c48db8b23 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="include" fontname="Helvetica", fontsize="10", URL="dir_d44c64559bbebec7f509842c48db8b23.html"]
+  dir_ce5f4a480043d107452a96d2c52b2a64 [shape=box, label="Entidades", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_ce5f4a480043d107452a96d2c52b2a64.html"];
+  }
+  dir_22482870b450f3a092f5a4a44a0ba886 [shape=box label="Dominios" URL="dir_22482870b450f3a092f5a4a44a0ba886.html"];
+  dir_ce5f4a480043d107452a96d2c52b2a64->dir_22482870b450f3a092f5a4a44a0ba886 [headlabel="18", labeldistance=1.5 headhref="dir_000001_000002.html"];
+}

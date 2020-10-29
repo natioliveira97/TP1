@@ -1,100 +1,223 @@
-warning: The selected output language "portuguese" has not been updated
+warning: The selected output language "brazilian" has not been updated
 since release 1.8.19.  As a result some sentences may appear in English.
 
-/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/main.cpp:26: warning: the name 'main.c' supplied as the argument in the \file statement is not an input file
-/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Emissor.h:29: warning: argument 'codigo' of command @param is not found in the argument list of Emissor::Emissor(std::string emissor)
-/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Emissor.h:38: warning: The following parameter of Emissor::Emissor(std::string emissor) is not documented:
-  parameter 'emissor'
-/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Emissor.h:40: warning: argument 'codigo' of command @param is not found in the argument list of Emissor::setEmissor(std::string emissor)
-/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Emissor.h:49: warning: The following parameter of Emissor::setEmissor(std::string emissor) is not documented:
-  parameter 'emissor'
-/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/include/Endereco.h:45: warning: argument 'endereco' of command @param is not found in the argument list of Endereco::setEndereco(std::string)
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_c_p_f_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_c_p_f_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_c_e_p_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_c_e_p_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_classe_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_classe_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_codigo_de_aplicacao_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_codigo_de_aplicacao_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_codigo_de_agencia_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_codigo_de_agencia_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_codigo_de_banco_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_codigo_de_banco_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_codigo_de_produto_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_codigo_de_produto_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_data_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_data_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_emissor_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_emissor_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_endereco_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_endereco_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_horario_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_horario_8h__dep__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_horario_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_horario_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_horario_8cpp__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_horario_8cpp__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_nome_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_nome_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_numero_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_numero_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_prazo_8cpp__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_prazo_8cpp__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_prazo_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_prazo_8h__dep__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_prazo_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_prazo_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_senha_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_senha_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_taxa_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_taxa_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_valor_de_aplicacao_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_valor_de_aplicacao_8h__incl.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/dir_68267d1309a1af8e8297ef4c3efbcdba_dep.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/dir_68267d1309a1af8e8297ef4c3efbcdba_dep.png"'
-error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/graph_legend.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/graph_legend.png"'
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_c_e_p_8h__incl.map for inclusion in the docs!
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/main.cpp:13: warning: the name 'main.c' supplied as the argument in the \file statement is not an input file
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CEP.h:29: warning: argument 'cep' of command @param is not found in the argument list of CEP::CEP(int)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CEP.h:45: warning: argument 'cep' of command @param is not found in the argument list of CEP::setCEP(int)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Classe.h:29: warning: argument 'classe' of command @param is not found in the argument list of Classe::Classe(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Classe.h:38: warning: argument 'classe' of command @param is not found in the argument list of Classe::setClasse(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CodigoDeAgencia.h:28: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeAgencia::CodigoDeAgencia(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CodigoDeAgencia.h:37: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeAgencia::setCodigoDeAgencia(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CodigoDeAplicacao.h:28: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeAplicacao::CodigoDeAplicacao(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CodigoDeAplicacao.h:37: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeAplicacao::setCodigoDeAplicacao(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CodigoDeBanco.h:29: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeBanco::CodigoDeBanco(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CodigoDeBanco.h:40: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeBanco::setCodigoDeBanco(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CodigoDeProduto.h:30: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeProduto::CodigoDeProduto(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CodigoDeProduto.h:39: warning: argument 'codigo' of command @param is not found in the argument list of CodigoDeProduto::setCodigoDeProduto(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Conta.h:48: warning: argument 'horario' of command @param is not found in the argument list of Conta::setAgencia(CodigoDeAgencia &agencia)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Conta.h:52: warning: The following parameter of Conta::setAgencia(CodigoDeAgencia &agencia) is not documented:
+  parameter 'agencia'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Conta.h:37: warning: argument 'horario' of command @param is not found in the argument list of Conta::setBanco(CodigoDeBanco &banco)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Conta.h:41: warning: The following parameter of Conta::setBanco(CodigoDeBanco &banco) is not documented:
+  parameter 'banco'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Conta.h:59: warning: argument 'horario' of command @param is not found in the argument list of Conta::setNumero(Numero &numero)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Conta.h:63: warning: The following parameter of Conta::setNumero(Numero &numero) is not documented:
+  parameter 'numero'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/CPF.h:32: warning: argument 'cpf' of command @param is not found in the argument list of CPF::setCPF(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Data.h:31: warning: argument 'data' of command @param is not found in the argument list of Data::Data(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Data.h:40: warning: argument 'data' of command @param is not found in the argument list of Data::setData(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Emissor.h:29: warning: argument 'codigo' of command @param is not found in the argument list of Emissor::Emissor(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Emissor.h:40: warning: argument 'codigo' of command @param is not found in the argument list of Emissor::setEmissor(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Endereco.h:29: warning: argument 'endereco' of command @param is not found in the argument list of Endereco::Endereco(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Endereco.h:45: warning: argument 'endereco' of command @param is not found in the argument list of Endereco::setEndereco(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Horario.h:28: warning: argument 'horario' of command @param is not found in the argument list of Horario::Horario(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Horario.h:36: warning: argument 'horario' of command @param is not found in the argument list of Horario::setHorario(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Nome.h:30: warning: argument 'nome' of command @param is not found in the argument list of Nome::Nome(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Nome.h:41: warning: argument 'nome' of command @param is not found in the argument list of Nome::setNome(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Numero.h:29: warning: argument 'numero' of command @param is not found in the argument list of Numero::Numero(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Numero.h:39: warning: argument 'numero' of command @param is not found in the argument list of Numero::setNumero(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Prazo.h:29: warning: argument 'prazo' of command @param is not found in the argument list of Prazo::Prazo(int)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Prazo.h:37: warning: argument 'prazo' of command @param is not found in the argument list of Prazo::setPrazo(int)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Produto.h:104: warning: argument 'data' of command @param is not found in the argument list of Produto::setVencimento(Data &vencimento)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Produto.h:108: warning: The following parameter of Produto::setVencimento(Data &vencimento) is not documented:
+  parameter 'vencimento'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Senha.h:30: warning: argument 'senha' of command @param is not found in the argument list of Senha::Senha(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Senha.h:38: warning: argument 'senha' of command @param is not found in the argument list of Senha::setSenha(std::string)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Taxa.h:27: warning: argument 'taxa' of command @param is not found in the argument list of Taxa::Taxa(float)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/Taxa.h:35: warning: argument 'taxa' of command @param is not found in the argument list of Taxa::setTaxa(float)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Usuario.h:61: warning: argument 'codigo' of command @param is not found in the argument list of Usuario::setCEP(CEP &cep)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Usuario.h:65: warning: The following parameter of Usuario::setCEP(CEP &cep) is not documented:
+  parameter 'cep'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Usuario.h:72: warning: argument 'codigo' of command @param is not found in the argument list of Usuario::setCPF(CPF &cpf)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Usuario.h:76: warning: The following parameter of Usuario::setCPF(CPF &cpf) is not documented:
+  parameter 'cpf'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Usuario.h:49: warning: argument 'codigo' of command @param is not found in the argument list of Usuario::setEndereco(Endereco &endereco)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Usuario.h:53: warning: The following parameter of Usuario::setEndereco(Endereco &endereco) is not documented:
+  parameter 'endereco'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Usuario.h:37: warning: argument 'codigo' of command @param is not found in the argument list of Usuario::setNome(Nome &nome)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Usuario.h:41: warning: The following parameter of Usuario::setNome(Nome &nome) is not documented:
+  parameter 'nome'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Usuario.h:84: warning: argument 'codigo' of command @param is not found in the argument list of Usuario::setSenha(Senha &senha)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Entidades/Usuario.h:88: warning: The following parameter of Usuario::setSenha(Senha &senha) is not documented:
+  parameter 'senha'
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/ValorDeAplicacao.h:27: warning: argument 'valor' of command @param is not found in the argument list of ValorDeAplicacao::ValorDeAplicacao(float)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/ValorDeAplicacao.h:35: warning: argument 'valor' of command @param is not found in the argument list of ValorDeAplicacao::setValorDeAplicacao(float)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/ValorMinimo.h:29: warning: argument 'valor' of command @param is not found in the argument list of ValorMinimo::ValorMinimo(float)
+/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/include/Dominios/ValorMinimo.h:37: warning: argument 'valor' of command @param is not found in the argument list of ValorMinimo::setValorMinimo(float)
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_aplicacao_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_aplicacao_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_c_e_p_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_c_e_p_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_c_p_f_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_c_p_f_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_c_e_p_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_c_e_p_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_c_p_f_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_c_p_f_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_classe_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_classe_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_classe_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_classe_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_agencia_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_agencia_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_agencia_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_agencia_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_aplicacao_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_aplicacao_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_aplicacao_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_aplicacao_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_banco_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_banco_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_banco_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_banco_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_produto_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_produto_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_produto_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_produto_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_conta_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_conta_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_data_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_data_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_data_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_data_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_emissor_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_emissor_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_emissor_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_emissor_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_endereco_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_endereco_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_endereco_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_endereco_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_horario_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_horario_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_horario_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_horario_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_nome_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_nome_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_nome_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_nome_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_numero_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_numero_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_numero_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_numero_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_prazo_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_prazo_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_prazo_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_prazo_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_senha_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_senha_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_taxa_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_taxa_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_senha_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_senha_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_taxa_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_taxa_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_usuario_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_usuario_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_valor_de_aplicacao_8h__dep__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_valor_de_aplicacao_8h__dep__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_valor_de_aplicacao_8h__incl.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_valor_de_aplicacao_8h__incl.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/dir_ce5f4a480043d107452a96d2c52b2a64_dep.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/dir_ce5f4a480043d107452a96d2c52b2a64_dep.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/dir_d44c64559bbebec7f509842c48db8b23_dep.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/dir_d44c64559bbebec7f509842c48db8b23_dep.png"'
+error: Problems running dot: exit code=127, command='dot', arguments='"/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/graph_legend.dot" -Tpng -o "/Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/graph_legend.png"'
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_aplicacao_8h__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_c_p_f_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_c_e_p_8h__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_classe_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_c_e_p_8h__dep__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_codigo_de_agencia_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_c_p_f_8h__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_codigo_de_aplicacao_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_c_p_f_8h__dep__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_codigo_de_banco_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_classe_8h__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_codigo_de_produto_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_classe_8h__dep__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_data_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_agencia_8h__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_emissor_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_agencia_8h__dep__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_endereco_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_aplicacao_8h__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_horario_8cpp__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_aplicacao_8h__dep__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_horario_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_banco_8h__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_horario_8h__dep__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_banco_8h__dep__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_nome_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_produto_8h__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_numero_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_codigo_de_produto_8h__dep__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_prazo_8cpp__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_conta_8h__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_prazo_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_data_8h__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_prazo_8h__dep__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_data_8h__dep__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_senha_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_emissor_8h__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_taxa_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_emissor_8h__dep__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/_valor_de_aplicacao_8h__incl.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_endereco_8h__incl.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
-error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_1/doxygen/html/dir_68267d1309a1af8e8297ef4c3efbcdba_dep.map for inclusion in the docs!
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_endereco_8h__dep__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_horario_8h__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_horario_8h__dep__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_nome_8h__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_nome_8h__dep__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_numero_8h__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_numero_8h__dep__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_prazo_8h__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_prazo_8h__dep__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_senha_8h__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_senha_8h__dep__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_taxa_8h__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_taxa_8h__dep__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_usuario_8h__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_valor_de_aplicacao_8h__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/_valor_de_aplicacao_8h__dep__incl.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/dir_ce5f4a480043d107452a96d2c52b2a64_dep.map for inclusion in the docs!
+If you installed Graphviz/dot after a previous failing run, 
+try deleting the output directory and rerun doxygen.
+error: problems opening map file /Users/Natalia/Documents/GitHub/TP1/Trabalho_2/doxygen/html/dir_d44c64559bbebec7f509842c48db8b23_dep.map for inclusion in the docs!
 If you installed Graphviz/dot after a previous failing run, 
 try deleting the output directory and rerun doxygen.
