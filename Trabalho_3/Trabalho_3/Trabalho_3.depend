@@ -1,6 +1,29 @@
 # depslib dependency file v1.0
-1605641090 source:c:\users\natio\documents\tp1\trabalho_3\trabalho_3\main.cpp
+1605792835 source:c:\users\natio\documents\tp1\trabalho_3\trabalho_3\main.cpp
 	<iostream>
+	"Servicos/CntrBD.h"
+	"Dominios/CEP.h"
+	"Dominios/Classe.h"
+	"Dominios/CodigoDeAgencia.h"
+	"Dominios/CodigoDeAplicacao.h"
+	"Dominios/CodigoDeBanco.h"
+	"Dominios/CodigoDeProduto.h"
+	"Dominios/CPF.h"
+	"Dominios/Data.h"
+	"Dominios/Emissor.h"
+	"Dominios/Endereco.h"
+	"Dominios/Horario.h"
+	"Dominios/Nome.h"
+	"Dominios/Numero.h"
+	"Dominios/Prazo.h"
+	"Dominios/Senha.h"
+	"Dominios/Taxa.h"
+	"Dominios/ValorDeAplicacao.h"
+	"Dominios/ValorMinimo.h"
+	"Entidades/Usuario.h"
+	"Entidades/Conta.h"
+	"Entidades/Aplicacao.h"
+	"Entidades/Produto.h"
 
 1605636851 source:c:\users\natio\documents\tp1\trabalho_3\trabalho_3\src\dominios\basetest.cpp
 	"Dominios/BaseTest.h"
@@ -385,13 +408,37 @@
 
 1605638333 c:\users\natio\documents\tp1\trabalho_3\trabalho_3\include\servico.h
 
-1605642136 source:c:\users\natio\documents\tp1\trabalho_3\trabalho_3\src\servicos\cntrbd.cpp
+1605794661 source:c:\users\natio\documents\tp1\trabalho_3\trabalho_3\src\servicos\cntrbd.cpp
 	"Servicos/CntrBD.h"
 
-1605642195 c:\users\natio\documents\tp1\trabalho_3\trabalho_3\include\servicos\cntrbd.h
+1605794508 c:\users\natio\documents\tp1\trabalho_3\trabalho_3\include\servicos\cntrbd.h
 	"Servicos/sqlite3.h"
 	<string>
 	<list>
+	<vector>
+	<exception>
+	"Dominios/CEP.h"
+	"Dominios/Classe.h"
+	"Dominios/CodigoDeAgencia.h"
+	"Dominios/CodigoDeAplicacao.h"
+	"Dominios/CodigoDeBanco.h"
+	"Dominios/CodigoDeProduto.h"
+	"Dominios/CPF.h"
+	"Dominios/Data.h"
+	"Dominios/Emissor.h"
+	"Dominios/Endereco.h"
+	"Dominios/Horario.h"
+	"Dominios/Nome.h"
+	"Dominios/Numero.h"
+	"Dominios/Prazo.h"
+	"Dominios/Senha.h"
+	"Dominios/Taxa.h"
+	"Dominios/ValorDeAplicacao.h"
+	"Dominios/ValorMinimo.h"
+	"Entidades/Usuario.h"
+	"Entidades/Conta.h"
+	"Entidades/Aplicacao.h"
+	"Entidades/Produto.h"
 
 1605640856 c:\users\natio\documents\tp1\trabalho_3\trabalho_3\include\servicos\sqlite3.h
 	<stdarg.h>
