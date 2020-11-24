@@ -25,6 +25,11 @@
 #include "Entidades/Aplicacao.h"
 #include "Entidades/Produto.h"
 
+#include "Servicos/CntrServicoAutenticacao.h"
+#include "Servicos/CntrServicoPessoal.h"
+#include "Servicos/CntrServicoProdutosFinanceiros.h"
+
+
 using namespace std;
 
 int main(){
@@ -53,9 +58,6 @@ int main(){
     CodigoDeAplicacao codigo_app;
     ValorDeAplicacao valor_app;
 
-
-
-
     nome.setNome("Maria");
     endereco.setEndereco("Rua 1");
     cep.setCEP(70000000);
@@ -81,11 +83,9 @@ int main(){
     usuario.setCEP(cep);
     usuario.setCPF(cpf);
     usuario.setSenha(senha);
-
     conta.setAgencia(agencia);
     conta.setBanco(banco);
     conta.setNumero(numero);
-
     produto.setCodigo(codigo);
     produto.setClasse(classe);
     produto.setEmissor(emissor);
@@ -94,82 +94,58 @@ int main(){
     produto.setVencimento(vencimento);
     produto.setHorario(horario);
     produto.setValor(valorminimo);
-
     aplicacao.setCodigo(codigo_app);
     aplicacao.setValor(valor_app);
     aplicacao.setData(vencimento);
 
-    /*
+
     try{
-    ComandoCadastrarUsuario cadastrar(usuario);
-    cadastrar.executar();
+
+        CntrServicoPessoal csp;
+        csp.cadastrarUsuario(usuario, conta);
+        std::cout<<"Resultado do cadastramento " << csp.cadastrarUsuario(usuario,conta)<<std::endl;
+
+        Usuario usu_result;
+        usu_result = csp.consultarUsuario(cpf);
+
+        std::cout<<"Nome recuperado " << usu_result.getNome().getNome()<<std::endl;
+        std::cout<<"Endereco recuperado " << usu_result.getEndereco().getEndereco()<<std::endl;
+        std::cout<<"CEP recuperado " << usu_result.getCEP().getCEP()<<std::endl;
+        std::cout<<"CPF recuperado " << usu_result.getCPF().getCPF()<<std::endl;
+        std::cout<<"Senha recuperado " << usu_result.getSenha().getSenha()<<std::endl;
+
+        CPF cpf_inv = CPF("261.779.001-00");
+        Senha senha_inv = Senha("654321");
+
+        CntrServicoAutenticacao cntr;
+        std::cout<<"Resultado da Autenticacao " << cntr.autenticar(cpf, senha_inv) <<std::endl;
+
+        Conta conta_result;
+        conta_result = csp.consultarConta(cpf);
+
+        std::cout<<"Codigo recuperado " << conta_result.getBanco().getCodigoDeBanco()<<std::endl;
+        std::cout<<"Agencia recuperado " << conta_result.getAgencia().getCodigoDeAgencia()<<std::endl;
+        std::cout<<"Numero recuperado " << conta_result.getNumero().getNumero()<<std::endl;
 
 
-    ComandoPesquisarDadosUsuario pesquisar(cpf);
-    pesquisar.executar();
+        csp.descadastrarUsuario(cpf);
+        std::cout<<"Resultado do Descadastramento " <<  csp.descadastrarUsuario(cpf) <<std::endl;
 
-    Usuario usu_result;
-    usu_result = pesquisar.getResultado();
-
-    std::cout<<"Nome recuperado " << usu_result.getNome().getNome()<<std::endl;
-    std::cout<<"Endereco recuperado " << usu_result.getEndereco().getEndereco()<<std::endl;
-    std::cout<<"CEP recuperado " << usu_result.getCEP().getCEP()<<std::endl;
-    std::cout<<"CPF recuperado " << usu_result.getCPF().getCPF()<<std::endl;
-    std::cout<<"Senha recuperado " << usu_result.getSenha().getSenha()<<std::endl;
-
-    ComandoLerSenha ler_senha(cpf);
-    ler_senha.executar();
-
-    std::cout<<"Senha recuperada " << ler_senha.getResultado() <<std::endl;
-
-    ComandoRemoverUsuario remover(cpf);
-    remover.executar();
     }
-
 
     catch(std::exception &exp){
         std::cout << exp.what() << std::endl;
     }
-   */
 
-    /*
-    try{
-    ComandoCadastrarConta cadastrar(cpf, conta);
-    cadastrar.executar();
-
-
-    ComandoPesquisarDadosConta pesquisar(cpf);
-    pesquisar.executar();
-
-    Conta usu_result;
-    usu_result = pesquisar.getResultado();
-
-    std::cout<<"Codigo recuperado " << usu_result.getBanco().getCodigoDeBanco()<<std::endl;
-    std::cout<<"Agencia recuperado " << usu_result.getAgencia().getCodigoDeAgencia()<<std::endl;
-    std::cout<<"Numero recuperado " << usu_result.getNumero().getNumero()<<std::endl;
-
-
-    ComandoRemoverConta remover(cpf);
-    remover.executar();
-    }
-
-
-    catch(std::exception &exp){
-        std::cout << exp.what() << std::endl;
-    }*/
 
 
     try{
+        CntrServicoProdutosFinanceiros cspf;
+        std::cout<<"Resultado do cadastramento de produto " << cspf.cadastrarProdutoInvestimento(produto) <<endl;
 
-        ComandoCadastrarProduto cadastrar(produto);
-        cadastrar.executar();
-
-
-        ComandoPesquisarProdutos pesquisar(codigo);
-        pesquisar.executar();
 
         vector<Produto> usu_result;
-        usu_result = pesquisar.getResultado();
+        usu_result = cspf.consultarProdutosInvestimento(classe);
 
         for(int i=0; i<(int)usu_result.size(); ++i){
             std::cout<<"Codigo recuperado " << usu_result[i].getCodigo().getCodigoDeProduto()<<std::endl;
@@ -182,22 +158,22 @@ int main(){
             std::cout<<"Valor recuperado " << usu_result[i].getValor().getValorMinimo()<<std::endl;
 
         }
+        cspf.descadastrarProdutoInvestimento(codigo);
+        std::cout<<"Resultado do Descadastramento " <<  cspf.descadastrarProdutoInvestimento(codigo) <<std::endl;
 
-        ComandoRemoverProduto remover(codigo);
-        remover.executar();
-        }
+    }
     catch(EErroPersistencia &exp){
         std::cout << "Aconteceu excecao ";
         std::cout << exp.what() << std::endl;
     }
 
-     try{
+    try{
 
-        ComandoCadastrarAplicacao cadastrar(cpf, aplicacao);
+        ComandoCadastrarAplicacao cadastrar(cpf, codigo, aplicacao);
         cadastrar.executar();
 
 
-        ComandoPesquisarAplicacao pesquisar(codigo_app);
+        ComandoPesquisarAplicacao pesquisar(codigo);
         pesquisar.executar();
 
         vector<Aplicacao> usu_result;
@@ -213,6 +189,7 @@ int main(){
         ComandoRemoverAplicacao remover(codigo_app);
         remover.executar();
         }
+
     catch(EErroPersistencia &exp){
         std::cout << "Aconteceu excecao ";
         std::cout << exp.what() << std::endl;

@@ -31,6 +31,9 @@
 #include "Entidades/Aplicacao.h"
 #include "Entidades/Produto.h"
 
+//--------------------------
+// Exceções personalizadas.
+//--------------------------
 using namespace std;
 class EErroPersistencia: public exception {
 private:
@@ -55,6 +58,10 @@ public:
         EErroDeQuery(string);
         string what();
 };
+
+//-------------------------------
+// Interação com banco de dados.
+//-------------------------------
 
 class ElementoResultado{
 private:
@@ -82,23 +89,17 @@ protected:
         string comandoSQL;
 public:
         ComandoSQL() {
-             nomeBancoDados = "data.db";                             //Informa o nome do banco de dados.
+             nomeBancoDados = "data.db";              //Informa o nome do banco de dados.
         }
         void executar();
 };
 
-//---------------------------------------------------------------------------
-//Classe ComandoLerSenha.
-
-class ComandoLerSenha:public ComandoSQL {
-public:
-        ComandoLerSenha(CPF);
-        string getResultado();
-};
 
 
-//---------------------------------------------------------------------------
-//Classe ComandoPesquisarDadosUsuario.
+
+//----------------------------------------
+//Classes que interagem com tabela usuario
+//----------------------------------------
 
 class ComandoPesquisarDadosUsuario:public ComandoSQL {
 public:
@@ -107,26 +108,11 @@ public:
 };
 
 
-//---------------------------------------------------------------------------
-//Classe ComandoCadastrarAluno.
-
 class ComandoCadastrarUsuario:public ComandoSQL {
 public:
         ComandoCadastrarUsuario(Usuario);
 };
 
-/*
-//---------------------------------------------------------------------------
-//Classe ComandoAtualizarAluno.
-
-class ComandoAtualizarAluno:public ComandoSQL {
-public:
-        ComandoAtualizarAluno(Aluno);
-};
-*/
-
-//---------------------------------------------------------------------------
-//Classe ComandoRemoverAluno.
 
 class ComandoRemoverUsuario:public ComandoSQL {
 public:
@@ -134,8 +120,9 @@ public:
 };
 
 
-//---------------------------------------------------------------------------
-//Classe ComandoCadastrarDisciplina.
+//----------------------------------------
+//Classes que interagem com tabela conta
+//----------------------------------------
 
 class ComandoPesquisarDadosConta:public ComandoSQL {
 public:
@@ -154,15 +141,15 @@ public:
 };
 
 
+//----------------------------------------
+//Classes que interagem com tabela produto
+//----------------------------------------
 class ComandoPesquisarProdutos:public ComandoSQL {
 public:
-        ComandoPesquisarProdutos(CPF);
         ComandoPesquisarProdutos(Classe);
         ComandoPesquisarProdutos(CodigoDeProduto);
         vector<Produto> getResultado();
 };
-
-
 
 class ComandoCadastrarProduto:public ComandoSQL {
 public:
@@ -174,26 +161,28 @@ public:
         ComandoRemoverProduto(CodigoDeProduto);
 };
 
+//------------------------------------------
+//Classes que interagem com tabela aplicacao
+//------------------------------------------
+
 class ComandoPesquisarAplicacao:public ComandoSQL {
 public:
-        ComandoPesquisarAplicacao(CodigoDeAplicacao);
+        ComandoPesquisarAplicacao(CodigoDeProduto);
+        ComandoPesquisarAplicacao(CPF);
         vector<Aplicacao> getResultado();
 };
 
-
-
 class ComandoCadastrarAplicacao:public ComandoSQL {
 public:
-        ComandoCadastrarAplicacao(CPF, Aplicacao);
+        ComandoCadastrarAplicacao(CPF, CodigoDeProduto, Aplicacao);
 };
 
 class ComandoRemoverAplicacao:public ComandoSQL {
 public:
         ComandoRemoverAplicacao(CodigoDeAplicacao);
+        ComandoRemoverAplicacao(CPF);
+
 };
-
-
-
 
 
 #endif // CNTRBD_H

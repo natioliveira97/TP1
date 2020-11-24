@@ -2,8 +2,9 @@
 
 list<ElementoResultado> ComandoSQL::listaResultado;
 
-//---------------------------------------------------------------------------
-//Classe ErroPersistencia.
+//--------------------------
+// Exceções personalizadas.
+//--------------------------
 
 EErroPersistencia::EErroPersistencia(string mensagem){
         this->mensagem = mensagem;
@@ -31,10 +32,9 @@ string EErroDeQuery::what() {
 
 
 
-
-//---------------------------------------------------------------------------
-//Classe ElementoResultado.
-
+//-------------------------------
+// Interação com banco de dados.
+//-------------------------------
 void ElementoResultado::setNomeColuna(const string& nomeColuna) {
         this->nomeColuna = nomeColuna;
 }
@@ -51,9 +51,6 @@ string ElementoResultado::getValorColuna() const {
         return valorColuna;
 }
 
-
-//---------------------------------------------------------------------------
-//Classe ComandoSQL.
 
 void ComandoSQL::conectar() {
       rc = sqlite3_open(nomeBancoDados, &bd);
@@ -91,32 +88,11 @@ int ComandoSQL::callback(void *NotUsed, int argc, char **valorColuna, char **nom
       return 0;
 }
 
-// Comando para ler senha
 
-ComandoLerSenha::ComandoLerSenha(CPF cpf) {
-        comandoSQL = "SELECT Senha FROM usuario WHERE CPF = '";
-        comandoSQL += cpf.getCPF()+"'";
-}
 
-string ComandoLerSenha::getResultado() {
-        ElementoResultado resultado;
-        string senha;
-
-        if (listaResultado.empty()){
-            throw ENaoExisteNoBanco("Nao existe senha para esse CPF.");
-        }
-        if (listaResultado.size()>1){
-            listaResultado.clear();
-            throw EErroDeQuery("Mais de uma senha para esse CPF.");
-        }
-        resultado = listaResultado.back();
-        listaResultado.pop_back();
-        senha = resultado.getValorColuna();
-
-        return senha;
-}
-
-// Comandos para tratar de usuário
+//----------------------------------------
+//Classes que interagem com tabela usuario
+//----------------------------------------
 
 ComandoPesquisarDadosUsuario::ComandoPesquisarDadosUsuario(CPF cpf) {
         comandoSQL = "SELECT * FROM usuario WHERE CPF = '";
@@ -178,7 +154,11 @@ ComandoRemoverUsuario::ComandoRemoverUsuario(CPF cpf) {
         comandoSQL += cpf.getCPF()+"'";
 }
 
-// Comandos para tratar de conta
+
+
+//----------------------------------------
+//Classes que interagem com tabela conta
+//----------------------------------------
 
 ComandoPesquisarDadosConta::ComandoPesquisarDadosConta(CPF cpf) {
         comandoSQL = "SELECT * FROM conta WHERE CPF = '";
@@ -232,6 +212,12 @@ ComandoRemoverConta::ComandoRemoverConta(CPF cpf) {
         comandoSQL = "DELETE FROM conta WHERE CPF = '";
         comandoSQL += cpf.getCPF()+"'";
 }
+
+
+
+//----------------------------------------
+//Classes que interagem com tabela produto
+//----------------------------------------
 
 ComandoPesquisarProdutos::ComandoPesquisarProdutos(Classe classe) {
         comandoSQL = "SELECT * FROM produto WHERE Classe = '";
@@ -323,10 +309,19 @@ ComandoRemoverProduto::ComandoRemoverProduto(CodigoDeProduto codigo) {
 }
 
 
+//------------------------------------------
+//Classes que interagem com tabela aplicacao
+//------------------------------------------
 
-ComandoPesquisarAplicacao::ComandoPesquisarAplicacao(CodigoDeAplicacao codigo) {
-        comandoSQL = "SELECT * FROM aplicacao WHERE CodigoDeAplicacao = '";
-        comandoSQL += codigo.getCodigoDeAplicacao()+"'";
+
+ComandoPesquisarAplicacao::ComandoPesquisarAplicacao(CodigoDeProduto codigo) {
+        comandoSQL = "SELECT * FROM aplicacao WHERE CodigoDeProduto = '";
+        comandoSQL += codigo.getCodigoDeProduto()+"'";
+}
+
+ComandoPesquisarAplicacao::ComandoPesquisarAplicacao(CPF cpf) {
+        comandoSQL = "SELECT * FROM aplicacao WHERE CPF = '";
+        comandoSQL += cpf.getCPF()+"'";
 }
 
 
@@ -338,7 +333,7 @@ vector<Aplicacao> ComandoPesquisarAplicacao::getResultado() {
         if (listaResultado.empty()){
             throw ENaoExisteNoBanco("Nao há produtos cadastrados.");
         }
-        if (listaResultado.size()%4 != 0){
+        if (listaResultado.size()%5 != 0){
             listaResultado.clear();
             throw EErroDeQuery("Dados de produtos no banco incorretos.");
         }
@@ -347,6 +342,10 @@ vector<Aplicacao> ComandoPesquisarAplicacao::getResultado() {
             resultado = listaResultado.back();
             listaResultado.pop_back();
             CPF cpf(resultado.getValorColuna());
+
+            resultado = listaResultado.back();
+            listaResultado.pop_back();
+            CodigoDeProduto codigo_prod(resultado.getValorColuna());
 
             resultado = listaResultado.back();
             listaResultado.pop_back();
@@ -370,9 +369,10 @@ vector<Aplicacao> ComandoPesquisarAplicacao::getResultado() {
         return apli_list;
 }
 
-ComandoCadastrarAplicacao::ComandoCadastrarAplicacao(CPF cpf, Aplicacao aplicacao) {
-        comandoSQL = "INSERT INTO aplicacao (CPF, CodigoDeAplicacao, ValorDeAplicacao, Data) VALUES (";
+ComandoCadastrarAplicacao::ComandoCadastrarAplicacao(CPF cpf, CodigoDeProduto codigo, Aplicacao aplicacao) {
+        comandoSQL = "INSERT INTO aplicacao (CPF, CodigoDeProduto, CodigoDeAplicacao, ValorDeAplicacao, Data) VALUES (";
         comandoSQL += "'" + cpf.getCPF() + "', ";
+        comandoSQL += "'" + codigo.getCodigoDeProduto() + "', ";
         comandoSQL += "'" + aplicacao.getCodigo().getCodigoDeAplicacao() + "', ";
         comandoSQL +=  std::to_string(aplicacao.getValor().getValorDeAplicacao()) + ", ";
         comandoSQL += "'" + aplicacao.getData().getData() + "') ";
@@ -383,28 +383,9 @@ ComandoRemoverAplicacao::ComandoRemoverAplicacao(CodigoDeAplicacao codigo) {
         comandoSQL += codigo.getCodigoDeAplicacao()+"'";
 }
 
-
-
-
-
-
-
-
-//---------------------------------------------------------------------------
-//Classe ComandoEditarAluno.
-/*
-ComandoAtualizarAluno::ComandoAtualizarAluno(Aluno aluno) {
-        comandoSQL = "UPDATE alunos ";
-        comandoSQL += "SET nome = '" + aluno.getNome().getValor();
-        comandoSQL += "', senha = '" + aluno.getSenha().getValor();
-        comandoSQL += "', telefone = '" + aluno.getTelefone().getValor();
-        comandoSQL += "', matriculaorientador = '" + aluno.getMatriculaOrientador().getValor();
-        comandoSQL += "' WHERE matricula = " + aluno.getMatricula().getValor();
+ComandoRemoverAplicacao::ComandoRemoverAplicacao(CPF cpf) {
+        comandoSQL = "DELETE FROM aplicacao WHERE CPF = '";
+        comandoSQL += cpf.getCPF()+"'";
 }
-
-*/
-
-//---------------------------------------------------------------------------
-//Classe ComandoCadastrarDisciplina.
 
 
