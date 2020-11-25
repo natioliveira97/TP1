@@ -50,9 +50,11 @@ class CntrServicoProdutosFinanceiros:public IServicoProdutosFinanceiros{
         /**
         * @brief Cadastra uma aplicacao no banco de dados.
         * @param aplicacao Aplicacao a ser realizada.
-        * @return 0 Se aplicacao for cadastrado corretamente.
-        * @return 1 Se aplicacao já estiver cadastrado.
-        * @return 2 Se já tiverem 5 aplicacoes nesse CPF.
+        * @return 0 Se aplicacao for cadastrada corretamente.
+        * @return 1 Se aplicacao já estiver cadastrada.
+        * @return 2 Se produto de investimento nao existir.
+        * @return 3 Se valor for menor que valor mínimo de investimento.
+        * @return 4 Se já tiverem 5 aplicacoes nesse CPF.
         * @throw EErroPercistencia
         * @throw EErroDeQuery
         */

@@ -76,6 +76,21 @@ int CntrServicoProdutosFinanceiros::realizarAplicacao(CPF cpf, CodigoDeProduto c
     }
 
     try{
+        ComandoPesquisarProdutos pesquisar(codigo);
+        pesquisar.executar();
+
+        std::vector<Produto> pro_return;
+        pro_return = pesquisar.getResultado();
+
+        if(aplicacao.getValor().getValorDeAplicacao() < pro_return[0].getValor().getValorMinimo()){
+            return 3;
+        }
+    }
+    catch(ENaoExisteNoBanco &exp){
+        return 2;
+    }
+
+    try{
         ComandoPesquisarAplicacao pesquisar(cpf);
         pesquisar.executar();
 
@@ -83,7 +98,7 @@ int CntrServicoProdutosFinanceiros::realizarAplicacao(CPF cpf, CodigoDeProduto c
         apli_retornada = pesquisar.getResultado();
 
         if(apli_retornada.size()>=5){
-            return 2;
+            return 4;
         }
     }
     catch(ENaoExisteNoBanco &exp){

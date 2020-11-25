@@ -37,7 +37,7 @@ int main(){
     Usuario usuario;
     Conta conta;
     Produto produto;
-    Aplicacao aplicacao, aplicacao1,aplicacao2, aplicacao3, aplicacao4, aplicacao5, aplicacao6;
+    Aplicacao aplicacao, aplicacao1,aplicacao2, aplicacao3, aplicacao4, aplicacao5, aplicacao6, aplicacao7;
 
     Nome nome;
     Endereco endereco;
@@ -64,6 +64,9 @@ int main(){
     CodigoDeAplicacao codigo_app4 = CodigoDeAplicacao("14579");
     CodigoDeAplicacao codigo_app5 = CodigoDeAplicacao("13429");
     CodigoDeAplicacao codigo_app6 = CodigoDeAplicacao("13579");
+    CodigoDeAplicacao codigo_app7 = CodigoDeAplicacao("12179");
+
+    ValorDeAplicacao valor_app7 = ValorDeAplicacao(500.0);
 
     nome.setNome("Maria");
     endereco.setEndereco("Rua 1");
@@ -125,6 +128,10 @@ int main(){
     aplicacao5.setData(vencimento);
 
     aplicacao6.setCodigo(codigo_app6);
+    aplicacao6.setValor(valor_app);
+    aplicacao6.setData(vencimento);
+
+    aplicacao6.setCodigo(codigo_app7);
     aplicacao6.setValor(valor_app);
     aplicacao6.setData(vencimento);
 
@@ -230,6 +237,7 @@ int main(){
         std::cout<<"Saida do cadastramento de aplicacao " << cspf.realizarAplicacao(cpf, codigo,aplicacao) <<endl;
         std::cout<<"Saida do recadastramento da mesma aplicacao " << cspf.realizarAplicacao(cpf, codigo, aplicacao) <<endl;
         std::cout<<"Saida do cadastramento de aplicacao2 " << cspf.realizarAplicacao(cpf, codigo, aplicacao2) <<endl;
+        std::cout<<"Saida do cadastramento de aplicacao com valor invalido " << cspf.realizarAplicacao(cpf, codigo, aplicacao7) <<endl;
         std::cout<<"Saida do cadastramento de aplicacao3 " << cspf.realizarAplicacao(cpf, codigo, aplicacao3) <<endl;
         std::cout<<"Saida do cadastramento de aplicacao4 " << cspf.realizarAplicacao(cpf, codigo, aplicacao4) <<endl;
         std::cout<<"Saida do cadastramento de aplicacao5 " << cspf.realizarAplicacao(cpf, codigo, aplicacao5) <<endl;
@@ -252,8 +260,10 @@ int main(){
 
         csp.descadastrarUsuario(cpf);
         std::cout<<"Saida do descadastramento de usuario " <<  csp.descadastrarUsuario(cpf) <<std::endl;
+        std::cout<<"Saida do Descadastramento de produto depois de excluir usuario " <<  cspf.descadastrarProdutoInvestimento(codigo) <<std::endl;
 
     }
+
 
     catch(std::exception &exp){
         std::cout << exp.what() << std::endl;
