@@ -325,6 +325,11 @@ ComandoPesquisarAplicacao::ComandoPesquisarAplicacao(CPF cpf) {
 }
 
 
+ComandoPesquisarAplicacao::ComandoPesquisarAplicacao(Aplicacao aplicacao) {
+        comandoSQL = "SELECT * FROM aplicacao WHERE CodigoDeAplicacao = '";
+        comandoSQL += aplicacao.getCodigo().getCodigoDeAplicacao()+"'";
+}
+
 vector<Aplicacao> ComandoPesquisarAplicacao::getResultado() {
         ElementoResultado resultado;
         vector<Aplicacao> apli_list;

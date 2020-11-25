@@ -169,6 +169,7 @@ class ComandoPesquisarAplicacao:public ComandoSQL {
 public:
         ComandoPesquisarAplicacao(CodigoDeProduto);
         ComandoPesquisarAplicacao(CPF);
+        ComandoPesquisarAplicacao(Aplicacao);
         vector<Aplicacao> getResultado();
 };
 

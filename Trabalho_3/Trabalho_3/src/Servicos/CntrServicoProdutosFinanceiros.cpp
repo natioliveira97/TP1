@@ -26,16 +26,25 @@ int CntrServicoProdutosFinanceiros::descadastrarProdutoInvestimento(CodigoDeProd
         pesquisar.executar();
 
         std::vector<Produto> produto_retornado;
-
         produto_retornado = pesquisar.getResultado();
-
-        ComandoRemoverProduto remover(codigo);
-        remover.executar();
     }
     catch(ENaoExisteNoBanco &exp){
         return 1;
     }
+    try{
+        ComandoPesquisarAplicacao pesquisar(codigo);
+        pesquisar.executar();
 
+        std::vector<Aplicacao> apli_retornada;
+        apli_retornada = pesquisar.getResultado();
+        return 2;
+    }
+    catch(ENaoExisteNoBanco &exp){
+    }
+
+
+    ComandoRemoverProduto remover(codigo);
+    remover.executar();
     return 0;
 }
 
@@ -44,14 +53,19 @@ std::vector<Produto> CntrServicoProdutosFinanceiros::consultarProdutosInvestimen
     ComandoPesquisarProdutos pesquisar(classe);
     pesquisar.executar();
 
-    //std::vector<Produto> vetor;
+    std::vector<Produto> vetor;
+    try{
+        vetor = pesquisar.getResultado();
+    }
+    catch(ENaoExisteNoBanco &exp){
+    }
 
-    return pesquisar.getResultado();
+    return vetor;
 }
 
 int CntrServicoProdutosFinanceiros::realizarAplicacao(CPF cpf, CodigoDeProduto codigo, Aplicacao aplicacao){
     try{
-        ComandoPesquisarAplicacao pesquisar(codigo);
+        ComandoPesquisarAplicacao pesquisar(aplicacao);
         pesquisar.executar();
 
         std::vector<Aplicacao> apli_retornada;
@@ -86,8 +100,14 @@ std::vector<Aplicacao> CntrServicoProdutosFinanceiros::consultarAplicacao(CPF cp
 
     ComandoPesquisarAplicacao pesquisar(cpf);
     pesquisar.executar();
-    return pesquisar.getResultado();
 
+    std::vector<Aplicacao> vetor;
+    try{
+        vetor = pesquisar.getResultado();
+    }
+    catch(ENaoExisteNoBanco &exp){
+    }
+    return vetor;
 }
 
 

@@ -32,6 +32,7 @@ class CntrServicoProdutosFinanceiros:public IServicoProdutosFinanceiros{
         * @param codigo CodigoDeProduto a ser descadastrado.
         * @return 0 Se produto for descadastrado corretamente.
         * @return 1 Se produto não estiver no banco.
+        * @return 2 Se houverem aplicacoes nesse produto.
         * @throw EErroPercistencia
         * @throw EErroDeQuery
         */
@@ -47,14 +48,23 @@ class CntrServicoProdutosFinanceiros:public IServicoProdutosFinanceiros{
         std::vector<Produto> consultarProdutosInvestimento(Classe);
 
         /**
-        * @brief Cadastra um produto no banco de dados.
-        * @param produto Produto a ser cadastrado.
-        * @return 0 Se produto for cadastrado corretamente.
-        * @return 1 Se produto já estiver cadastrado.
+        * @brief Cadastra uma aplicacao no banco de dados.
+        * @param aplicacao Aplicacao a ser realizada.
+        * @return 0 Se aplicacao for cadastrado corretamente.
+        * @return 1 Se aplicacao já estiver cadastrado.
+        * @return 2 Se já tiverem 5 aplicacoes nesse CPF.
         * @throw EErroPercistencia
         * @throw EErroDeQuery
         */
         int realizarAplicacao(CPF, CodigoDeProduto, Aplicacao);
+
+        /**
+        * @brief Consulta aplicacoes no banco de dados.
+        * @param cpf CPF do titular.
+        * @return vetor de aplicacoes.
+        * @throw EErroPercistencia
+        * @throw EErroDeQuery
+        */
         std::vector<Aplicacao> consultarAplicacao(CPF);
 
 };

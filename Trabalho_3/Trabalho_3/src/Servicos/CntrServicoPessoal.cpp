@@ -12,18 +12,15 @@ int CntrServicoPessoal::cadastrarUsuario(Usuario usuario, Conta conta){
         return 1;
     }
     catch(ENaoExisteNoBanco &exp){
-        try{
-            if(cadastrarConta(usuario.getCPF(), conta)==0){
-                ComandoCadastrarUsuario cadastrar(usuario);
-                cadastrar.executar();
-            }
-            else{
-                return 2;
-            }
-        }
-        catch(...){
-            throw;
-        }
+    }
+
+
+    if(cadastrarConta(usuario.getCPF(), conta)==0){
+        ComandoCadastrarUsuario cadastrar(usuario);
+        cadastrar.executar();
+    }
+    else{
+        return 2;
     }
     return 0;
 }
@@ -35,21 +32,21 @@ int CntrServicoPessoal::descadastrarUsuario(CPF cpf){
         pesquisar.executar();
 
         Usuario usu_retornado;
-
         usu_retornado = pesquisar.getResultado();
-
-        ComandoRemoverUsuario remover(cpf);
-        remover.executar();
 
         if(descadastrarConta(cpf)!=0){
             throw EErroPersistencia("Erro ao descadastrar conta");
         }
 
+        ComandoRemoverAplicacao remove_apli(cpf);
+        remove_apli.executar();
+
+        ComandoRemoverUsuario remover(cpf);
+        remover.executar();
     }
     catch(ENaoExisteNoBanco &exp){
         return 1;
     }
-
     return 0;
 }
 
@@ -67,19 +64,13 @@ int CntrServicoPessoal::cadastrarConta(CPF cpf, Conta conta){
         pesquisar.executar();
 
         Conta conta_retornada;
-
         conta_retornada = pesquisar.getResultado();
         return 1;
     }
     catch(ENaoExisteNoBanco &exp){
-        try{
-            ComandoCadastrarConta cadastrar(cpf, conta);
-            cadastrar.executar();
-        }
-        catch(...){
-            throw;
-        }
     }
+    ComandoCadastrarConta cadastrar(cpf, conta);
+    cadastrar.executar();
     return 0;
 }
 
@@ -95,7 +86,6 @@ int CntrServicoPessoal::descadastrarConta(CPF cpf){
 
         ComandoRemoverConta remover(cpf);
         remover.executar();
-
     }
     catch(ENaoExisteNoBanco &exp){
         return 1;

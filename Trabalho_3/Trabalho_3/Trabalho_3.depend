@@ -411,10 +411,10 @@
 
 1605638333 c:\users\natio\documents\tp1\trabalho_3\trabalho_3\include\servico.h
 
-1606240942 source:c:\users\natio\documents\tp1\trabalho_3\trabalho_3\src\servicos\cntrbd.cpp
+1606329636 source:c:\users\natio\documents\tp1\trabalho_3\trabalho_3\src\servicos\cntrbd.cpp
 	"Servicos/CntrBD.h"
 
-1606241705 c:\users\natio\documents\tp1\trabalho_3\trabalho_3\include\servicos\cntrbd.h
+1606329604 c:\users\natio\documents\tp1\trabalho_3\trabalho_3\include\servicos\cntrbd.h
 	"Servicos/sqlite3.h"
 	<string>
 	<list>
@@ -469,24 +469,24 @@
 1606228457 source:c:\users\natio\documents\tp1\trabalho_3\trabalho_3\src\servicos\cntrservicoautenticacao.cpp
 	"CntrServicoAutenticacao.h"
 
-1606228484 c:\users\natio\documents\tp1\trabalho_3\trabalho_3\include\servicos\cntrservicoautenticacao.h
+1606330156 c:\users\natio\documents\tp1\trabalho_3\trabalho_3\include\servicos\cntrservicoautenticacao.h
 	"Interfaces/IServico.h"
 	"Servicos/CntrBD.h"
 
-1606238260 source:c:\users\natio\documents\tp1\trabalho_3\trabalho_3\src\servicos\cntrservicopessoal.cpp
+1606330812 source:c:\users\natio\documents\tp1\trabalho_3\trabalho_3\src\servicos\cntrservicopessoal.cpp
 	"Servicos/CntrServicoPessoal.h"
 
-1606236405 c:\users\natio\documents\tp1\trabalho_3\trabalho_3\include\servicos\cntrservicopessoal.h
+1606330930 c:\users\natio\documents\tp1\trabalho_3\trabalho_3\include\servicos\cntrservicopessoal.h
 	"Dominios/CPF.h"
 	"Entidades/Usuario.h"
 	"Entidades/Conta.h"
 	"Interfaces/IServico.h"
 	"Servicos/CntrBD.h"
 
-1606241122 source:c:\users\natio\documents\tp1\trabalho_3\trabalho_3\src\servicos\cntrservicoprodutosfinanceiros.cpp
+1606329920 source:c:\users\natio\documents\tp1\trabalho_3\trabalho_3\src\servicos\cntrservicoprodutosfinanceiros.cpp
 	"Servicos/CntrServicoProdutosFinanceiros.h"
 
-1606242180 c:\users\natio\documents\tp1\trabalho_3\trabalho_3\include\servicos\cntrservicoprodutosfinanceiros.h
+1606329980 c:\users\natio\documents\tp1\trabalho_3\trabalho_3\include\servicos\cntrservicoprodutosfinanceiros.h
 	"Dominios/CodigoDeProduto.h"
 	"Dominios/Classe.h"
 	"Entidades/Usuario.h"
