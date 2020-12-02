@@ -70,12 +70,12 @@ void CntrApresentacaoProdutosFinanceiros::executar(CPF cpf){
 
         clear();                                                                                // Limpa janela.
         mvprintw(linha/4,coluna/4,"%s",texto1);                                                 // Imprime nome do campo.
-        mvprintw(linha/4 + 4,coluna/4,"%s",texto2);                                             // Imprime nome do campo.
-        mvprintw(linha/4 + 6,coluna/4,"%s",texto3);                                             // Imprime nome do campo.
-        mvprintw(linha/4 + 8,coluna/4,"%s",texto4);                                             // Imprime nome do campo.
-        mvprintw(linha/4 + 10,coluna/4,"%s",texto5);                                            // Imprime nome do campo.
-        mvprintw(linha/4 + 12,coluna/4,"%s",texto6);                                            // Imprime nome do campo.
-        mvprintw(linha/4 + 14,coluna/4,"%s",texto7);                                            // Imprime nome do campo.
+        mvprintw(linha/4 + 2,coluna/4,"%s",texto2);                                             // Imprime nome do campo.
+        mvprintw(linha/4 + 4,coluna/4,"%s",texto3);                                             // Imprime nome do campo.
+        mvprintw(linha/4 + 6,coluna/4,"%s",texto4);                                             // Imprime nome do campo.
+        mvprintw(linha/4 + 8,coluna/4,"%s",texto5);                                            // Imprime nome do campo.
+        mvprintw(linha/4 + 10,coluna/4,"%s",texto6);                                            // Imprime nome do campo.
+        mvprintw(linha/4 + 12,coluna/4,"%s",texto7);                                            // Imprime nome do campo.
         noecho();
         campo = getch() - 48;                                                                   // Leitura do campo de entrada e conversão de ASCII.
         echo();
@@ -623,7 +623,7 @@ void CntrApresentacaoProdutosFinanceiros::listarAplicacoes(CPF cpf){
     char texto4[] ="Data               :";
     char texto5[] ="Pressione qualquer tecla para continuar.";
     char texto6[] ="Pressione qualquer tecla para sair.";
-    char texto7[] ="Ainda não ha aplicacoes cadstradas. Pressiona qualquer tecla para sair.";
+    char texto7[] ="Ainda nao ha aplicacoes cadstradas. Pressiona qualquer tecla para sair.";
 
     try{
         aplicacoes = cntr->consultarAplicacao(cpf);

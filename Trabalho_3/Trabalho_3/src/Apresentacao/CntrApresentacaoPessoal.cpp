@@ -6,8 +6,9 @@ bool CntrApresentacaoPessoal::executar(CPF cpf){
 
     char texto1[]="Selecione um dos servicos : ";
     char texto2[]="1 - Consultar dados pessoais.";
-    char texto3[]="2 - Descadastrar.";
-    char texto4[]="3 - Retornar.";
+    char texto3[]="2 - Consultar conta.";
+    char texto4[]="3 - Descadastrar.";
+    char texto5[]="4 - Retornar.";
 
     int campo;                                                                                  // Campo de entrada.
 
@@ -29,6 +30,7 @@ bool CntrApresentacaoPessoal::executar(CPF cpf){
         mvprintw(linha/4 + 2,coluna/4,"%s",texto2);                                             // Imprime nome do campo.
         mvprintw(linha/4 + 4,coluna/4,"%s",texto3);                                             // Imprime nome do campo.
         mvprintw(linha/4 + 6,coluna/4,"%s",texto4);
+        mvprintw(linha/4 + 8,coluna/4,"%s",texto5);
         noecho();
         campo = getch() - 48;                                                                   // Leitura do campo de entrada e conversão de ASCII.
         echo();
@@ -36,11 +38,13 @@ bool CntrApresentacaoPessoal::executar(CPF cpf){
         switch(campo){
             case 1: consultarDadosPessoais(cpf);
                     break;
-            case 2: descadastrado = descadastrar(cpf);
+            case 2: consultarConta(cpf);
+                    break;
+            case 3: descadastrado = descadastrar(cpf);
                     if(descadastrado)
                         apresentar = false;
                     break;
-            case 3: apresentar = false;
+            case 4: apresentar = false;
                     break;
         }
     }
@@ -314,10 +318,7 @@ void CntrApresentacaoPessoal::consultarDadosPessoais(CPF cpf){
     char texto4[] ="CEP             :";
     char texto5[] ="CPF             :";
     char texto6[] ="Senha           :";
-    char texto7[] ="Numero de conta :";
-    char texto8[] ="Agencia         :";
-    char texto9[] ="Banco           :";
-    char texto10[]="Pressione qualquer tecla para sair.";
+    char texto7[] ="Pressione qualquer tecla para sair.";
 
     Usuario usuario;
     Conta conta;
@@ -331,28 +332,55 @@ void CntrApresentacaoPessoal::consultarDadosPessoais(CPF cpf){
     mvprintw(linha/4 + 2,coluna/4,"%s",texto2);
     printw(usuario.getNome().getNome().c_str());
 
-    mvprintw(linha/4 + 3,coluna/4,"%s",texto3);
+    mvprintw(linha/4 + 4,coluna/4,"%s",texto3);
     printw(usuario.getEndereco().getEndereco().c_str());
 
-    mvprintw(linha/4 + 4,coluna/4,"%s",texto4);
+    mvprintw(linha/4 + 6,coluna/4,"%s",texto4);
     printw(std::to_string(usuario.getCEP().getCEP()).c_str());
 
-    mvprintw(linha/4 + 5,coluna/4,"%s",texto5);
+    mvprintw(linha/4 + 8,coluna/4,"%s",texto5);
     printw(usuario.getCPF().getCPF().c_str());
 
-    mvprintw(linha/4 + 6,coluna/4,"%s",texto6);
+    mvprintw(linha/4 + 10,coluna/4,"%s",texto6);
     printw(usuario.getSenha().getSenha().c_str());
 
-    mvprintw(linha/4 + 7,coluna/4,"%s",texto7);
+    mvprintw(linha/4 + 14,coluna/4,"%s",texto7);
+    noecho();
+    getch();
+    echo();
+}
+
+//--------------------------------------------------------------------------------------------
+
+void CntrApresentacaoPessoal::consultarConta(CPF cpf){
+
+    // Mensagens a serem apresentadas.
+
+    int linha,coluna;                                                                           // Dados sobre tamanho da tela.
+    getmaxyx(stdscr,linha,coluna);                                                              // Armazena quantidade de linhas e colunas.
+
+    char texto1[] ="Dados da conta";
+    char texto2[] ="Numero de conta :";
+    char texto3[] ="Agencia         :";
+    char texto4[] ="Banco           :";
+    char texto5[] ="Pressione qualquer tecla para sair.";
+
+    Conta conta;
+    conta = cntrServicoPessoal->consultarConta(cpf);
+
+    clear();
+    mvprintw(linha/4,coluna/4,"%s",texto1);
+
+    mvprintw(linha/4 + 2,coluna/4,"%s",texto2);
     printw(conta.getNumero().getNumero().c_str());
 
-    mvprintw(linha/4 + 8,coluna/4,"%s",texto8);
+    mvprintw(linha/4 + 4,coluna/4,"%s",texto3);
     printw(conta.getAgencia().getCodigoDeAgencia().c_str());
 
-    mvprintw(linha/4 + 9,coluna/4,"%s",texto9);
+    mvprintw(linha/4 + 6,coluna/4,"%s",texto4);
     printw(conta.getBanco().getBanco().c_str());
 
-    mvprintw(linha/4 + 12,coluna/4,"%s",texto10);
+    mvprintw(linha/4 + 10,coluna/4,"%s",texto5);
     noecho();
     getch();
     echo();

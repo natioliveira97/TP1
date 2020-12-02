@@ -26,6 +26,7 @@ class CntrApresentacaoPessoal:public IApresentacaoPessoal{
         IServicoPessoal *cntrServicoPessoal;
         IServicoProdutosFinanceiros *cntrServicoProdutosFinanceiros;
         void consultarDadosPessoais(CPF);
+        void consultarConta(CPF);
         bool descadastrar(CPF);
     public:
         bool executar(CPF);
