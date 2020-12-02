@@ -260,7 +260,7 @@ bool CntrApresentacaoPessoal::descadastrar(CPF cpf){
     getmaxyx(stdscr,linha,coluna);
 
     char texto1[] ="Usuario descadastrado com sucesso. Pressione qualquer tecla para sair.";
-    char texto2[] ="Falha no descadrastamento, usuario possui aplicacoes vinculadas.";
+    char texto2[] ="Falha no descadrastamento.";
     char texto3[] ="Pressione qualquer tecla para sair.";
 
 
@@ -274,7 +274,7 @@ bool CntrApresentacaoPessoal::descadastrar(CPF cpf){
                 getch();
                 echo();
                 return true;
-            case 2:
+            case 1:
                 clear();
                 mvprintw(linha/4 + 4,coluna/4,"%s",texto2);
                 clrtoeol();

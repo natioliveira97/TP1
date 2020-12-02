@@ -27,8 +27,8 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="C:/Users/livia/Documents/UnB/TP1/TP1_trabalho3/sqlite3.o" />
-					<Add library="C:/Users/livia/Documents/UnB/TP1/TP1_trabalho3/pdcurses.a" />
+					<Add library="C:/Users/livia/Documents/UnB/TP1/TP1_trabalho3/lib/libsqlite.a" />
+					<Add library="C:/Users/livia/Documents/UnB/TP1/TP1_trabalho3/lib/pdcurses.a" />
 				</Linker>
 			</Target>
 		</Build>

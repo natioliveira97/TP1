@@ -74,7 +74,6 @@ int main(){
     CodigoDeAplicacao codigo_app6 = CodigoDeAplicacao("13579");
     CodigoDeAplicacao codigo_app7 = CodigoDeAplicacao("12179");
 
-//    ValorDeAplicacao valor_app7 = ValorDeAplicacao(500.0);
 
     nome.setNome("Maria");
     endereco.setEndereco("Rua 1");
