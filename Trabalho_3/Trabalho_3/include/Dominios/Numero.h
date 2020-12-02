@@ -10,7 +10,7 @@
 * @author Lívia Gomes Costa Fonseca
 * @author Natalia Oliveira Borges
 *
-* Esse arquivo contém a implementção da classe de domínio Numero. Essa classe armazena o atributo prazo no formato
+* Esse arquivo contém a implementção da classe de domínio Numero. Essa classe armazena o atributo numero no formato
 * string.
 */
 

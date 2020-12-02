@@ -20,17 +20,25 @@
 #include "Dominios/ValorDeAplicacao.h"
 #include "Dominios/ValorMinimo.h"
 
+#include "Dominios/BaseTest.h"
+#include "Dominios/TestPrazo.h"
+
 #include "Entidades/Usuario.h"
 #include "Entidades/Conta.h"
 #include "Entidades/Aplicacao.h"
 #include "Entidades/Produto.h"
+
+#include "Apresentacao/CntrApresentacaoControle.h"
+#include "Apresentacao/CntrApresentacaoAutenticacao.h"
+#include "Apresentacao/CntrApresentacaoPessoal.h"
+#include "Apresentacao/CntrApresentacaoProdutosFinanceiros.h"
 
 #include "Servicos/CntrServicoAutenticacao.h"
 #include "Servicos/CntrServicoPessoal.h"
 #include "Servicos/CntrServicoProdutosFinanceiros.h"
 
 
-using namespace std;
+//using namespace std;
 
 int main(){
 
@@ -66,7 +74,7 @@ int main(){
     CodigoDeAplicacao codigo_app6 = CodigoDeAplicacao("13579");
     CodigoDeAplicacao codigo_app7 = CodigoDeAplicacao("12179");
 
-    ValorDeAplicacao valor_app7 = ValorDeAplicacao(500.0);
+//    ValorDeAplicacao valor_app7 = ValorDeAplicacao(500.0);
 
     nome.setNome("Maria");
     endereco.setEndereco("Rua 1");
@@ -135,7 +143,7 @@ int main(){
     aplicacao6.setValor(valor_app);
     aplicacao6.setData(vencimento);
 
-
+/*
     try{
 
         CntrServicoPessoal csp;
@@ -269,7 +277,48 @@ int main(){
         std::cout << exp.what() << std::endl;
     }
 
+*/
 
+// Instancia as controladoras de apresentação.
+
+    CntrApresentacaoControle *cntrApresentacaoControle;
+    IApresentacaoAutenticacao *cntrApresentacaoAutenticacao;
+    IApresentacaoPessoal *cntrApresentacaoPessoal;
+    IApresentacaoProdutosFinanceiros *cntrApresentacaoProdutosFinanceiros;
+
+    cntrApresentacaoControle = new CntrApresentacaoControle();
+    cntrApresentacaoAutenticacao = new CntrApresentacaoAutenticacao();
+    cntrApresentacaoPessoal = new CntrApresentacaoPessoal();
+    cntrApresentacaoProdutosFinanceiros = new CntrApresentacaoProdutosFinanceiros();
+
+    // Instancia os stubs de serviço.
+
+    IServicoAutenticacao *cntrServicoAutenticacao;
+    IServicoPessoal *cntrServicoPessoal;
+    IServicoProdutosFinanceiros *cntrServicoProdutosFinanceiros;
+
+    cntrServicoAutenticacao = new CntrServicoAutenticacao();
+    cntrServicoPessoal = new CntrServicoPessoal();
+    cntrServicoProdutosFinanceiros = new CntrServicoProdutosFinanceiros();
+
+    // Interliga as controladoras aos serviços.
+
+    cntrApresentacaoControle->setCntrApresentacaoAutenticacao(cntrApresentacaoAutenticacao);
+    cntrApresentacaoControle->setCntrApresentacaoPessoal(cntrApresentacaoPessoal);
+    cntrApresentacaoControle->setCntrApresentacaoProdutosFinanceiros(cntrApresentacaoProdutosFinanceiros);
+
+    cntrApresentacaoAutenticacao->setCntrServicoAutenticacao(cntrServicoAutenticacao);
+    cntrApresentacaoPessoal->setCntrServicoPessoal(cntrServicoPessoal);
+    cntrApresentacaoPessoal->setCntrServicoProdutosFinanceiros(cntrServicoProdutosFinanceiros);
+    cntrApresentacaoProdutosFinanceiros->setCntrServicoProdutosFinanceiros(cntrServicoProdutosFinanceiros);
+
+    initscr();                                                      // Inicia curses.
+    //cntrApresentacaoPessoal->executar(cpf);
+    cntrApresentacaoControle->executar();                           // Solicita serviço apresentacao.
+    endwin();
+                                                                    // Finaliza curses.
+
+    return 0;
 
 
 }

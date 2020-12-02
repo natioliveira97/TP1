@@ -21,7 +21,7 @@ class CntrServicoProdutosFinanceiros:public IServicoProdutosFinanceiros{
         * @param produto Produto a ser cadastrado.
         * @return 0 Se produto for cadastrado corretamente.
         * @return 1 Se produto já estiver cadastrado.
-        * @throw EErroPercistencia
+        * @throw EErroPersistencia
         * @throw EErroDeQuery
         */
         int cadastrarProdutoInvestimento(Produto);
@@ -32,7 +32,7 @@ class CntrServicoProdutosFinanceiros:public IServicoProdutosFinanceiros{
         * @param codigo CodigoDeProduto a ser descadastrado.
         * @return 0 Se produto for descadastrado corretamente.
         * @return 1 Se produto não estiver no banco.
-        * @return 2 Se houverem aplicacoes nesse produto.
+        * @return 2 Se houver aplicacoes nesse produto.
         * @throw EErroPercistencia
         * @throw EErroDeQuery
         */
@@ -42,7 +42,7 @@ class CntrServicoProdutosFinanceiros:public IServicoProdutosFinanceiros{
         * @brief Consulta produtos de investimento do banco de dados.
         * @param classe Classe de produtos.
         * @return vetor de produtos de investimento.
-        * @throw EErroPercistencia
+        * @throw EErroPersistencia
         * @throw EErroDeQuery
         */
         std::vector<Produto> consultarProdutosInvestimento(Classe);
@@ -55,7 +55,7 @@ class CntrServicoProdutosFinanceiros:public IServicoProdutosFinanceiros{
         * @return 2 Se produto de investimento nao existir.
         * @return 3 Se valor for menor que valor mínimo de investimento.
         * @return 4 Se já tiverem 5 aplicacoes nesse CPF.
-        * @throw EErroPercistencia
+        * @throw EErroPersistencia
         * @throw EErroDeQuery
         */
         int realizarAplicacao(CPF, CodigoDeProduto, Aplicacao);
@@ -64,7 +64,7 @@ class CntrServicoProdutosFinanceiros:public IServicoProdutosFinanceiros{
         * @brief Consulta aplicacoes no banco de dados.
         * @param cpf CPF do titular.
         * @return vetor de aplicacoes.
-        * @throw EErroPercistencia
+        * @throw EErroPersistencia
         * @throw EErroDeQuery
         */
         std::vector<Aplicacao> consultarAplicacao(CPF);

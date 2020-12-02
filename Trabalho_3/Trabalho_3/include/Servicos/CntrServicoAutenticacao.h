@@ -11,7 +11,7 @@
 * @return 0 se usuário for autenticado.
 * @return 1 se senha estiver incorreta.
 * @return 2 se usuário não estiver cadastrado.
-* @throw EErroPercistencia
+* @throw EErroPersistencia
 * @throw EErroDeQuery
 */
 class CntrServicoAutenticacao:public IServicoAutenticacao{

@@ -27,7 +27,8 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
-					<Add library="../Trabalho_3/sqlite3.o" />
+					<Add library="C:/Users/livia/Documents/UnB/TP1/TP1_trabalho3/sqlite3.o" />
+					<Add library="C:/Users/livia/Documents/UnB/TP1/TP1_trabalho3/pdcurses.a" />
 				</Linker>
 			</Target>
 		</Build>
@@ -35,6 +36,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Apresentacao/CntrApresentacaoAutenticacao.h" />
+		<Unit filename="include/Apresentacao/CntrApresentacaoControle.h" />
+		<Unit filename="include/Apresentacao/CntrApresentacaoPessoal.h" />
+		<Unit filename="include/Apresentacao/CntrApresentacaoProdutosFinanceiros.h" />
 		<Unit filename="include/Dominios/BaseTest.h" />
 		<Unit filename="include/Dominios/CEP.h" />
 		<Unit filename="include/Dominios/CPF.h" />
@@ -81,9 +86,19 @@
 		<Unit filename="include/Entidades/TestProduto.h" />
 		<Unit filename="include/Entidades/TestUsuario.h" />
 		<Unit filename="include/Entidades/Usuario.h" />
+		<Unit filename="include/Interfaces/IApresentacao.h" />
+		<Unit filename="include/Interfaces/IServico.h" />
 		<Unit filename="include/Servicos/CntrBD.h" />
+		<Unit filename="include/Servicos/CntrServicoAutenticacao.h" />
+		<Unit filename="include/Servicos/CntrServicoPessoal.h" />
+		<Unit filename="include/Servicos/CntrServicoProdutosFinanceiros.h" />
+		<Unit filename="include/Servicos/dfkn.h" />
 		<Unit filename="include/Servicos/sqlite3.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Apresentacao/CntrApresentacaoAutenticacao.cpp" />
+		<Unit filename="src/Apresentacao/CntrApresentacaoControle.cpp" />
+		<Unit filename="src/Apresentacao/CntrApresentacaoPessoal.cpp" />
+		<Unit filename="src/Apresentacao/CntrApresentacaoProdutosFinanceiros.cpp" />
 		<Unit filename="src/Dominios/BaseTest.cpp" />
 		<Unit filename="src/Dominios/CEP.cpp" />
 		<Unit filename="src/Dominios/CPF.cpp" />
@@ -130,6 +145,9 @@
 		<Unit filename="src/Entidades/TestUsuario.cpp" />
 		<Unit filename="src/Entidades/Usuario.cpp" />
 		<Unit filename="src/Servicos/CntrBD.cpp" />
+		<Unit filename="src/Servicos/CntrServicoAutenticacao.cpp" />
+		<Unit filename="src/Servicos/CntrServicoPessoal.cpp" />
+		<Unit filename="src/Servicos/CntrServicoProdutosFinanceiros.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

@@ -14,7 +14,6 @@ int CntrServicoPessoal::cadastrarUsuario(Usuario usuario, Conta conta){
     catch(ENaoExisteNoBanco &exp){
     }
 
-
     if(cadastrarConta(usuario.getCPF(), conta)==0){
         ComandoCadastrarUsuario cadastrar(usuario);
         cadastrar.executar();

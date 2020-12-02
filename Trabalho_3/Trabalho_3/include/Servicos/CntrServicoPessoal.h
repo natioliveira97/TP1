@@ -41,7 +41,7 @@ class CntrServicoPessoal:public IServicoPessoal{
         * @return 0 Se usuario for cadastrado corretamente.
         * @return 1 Se usuario já estiver cadastrado.
         * @return 2 Se conta não puder ser cadastrada
-        * @throw EErroPercistencia
+        * @throw EErroPersistencia
         * @throw EErroDeQuery
         */
         int cadastrarUsuario(Usuario, Conta);
@@ -51,7 +51,7 @@ class CntrServicoPessoal:public IServicoPessoal{
         * @param cpf CPF do titular.
         * @return 0 Se usuario for descadastrado corretamente.
         * @return 1 Se usuario não estiver cadastrado.
-        * @throw EErroPercistencia
+        * @throw EErroPersistencia
         * @throw EErroDeQuery
         */
         int descadastrarUsuario(CPF);
@@ -61,7 +61,7 @@ class CntrServicoPessoal:public IServicoPessoal{
         * @param cpf CPF do titular.
         * @return usuario solicitado.
         * @throw ENaoExisteNoBanco
-        * @throw EErroPercistencia
+        * @throw EErroPersistencia
         * @throw EErroDeQuery
         */
         Usuario consultarUsuario(CPF);
@@ -71,7 +71,7 @@ class CntrServicoPessoal:public IServicoPessoal{
         * @param cpf CPF do titular.
         * @return conta solicitada.
         * @throw ENaoExisteNoBanco
-        * @throw EErroPercistencia
+        * @throw EErroPersistencia
         * @throw EErroDeQuery
         */
         Conta consultarConta(CPF);

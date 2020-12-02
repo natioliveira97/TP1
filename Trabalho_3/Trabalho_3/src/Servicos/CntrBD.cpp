@@ -1,4 +1,5 @@
 #include "Servicos/CntrBD.h"
+#include <string>
 
 list<ElementoResultado> ComandoSQL::listaResultado;
 
@@ -55,13 +56,13 @@ string ElementoResultado::getValorColuna() const {
 void ComandoSQL::conectar() {
       rc = sqlite3_open(nomeBancoDados, &bd);
       if( rc != SQLITE_OK )
-        throw EErroPersistencia("Erro na conexao ao banco de dados");
+        throw EErroPersistencia("Erro na conexao ao banco de dados - RC:" + std::to_string(rc));
 }
 
 void ComandoSQL::desconectar() {
       rc =  sqlite3_close(bd);
       if( rc != SQLITE_OK )
-        throw EErroPersistencia("Erro na desconexao ao banco de dados");
+        throw EErroPersistencia("Erro na desconexao ao banco de dados - RC:" + std::to_string(rc));
 }
 
 void ComandoSQL::executar() {
@@ -70,7 +71,7 @@ void ComandoSQL::executar() {
         if(rc != SQLITE_OK){
                 sqlite3_free(mensagem);
                 desconectar();
-                throw EErroPersistencia("Erro na execucao do comando SQL");
+                throw EErroPersistencia("Erro na execucao do comando SQL - RC:" + std::to_string(rc));
         }
         desconectar();
 }
