@@ -79,7 +79,7 @@ int CntrServicoPessoal::cadastrarConta(CPF cpf, Conta conta){
         if(conta_retornada.getAgencia().getCodigoDeAgencia() == conta.getAgencia().getCodigoDeAgencia() &&
            conta_retornada.getNumero().getNumero() == conta.getNumero().getNumero() &&
            conta_retornada.getBanco().getCodigoDeBanco() == conta.getBanco().getCodigoDeBanco()){
-            return 2;
+            return 1;
         }
     }
     catch(ENaoExisteNoBanco &exp){
