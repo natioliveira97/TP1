@@ -473,7 +473,7 @@ void CntrApresentacaoProdutosFinanceiros::realizarAplicacao(CPF cpf){
     ValorDeAplicacao valor;
     Data data;
 
-    char texto1[] ="Dados da aplicação:";
+    char texto1[] ="Dados da aplicacao:";
     char texto2[] ="Codigo de produto  :";
     char texto3[] ="Codigo de aplicacao:";
     char texto4[] ="Valor da aplicacao :";

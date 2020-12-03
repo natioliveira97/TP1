@@ -17,7 +17,6 @@ class IApresentacaoPessoal{
         virtual bool executar(CPF) = 0;
         virtual void cadastrar() = 0;
         virtual void setCntrServicoPessoal(IServicoPessoal*) = 0;
-        virtual void setCntrServicoProdutosFinanceiros(IServicoProdutosFinanceiros*) = 0;
         virtual ~IApresentacaoPessoal(){}
 };
 

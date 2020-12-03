@@ -42,7 +42,9 @@
 
 int main(){
 
-// Instancia as controladoras de apresentação.
+
+    // Instancia as controladoras de apresentação.
+
 
     CntrApresentacaoControle *cntrApresentacaoControle;
     IApresentacaoAutenticacao *cntrApresentacaoAutenticacao;
@@ -72,11 +74,9 @@ int main(){
 
     cntrApresentacaoAutenticacao->setCntrServicoAutenticacao(cntrServicoAutenticacao);
     cntrApresentacaoPessoal->setCntrServicoPessoal(cntrServicoPessoal);
-    cntrApresentacaoPessoal->setCntrServicoProdutosFinanceiros(cntrServicoProdutosFinanceiros);
     cntrApresentacaoProdutosFinanceiros->setCntrServicoProdutosFinanceiros(cntrServicoProdutosFinanceiros);
 
     initscr();                                                      // Inicia curses.
-    //cntrApresentacaoPessoal->executar(cpf);
     cntrApresentacaoControle->executar();                           // Solicita serviço apresentacao.
     endwin();
                                                                     // Finaliza curses.
