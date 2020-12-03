@@ -24,7 +24,6 @@
 class CntrApresentacaoPessoal:public IApresentacaoPessoal{
     private:
         IServicoPessoal *cntrServicoPessoal;
-        IServicoProdutosFinanceiros *cntrServicoProdutosFinanceiros;
         void consultarDadosPessoais(CPF);
         void consultarConta(CPF);
         bool descadastrar(CPF);
@@ -32,15 +31,10 @@ class CntrApresentacaoPessoal:public IApresentacaoPessoal{
         bool executar(CPF);
         void cadastrar();
         void setCntrServicoPessoal(IServicoPessoal*);
-        void setCntrServicoProdutosFinanceiros(IServicoProdutosFinanceiros*);
 };
 
 inline void CntrApresentacaoPessoal::setCntrServicoPessoal(IServicoPessoal *cntr){
     cntrServicoPessoal = cntr;
-}
-
-inline void CntrApresentacaoPessoal::setCntrServicoProdutosFinanceiros(IServicoProdutosFinanceiros *cntr){
-    cntrServicoProdutosFinanceiros = cntr;
 }
 
 #endif // CNTRAPRESENTACAOPESSOAL_H
