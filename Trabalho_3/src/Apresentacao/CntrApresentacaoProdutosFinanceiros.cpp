@@ -118,6 +118,7 @@ void CntrApresentacaoProdutosFinanceiros::cadastrarProdutoInvestimento(){
     char texto10[]="Dado em formato incorreto. Preencha o campo novamente";
     char texto11[]="Sucesso no cadastramento. Digite algo.";
     char texto12[]="Falha no cadastramento, produto financeiro ja existente. Digite algo.";
+    char texto13[]="Falha no cadastramento. Digite algo.";
 
     char campo1[80], campo2[80], campo3[80], campo4[80], campo5[80];                            // Cria campos para entrada dos dados.
     char campo6[80], campo7[80], campo8[80];
@@ -261,14 +262,14 @@ void CntrApresentacaoProdutosFinanceiros::cadastrarProdutoInvestimento(){
         }
     }
     catch(EErroPersistencia &exp){
-        mvprintw(linha/4 + 18,coluna/4,"%s",exp.what());                                               // Informa falha.
+        mvprintw(linha/4 + 18,coluna/4,"%s",texto13);                                               // Informa falha.
         noecho();
         getch();
         echo();
         return;
     }
     catch(EErroDeQuery &exp){
-        mvprintw(linha/4 + 18,coluna/4,"%s",exp.what());                                               // Informa sucesso.
+        mvprintw(linha/4 + 18,coluna/4,"%s",texto13);                                               // Informa sucesso.
         noecho();
         getch();
         echo();
@@ -296,6 +297,7 @@ void CntrApresentacaoProdutosFinanceiros::descadastrarProdutoInvestimento(){
     char texto5[] ="Falha no descadrastamento, produto inexistente no banco.";
     char texto6[] ="Falha no descadrastamento, produto possui aplicacoes vinculadas.";
     char texto7[] ="Pressione qualquer tecla para sair.";
+    char texto8[] ="Falha no descadrastamento.";
 
     clear();
     mvprintw(linha/4,coluna/4,"%s",texto1);
@@ -343,14 +345,16 @@ void CntrApresentacaoProdutosFinanceiros::descadastrarProdutoInvestimento(){
         }
     }
     catch(EErroPersistencia &exp){
-        mvprintw(linha/4 + 4,coluna/4,"%s",exp.what());
+        mvprintw(linha/4 + 4,coluna/4,"%s",texto8);
+        mvprintw(linha/4 + 4,coluna/4,"%s",texto7);
         noecho();
         getch();
         echo();
         return;
     }
     catch(EErroDeQuery &exp){
-        mvprintw(linha/4 + 4,coluna/4,"%s",exp.what());
+        mvprintw(linha/4 + 4,coluna/4,"%s",texto8);
+        mvprintw(linha/4 + 4,coluna/4,"%s",texto7);
         noecho();
         getch();
         echo();
@@ -486,6 +490,7 @@ void CntrApresentacaoProdutosFinanceiros::realizarAplicacao(CPF cpf){
     char texto10[]="Falha na aplicacao, valor menor que valor minimo de investimento.";
     char texto11[]="Falha na aplicacao, ja existem 5 aplicacoes neste CPF.";
     char texto12[]="Pressione qualquer tecla para sair.";
+    char texto13[]="Falha no cadastramento.";
 
     char campo1[80], campo2[80], campo3[80], campo4[80];
 
@@ -591,14 +596,16 @@ void CntrApresentacaoProdutosFinanceiros::realizarAplicacao(CPF cpf){
         }
     }
     catch(EErroPersistencia &exp){
-        mvprintw(linha/4 + 18,coluna/4,"%s",exp.what());                                               // Informa falha.
+        mvprintw(linha/4 + 18,coluna/4,"%s",texto13);                                               // Informa falha.
+        mvprintw(linha/4 + 18,coluna/4,"%s",texto12);
         noecho();
         getch();
         echo();
         return;
     }
     catch(EErroDeQuery &exp){
-        mvprintw(linha/4 + 18,coluna/4,"%s",exp.what());                                               // Informa sucesso.
+        mvprintw(linha/4 + 18,coluna/4,"%s",texto13);                                               // Informa falha.
+        mvprintw(linha/4 + 18,coluna/4,"%s",texto12);
         noecho();
         getch();
         echo();

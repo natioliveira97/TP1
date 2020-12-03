@@ -234,15 +234,13 @@ void CntrApresentacaoPessoal::cadastrar(){
     }
     catch(EErroPersistencia &exp){
         mvprintw(linha/4 + 18,coluna/4,"%s",texto12);
-        mvprintw(linha/4 + 19,coluna/4,"%s",exp.what());
         noecho();
         getch();
         echo();
         return;
     }
     catch(EErroDeQuery &exp){
-        mvprintw(linha/4 + 18,coluna/4,"%s",texto12);                                               // Informa sucesso.
-        mvprintw(linha/4 + 19,coluna/4,"%s",exp.what());
+        mvprintw(linha/4 + 18,coluna/4,"%s",texto12);
         noecho();
         getch();
         echo();
@@ -287,14 +285,14 @@ bool CntrApresentacaoPessoal::descadastrar(CPF cpf){
         }
     }
     catch(EErroPersistencia &exp){
-        mvprintw(linha/4 + 4,coluna/4,"%s",exp.what());
+        mvprintw(linha/4 + 4,coluna/4,"%s",texto2);
         noecho();
         getch();
         echo();
         return false;
     }
     catch(EErroDeQuery &exp){
-        mvprintw(linha/4 + 4,coluna/4,"%s",exp.what());
+        mvprintw(linha/4 + 4,coluna/4,"%s",texto2);
         noecho();
         getch();
         echo();
