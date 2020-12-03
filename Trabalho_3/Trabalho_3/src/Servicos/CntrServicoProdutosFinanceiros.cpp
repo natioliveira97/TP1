@@ -14,6 +14,7 @@ int CntrServicoProdutosFinanceiros::cadastrarProdutoInvestimento(Produto produto
     catch(ENaoExisteNoBanco &exp){
     }
 
+
     ComandoCadastrarProduto cadastrar(produto);
     cadastrar.executar();
     return 0;

@@ -127,6 +127,7 @@ public:
 class ComandoPesquisarDadosConta:public ComandoSQL {
 public:
         ComandoPesquisarDadosConta(CPF);
+        ComandoPesquisarDadosConta(Numero);
         Conta getResultado();
 };
 

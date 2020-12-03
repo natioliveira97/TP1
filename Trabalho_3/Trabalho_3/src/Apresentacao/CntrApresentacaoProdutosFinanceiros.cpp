@@ -623,7 +623,7 @@ void CntrApresentacaoProdutosFinanceiros::listarAplicacoes(CPF cpf){
     char texto4[] ="Data               :";
     char texto5[] ="Pressione qualquer tecla para continuar.";
     char texto6[] ="Pressione qualquer tecla para sair.";
-    char texto7[] ="Ainda nao ha aplicacoes cadstradas. Pressiona qualquer tecla para sair.";
+    char texto7[] ="Ainda nao ha aplicacoes cadastradas. Pressione qualquer tecla para sair.";
 
     try{
         aplicacoes = cntr->consultarAplicacao(cpf);

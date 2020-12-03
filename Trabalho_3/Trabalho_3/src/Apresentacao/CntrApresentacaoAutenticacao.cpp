@@ -6,7 +6,7 @@ bool CntrApresentacaoAutenticacao::autenticar(CPF *cpf){
 
     char texto1[]="Digite o CPF  : ";
     char texto2[]="Digite a senha: ";
-    char texto3[]="Dado em formato incorreto. Pressione qualquer tecla para tentar novamente.";
+    char texto3[]="Dado em formato incorreto. Pressione qualquer tecla para voltar ao inicio.";
     char texto4[]="Senha incorreta. Pressione qualquer tecla para sair.";
     char texto5[]="Usuario nao cadastrado. Pressione qualquer tecla para sair.";
 
@@ -44,6 +44,7 @@ bool CntrApresentacaoAutenticacao::autenticar(CPF *cpf){
             noecho();
             getch();                                    // Lê caracter digitado.
             echo();
+            return false;
         }
     }
     try{

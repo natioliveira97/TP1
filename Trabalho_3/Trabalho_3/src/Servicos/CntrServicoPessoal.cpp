@@ -8,7 +8,6 @@ int CntrServicoPessoal::cadastrarUsuario(Usuario usuario, Conta conta){
 
         Usuario usu_retornado;
         usu_retornado = pesquisar.getResultado();
-
         return 1;
     }
     catch(ENaoExisteNoBanco &exp){
@@ -68,6 +67,24 @@ int CntrServicoPessoal::cadastrarConta(CPF cpf, Conta conta){
     }
     catch(ENaoExisteNoBanco &exp){
     }
+
+
+    try{
+        ComandoPesquisarDadosConta pesquisar(conta.getNumero());
+        pesquisar.executar();
+
+        Conta conta_retornada;
+        conta_retornada = pesquisar.getResultado();
+
+        if(conta_retornada.getAgencia().getCodigoDeAgencia() == conta.getAgencia().getCodigoDeAgencia() &&
+           conta_retornada.getNumero().getNumero() == conta.getNumero().getNumero() &&
+           conta_retornada.getBanco().getCodigoDeBanco() == conta.getBanco().getCodigoDeBanco()){
+            return 2;
+        }
+    }
+    catch(ENaoExisteNoBanco &exp){
+    }
+
     ComandoCadastrarConta cadastrar(cpf, conta);
     cadastrar.executar();
     return 0;

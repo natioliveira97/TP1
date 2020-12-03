@@ -166,12 +166,17 @@ ComandoPesquisarDadosConta::ComandoPesquisarDadosConta(CPF cpf) {
         comandoSQL += cpf.getCPF()+"'";
 }
 
+ComandoPesquisarDadosConta::ComandoPesquisarDadosConta(Numero numero){
+        comandoSQL = "SELECT * FROM conta WHERE Numero = '";
+        comandoSQL += numero.getNumero()+"'";
+}
+
 Conta ComandoPesquisarDadosConta::getResultado() {
         ElementoResultado resultado;
         Conta conta;
 
         if (listaResultado.empty()){
-            throw ENaoExisteNoBanco("Nao usuario com esse CPF.");
+            throw ENaoExisteNoBanco("Nao ha usuario com esse CPF.");
         }
         if (listaResultado.size()>4){
             listaResultado.clear();
